@@ -1,0 +1,329 @@
+<title>eBay Daily 20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sourcing desk. Summary strip, then a tabbed ledger (Daily 20 / Rejected / All evaluated / Seasonal plan). */
+:root {
+  --bg: #f3f5f4; --surface: #ffffff; --ink: #18232b; --muted: #5d6a72; --line: #d9e0de; --accent: #0e6b5c; --accent-soft: #dcefe9;
+  --ok: #1d7a43; --ok-soft: #e1f2e7; --warn: #8a5a00; --warn-soft: #fbefd2; --bad: #a3302b; --bad-soft: #f8e1df; --info: #2f5f8f; --info-soft: #e2ecf6;
+  --font-display: "IBM Plex Sans Condensed", "Arial Narrow", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  --font-data: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11181c; --surface: #172127; --ink: #e5ece9; --muted: #9aa8ae; --line: #2a373e; --accent: #4fc2a9; --accent-soft: #173a33;
+  --ok: #67c98d; --ok-soft: #173225; --warn: #e4b45a; --warn-soft: #3a2d12; --bad: #ee8a83; --bad-soft: #3d1d1b; --info: #8cb8e6; --info-soft: #1b2c3e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11181c; --surface: #172127; --ink: #e5ece9; --muted: #9aa8ae; --line: #2a373e; --accent: #4fc2a9; --accent-soft: #173a33;
+  --ok: #67c98d; --ok-soft: #173225; --warn: #e4b45a; --warn-soft: #3a2d12; --bad: #ee8a83; --bad-soft: #3d1d1b; --info: #8cb8e6; --info-soft: #1b2c3e; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.45; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 40px; display: grid; gap: 18px; }
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: 0.01em; }
+h2 { font-size: 1.15rem; font-weight: 600; }
+.top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
+.top .sub { color: var(--muted); margin-top: 2px; }
+.daypick { display: flex; align-items: center; gap: 8px; }
+.daypick label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+select { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
+select:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; min-width: 0; }
+.big { font-family: var(--font-display); font-size: 2.4rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+.big small { font-size: 1rem; color: var(--muted); font-weight: 500; }
+.label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); margin-bottom: 6px; }
+.note { color: var(--muted); font-size: 0.85rem; }
+.srcs { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.srcs td { padding: 3px 0; }
+.srcs td:not(:first-child) { text-align: right; font-family: var(--font-data); font-size: 0.85rem; }
+.meter { display: flex; height: 8px; border-radius: 4px; overflow: hidden; background: var(--line); margin-block: 6px 4px; }
+.meter span { display: block; height: 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; color: var(--muted); }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--line); }
+.tabs button { font: inherit; font-weight: 600; color: var(--muted); background: none; border: 0; border-bottom: 3px solid transparent; padding: 8px 12px; cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tabs .count { font-family: var(--font-data); font-size: 0.8rem; font-weight: 400; margin-left: 4px; }
+.tablebox { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+table.ledger { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.ledger th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); font-weight: 600; padding: 10px 10px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; position: sticky; top: 0; background: var(--surface); }
+.ledger td { padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.ledger tr:last-child td { border-bottom: 0; }
+.ledger .num { text-align: right; font-family: var(--font-data); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ledger .prod { min-width: 220px; max-width: 340px; }
+.ledger .reason { min-width: 260px; max-width: 460px; }
+.pname { font-weight: 600; }
+.links { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; font-size: 0.8rem; }
+.links a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.links .nolink { color: var(--muted); }
+.chip { display: inline-block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.03em; padding: 2px 7px; border-radius: 10px; white-space: nowrap; }
+.chip.ok { background: var(--ok-soft); color: var(--ok); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.chip.info { background: var(--info-soft); color: var(--info); }
+.chip.neutral { background: var(--accent-soft); color: var(--accent); }
+.est { font-style: italic; background: var(--warn-soft); border-radius: 3px; padding: 0 3px; }
+.unk { color: var(--muted); font-family: var(--font-data); font-size: 0.78rem; }
+.empty { padding: 28px 20px; text-align: left; display: grid; gap: 6px; }
+.empty strong { font-family: var(--font-display); font-size: 1.15rem; }
+.foot { color: var(--muted); font-size: 0.8rem; display: grid; gap: 4px; }
+.err { background: var(--bad-soft); color: var(--bad); border-radius: 8px; padding: 12px 14px; }
+.drow td { padding-top: 0; }
+details.more summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 0.82rem; padding: 2px 0; }
+details.more[open] summary { margin-bottom: 8px; }
+.dgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; }
+.dsec { border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; min-width: 0; background: var(--bg); }
+.dsec.wide { grid-column: 1 / -1; }
+.dsec h3 { font-family: var(--font-display); font-size: 0.92rem; font-weight: 600; margin: 0 0 6px; }
+dl.kv { display: grid; grid-template-columns: minmax(110px, 42%) 1fr; gap: 3px 10px; margin: 0; font-size: 0.82rem; }
+dl.kv dt { color: var(--muted); }
+dl.kv dd { margin: 0; overflow-wrap: anywhere; }
+table.gates { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+table.gates th { text-align: left; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); padding: 4px 8px 4px 0; border-bottom: 1px solid var(--line); }
+table.gates td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+table.gates tr:last-child td { border-bottom: 0; }
+@media (max-width: 520px) { h1 { font-size: 1.5rem; } .big { font-size: 2rem; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>eBay Daily 20</h1>
+      <div class="sub" id="sub">UK eBay product research: the day's selected products, rejections and seasonal plan.</div>
+    </div>
+    <div class="daypick">
+      <label for="day">Hunt date</label>
+      <select id="day"></select>
+    </div>
+  </header>
+  <div id="app"></div>
+  <footer class="foot">
+    <div>Research only: nothing is bought, listed or published from this page. Retailer-sourced items stay in compliance review until you clear them.</div>
+    <div>Yellow italic figures are ESTIMATED (an input was assumed, not observed). UNKNOWN means not observed. Row order is not a ranking; no score is calculated.</div>
+    <div>Preferred and minimum listing starts (60 / 30 days before an event) are your business planning assumption, not an eBay requirement.</div>
+  </footer>
+</div>
+
+<script type="application/json" id="hunt-data">/*__HUNT_DATA__*/[]</script>
+<script>
+(function () {
+  var app = document.getElementById('app');
+  var daySel = document.getElementById('day');
+  var data = [];
+  try { data = JSON.parse(document.getElementById('hunt-data').textContent.replace('/*__HUNT_DATA__*/', '')) || []; } catch (e) { data = []; }
+  if (data && !(data instanceof Array)) { data = [data]; }
+
+  function esc(s) { return String(s === null || s === undefined ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function raw(v) { return (v && typeof v === 'object' && 'Value' in v) ? v.Value : v; }
+  function isEst(v) { return !!(v && typeof v === 'object' && v.Estimated); }
+  function known(v) { var r = raw(v); return !(r === null || r === undefined || r === '' || /^(UNKNOWN|N\/A|NA|none)$/i.test(String(r))); }
+  function num(v) { var r = raw(v); var n = parseFloat(r); return (known(v) && !isNaN(n)) ? n : null; }
+  function wrapEst(v, html) { return isEst(v) ? '<span class="est" title="ESTIMATED">' + html + '</span>' : html; }
+  function money(v) { var n = num(v); if (n === null) { return unk(v); } return wrapEst(v, '£' + n.toFixed(2)); }
+  function pct(v) { var n = num(v); if (n === null) { return unk(v); } return wrapEst(v, (n * 100).toFixed(1) + '%'); }
+  function unk(v) { var r = raw(v); return '<span class="unk">' + esc(known(v) ? r : (String(r || '').toUpperCase() === 'N/A' ? 'N/A' : 'UNKNOWN')) + '</span>'; }
+  function txt(v) { return known(v) ? esc(raw(v)) : unk(v); }
+  function link(l, label) {
+    var u = l && l.Url ? String(l.Url) : '';
+    if (/^https?:\/\//.test(u)) { return '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + esc(label) + '</a>'; }
+    return '<span class="nolink" title="No stored URL">' + esc(label) + ': UNKNOWN</span>';
+  }
+  function chip(text, kind) { return '<span class="chip ' + kind + '">' + esc(text) + '</span>'; }
+  function decisionChip(d) {
+    d = String(d || '');
+    if (/EXCEPTION/.test(d)) { return chip('EXCEPTION', 'warn'); }
+    if (/ESTIMATED/.test(d)) { return chip('PASS · ESTIMATED', 'warn'); }
+    if (/^ACCEPTED/.test(d)) { return chip('PASS', 'ok'); }
+    if (/^QUALIFIED/.test(d)) { return chip('Qualified, not selected', 'info'); }
+    if (/^DUPLICATE/.test(d)) { return chip('Duplicate', 'info'); }
+    if (/UNKNOWN/.test(d)) { return chip('Data unknown', 'neutral'); }
+    if (/^REJECTED/.test(d)) { return chip('Rejected', 'bad'); }
+    return chip(d || 'UNKNOWN', 'neutral');
+  }
+  function basisChip(b) {
+    b = String(b || 'UNKNOWN');
+    if (b === 'VERIFIED') { return chip('VERIFIED', 'ok'); }
+    if (b === 'ESTIMATED') { return chip('ESTIMATED', 'warn'); }
+    return chip(b, 'neutral');
+  }
+  function complianceChip(c) { c = String(c || 'UNKNOWN'); return c === 'PASS' ? chip('PASS', 'ok') : chip(c.replace(/_/g, ' '), 'warn'); }
+  function phaseChip(p) {
+    p = String(p || ''); if (!p || p === 'N/A' || p === 'UNKNOWN') { return unk(p); }
+    var k = { PREPARE_EARLY: 'info', START_NOW: 'ok', IN_SEASON: 'ok', LATE_EVENT_WINDOW: 'warn', POST_EVENT: 'bad' }[p] || 'neutral';
+    return chip(p.replace(/_/g, ' '), k);
+  }
+  function codeNote(r) {
+    var h = '';
+    if (known(r.itemCode)) { h += '<br>Item code: ' + esc(r.itemCode); }
+    if (known(r.variantCode) && r.variantCode !== 'none') { h += '<br>Variant code: ' + esc(r.variantCode); }
+    if (known(r.ebayNo)) { h += '<br>eBay item: ' + esc(r.ebayNo); }
+    return h;
+  }
+  function variantTable(r) {
+    var v = arr(r.variants); if (!v.length) { return ''; }
+    var h = '<section class="dsec wide"><h3>Selected variants</h3><table class="gates"><thead><tr><th>Variant</th><th>Item code</th><th>Variant code</th><th>Sold 30d</th><th>Stock</th><th>Cost</th><th>eBay price</th><th>Profit</th><th>ROI</th><th>Min price</th><th>Result</th><th>Links</th></tr></thead><tbody>';
+    for (var i = 0; i < v.length; i++) {
+      var x = v[i];
+      h += '<tr><td>' + vtxt(x.vname) + (known(x.ebayVariant) ? '<div class="note">eBay: ' + esc(x.ebayVariant) + '</div>' : '') + '</td><td>' + vtxt(x.itemCode) + '</td><td>' + vtxt(x.variantCode) + '</td><td>' + vtxt(x.sold30) + '</td><td>' + vtxt(x.stock) + '</td><td>' + money(x.cost) + '</td><td>' + money(x.ebayPrice) + '</td><td>' + money(x.profit) + '</td><td>' + pct(x.roi) + '</td><td>' + money(x.minPrice) + '</td><td>' + vtxt(x.result) + '</td><td>' + link(x.lSource, 'Source') + link(x.lItem, 'eBay') + '</td></tr>';
+    }
+    return h + '</tbody></table></section>';
+  }
+  function productCell(r, extra) {
+    var h = '<div class="pname">' + txt(r.name) + '</div><div class="note">' + esc(r.id || '') + codeNote(r) + '</div><div class="links">' +
+      link(r.lSource, 'Source') + link(r.lItem, 'eBay listing') + link(r.lSeller, 'Seller') + link(r.lSearch, 'eBay sold search');
+    if (r.lKeepa && r.lKeepa.Url) { h += link(r.lKeepa, 'Keepa'); }
+    if (r.lZik && r.lZik.Url) { h += link(r.lZik, 'ZIK'); }
+    if (r.lOther && r.lOther.Url) { h += link(r.lOther, 'Evidence'); }
+    return h + '</div>' + (extra || '');
+  }
+  function arr(a) { return a ? (a instanceof Array ? a : [a]) : []; }
+  function vtxt(v) { return known(v) ? esc(v) : unk(v); }
+  // Full details and links for one product (joined at build time by tools/build_review_page.ps1)
+  function detailRow(r, cols) {
+    var d = r.detail; if (!d) { return ''; }
+    var gates = arr(d.gates), secs = arr(d.sections), links = arr(d.links);
+    var h = '<tr class="drow"><td colspan="' + cols + '"><details class="more"><summary>Full details and links' + (gates.length ? ' · ' + gates.length + ' failed rule' + (gates.length > 1 ? 's' : '') : '') + '</summary><div class="dgrid">';
+    if (gates.length) {
+      h += '<section class="dsec wide"><h3>Why it was rejected</h3><table class="gates"><thead><tr><th>Rule failed</th><th>What was seen</th><th>Limit</th><th>Reason</th><th>Can change?</th><th>Next status</th><th>Recheck</th></tr></thead><tbody>';
+      for (var g = 0; g < gates.length; g++) {
+        var x = gates[g];
+        h += '<tr><td>' + vtxt(x.gate) + '</td><td>' + vtxt(x.seen) + '</td><td>' + vtxt(x.rule) + '</td><td>' + vtxt(x.why) + '</td><td>' + vtxt(x.mayChange) + (known(x.triggers) ? '<div class="note">' + esc(x.triggers) + '</div>' : '') + '</td><td>' + vtxt(x.status) + '</td><td>' + vtxt(x.recheck) + '</td></tr>';
+      }
+      h += '</tbody></table></section>';
+    }
+    h += variantTable(r);
+    for (var s = 0; s < secs.length; s++) {
+      var items = arr(secs[s].items), kv = '';
+      for (var i = 0; i < items.length; i++) { kv += '<dt>' + esc(items[i].k) + '</dt><dd>' + vtxt(items[i].v) + '</dd>'; }
+      h += '<section class="dsec"><h3>' + esc(secs[s].title) + '</h3><dl class="kv">' + kv + '</dl></section>';
+    }
+    if (links.length) {
+      h += '<section class="dsec wide"><h3>Links</h3><div class="links">';
+      for (var l = 0; l < links.length; l++) { h += link({ Url: links[l].url }, links[l].label); }
+      h += '</div></section>';
+    }
+    return h + '</div></details></td></tr>';
+  }
+
+  function tableDaily(rows) {
+    if (!rows.length) { return emptyBox('No products were selected on this day.', 'See Rejected and All evaluated for what was examined, and the shortfall in the summary above.'); }
+    var h = '<div class="tablebox"><table class="ledger"><thead><tr><th>#</th><th>Product</th><th>Source</th><th class="num">Item cost</th><th class="num">eBay price</th><th class="num">eBay fee</th><th class="num">Ad</th><th class="num">Profit</th><th class="num">Margin</th><th class="num">ROI (min)</th><th>Figures</th><th class="num">Sell-through</th><th>Season</th><th>Compliance</th><th>Decision</th></tr></thead><tbody>';
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var roiMin = num(r.roiMin) !== null ? ' <span class="note">(' + (num(r.roiMin) * 100).toFixed(0) + '%' + (String(raw(r.roiBypass)) === 'YES' ? ', bypassed' : '') + ')</span>' : '';
+      h += '<tr><td class="num">' + (i + 1) + '</td><td class="prod">' + productCell(r) + '</td><td>' + txt(r.source) + '</td>' +
+        '<td class="num">' + money(r.sourcePrice) + '</td><td class="num">' + money(r.ebayPrice) + '</td><td class="num">' + money(r.ebayFee) + '</td>' +
+        '<td class="num">' + pct(r.adRate) + '</td><td class="num">' + money(r.profit) + '</td><td class="num">' + pct(r.profitPct) + '</td>' +
+        '<td class="num">' + pct(r.roi) + roiMin + '</td><td>' + basisChip(r.basis) + '</td><td class="num">' + pct(r.str) + '</td>' +
+        '<td>' + txt(r.seasonal) + '<div class="note">' + txt(r.target) + ' · ' + phaseChip(r.phase) + '</div></td>' +
+        '<td>' + complianceChip(r.compliance) + '</td><td>' + decisionChip(r.decision) + (r.exception && r.exception !== 'none' ? '<div class="note">' + esc(r.exception) + '</div>' : '') + '</td></tr>' +
+        detailRow(r, 15);
+    }
+    return h + '</tbody></table></div>';
+  }
+  function tableReasons(rows, emptyTitle) {
+    if (!rows.length) { return emptyBox(emptyTitle, ''); }
+    var h = '<div class="tablebox"><table class="ledger"><thead><tr><th>Product</th><th>Source</th><th>Decision</th><th>Reason</th><th class="num">Item cost</th><th class="num">eBay price</th><th class="num">Profit</th><th class="num">ROI</th><th>Could change</th><th>Recheck</th></tr></thead><tbody>';
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      h += '<tr><td class="prod">' + productCell(r) + '</td><td>' + txt(r.source) + '</td><td>' + decisionChip(r.decision) + '<div class="note">' + esc(r.decision || '') + '</div></td>' +
+        '<td class="reason">' + (r.reason ? esc(r.reason) : '<span class="unk">—</span>') + (r.failed ? '<div class="note">' + esc(r.failed) + '</div>' : '') + '</td>' +
+        '<td class="num">' + money(r.sourcePrice) + '</td><td class="num">' + money(r.ebayPrice) + '</td><td class="num">' + money(r.profit) + '</td><td class="num">' + pct(r.roi) + '</td>' +
+        '<td>' + esc(r.mayChange || '') + '</td><td class="num">' + esc(r.recheck || '') + '</td></tr>' +
+        detailRow(r, 10);
+    }
+    return h + '</tbody></table></div>';
+  }
+  function tableCalendar(cal) {
+    if (!cal.length) { return emptyBox('No seasonal plan stored for this day.', ''); }
+    var h = '<div class="tablebox"><table class="ledger"><thead><tr><th>Event / season</th><th>Date or window</th><th class="num">Days until</th><th class="num">Preferred start</th><th class="num">Minimum start</th><th>Phase</th><th>Priority</th><th>Role today</th></tr></thead><tbody>';
+    for (var i = 0; i < cal.length; i++) {
+      var c = cal[i];
+      var when = c.type === 'window' ? esc(c.window_start) + ' to ' + esc(c.window_end) : esc(c.event_date);
+      var left = known(c.days_remaining_in_season) ? ' <span class="note">(' + esc(c.days_remaining_in_season) + ' days left)</span>' : '';
+      h += '<tr><td>' + esc(c.name) + '</td><td class="num">' + when + '</td><td class="num">' + esc(c.days_until) + '</td><td class="num">' + esc(c.preferred_listing_start) + '</td><td class="num">' + esc(c.minimum_listing_start) + '</td>' +
+        '<td>' + phaseChip(c.phase) + left + '</td><td>' + esc(c.priority || 'Not defined') + '</td><td>' + esc(String(c.role || '').replace(/_/g, ' ').toLowerCase()) + '</td></tr>';
+    }
+    return h + '</tbody></table></div>';
+  }
+  function emptyBox(title, body) { return '<div class="panel empty"><strong>' + esc(title) + '</strong>' + (body ? '<div class="note">' + esc(body) + '</div>' : '') + '</div>'; }
+
+  function summary(d) {
+    var src = '';
+    var ps = arr(d.per_source);
+    for (var i = 0; i < ps.length; i++) {
+      var p = ps[i];
+      src += '<tr><td>' + esc(p.source) + '</td><td>' + esc(p.selected) + ' / ' + esc(d.per_source_target) + '</td><td>' + (p.shortfall > 0 ? chip('short ' + p.shortfall, 'warn') : chip('met', 'ok')) + '</td></tr>';
+    }
+    var b = arr(d.buckets), total = 0, colors = { evergreen: 'var(--accent)', current_event: 'var(--info)', next_event_preparation: 'var(--warn)' };
+    for (var j = 0; j < b.length; j++) { total += b[j].selected || 0; }
+    var meter = '', legend = '';
+    for (var k = 0; k < b.length; k++) {
+      var w = total ? (100 * (b[k].selected || 0) / total) : 0;
+      meter += '<span style="width:' + w.toFixed(1) + '%;background:' + colors[b[k].bucket] + '"></span>';
+      legend += '<span><span class="dot" style="background:' + colors[b[k].bucket] + '"></span>' + esc(String(b[k].bucket).replace(/_/g, ' ')) + ' ' + esc(b[k].selected) + ' / ' + esc(b[k].target) + '</span>';
+    }
+    var c = d.counts || {};
+    var blocked = arr(d.blocked);
+    return '<div class="strip">' +
+      '<div class="panel"><div class="label">Selected today</div><div class="big">' + esc(d.total_selected) + '<small> / ' + esc(d.total_target) + '</small></div>' +
+      '<div class="note">Target, not a quota: weak products are never added to reach it.</div></div>' +
+      '<div class="panel"><div class="label">By source (target ' + esc(d.per_source_target) + ' each)</div><table class="srcs">' + src + '</table></div>' +
+      '<div class="panel"><div class="label">Seasonal mix ' + (d.allocation_changed ? chip('adjusted', 'warn') : chip('50/30/20', 'neutral')) + '</div><div class="meter">' + meter + '</div><div class="legend">' + legend + '</div>' +
+      (d.allocation_changed ? '<div class="note">' + esc(d.allocation_reason) + '</div>' : '') + '</div>' +
+      '<div class="panel"><div class="label">Examined</div><div class="note">' + esc(c.evaluated) + ' evaluated · ' + esc(c.qualified) + ' qualified · ' + esc(c.rejected) + ' rejected · ' + esc(c.unknown) + ' data unknown · ' + esc(c.duplicates) + ' duplicate</div>' +
+      (blocked.length ? '<div class="note" style="margin-top:6px">' + esc(blocked.join(' · ')) + '</div>' : '') + '</div>' +
+      '</div>';
+  }
+
+  var TABS = [['daily', 'Daily 20'], ['rejected', 'Rejected'], ['all', 'All evaluated'], ['season', 'Seasonal plan']];
+  var current = 'daily';
+  try { var saved = window.localStorage.getItem('daily20-tab'); if (saved) { current = saved; } } catch (e) { }
+  if (/^#(daily|rejected|all|season)$/.test(location.hash)) { current = location.hash.slice(1); }
+
+  function render(idx) {
+    try {
+      var d = data[idx];
+      if (!d) {
+        app.innerHTML = emptyBox('No daily hunt has run yet.', 'After the first hunt, this page shows the day’s selected products with links to the source and eBay pages, the rejected products with plain-English reasons, everything examined, and the seasonal plan. Each new hunt is added here; pick earlier days from the date list.');
+        document.getElementById('sub').textContent = 'Waiting for the first daily hunt.';
+        return;
+      }
+      document.getElementById('sub').textContent = 'Hunt of ' + d.date + (d.run > 1 ? ' (run ' + d.run + ')' : '') + ' · report generated ' + d.generated_uk + ' UK';
+      var sel = arr(d.selected), rej = arr(d.rejected), all = arr(d.all);
+      var counts = { daily: sel.length, rejected: rej.length, all: all.length, season: arr(d.calendar).length };
+      var tabs = '<div class="tabs" role="tablist">';
+      for (var i = 0; i < TABS.length; i++) {
+        tabs += '<button role="tab" id="tab-' + TABS[i][0] + '" aria-selected="' + (current === TABS[i][0]) + '" data-tab="' + TABS[i][0] + '">' + TABS[i][1] + '<span class="count">' + counts[TABS[i][0]] + '</span></button>';
+      }
+      tabs += '</div>';
+      var body = current === 'rejected' ? tableReasons(rej, 'Nothing was rejected on this day.') :
+        current === 'all' ? tableReasons(all, 'No products were examined on this day.') :
+        current === 'season' ? tableCalendar(arr(d.calendar)) : tableDaily(sel);
+      var notes = d.run_notes ? '<div class="panel note">' + esc(d.run_notes) + '</div>' : '';
+      app.innerHTML = '<div style="display:grid;gap:16px">' + summary(d) + notes + tabs + '<div role="tabpanel">' + body + '</div></div>';
+      var btns = app.querySelectorAll('.tabs button');
+      for (var j = 0; j < btns.length; j++) {
+        btns[j].onclick = function () {
+          current = this.getAttribute('data-tab');
+          try { window.localStorage.setItem('daily20-tab', current); } catch (e) { }
+          render(daySel.selectedIndex < 0 ? 0 : daySel.selectedIndex);
+        };
+      }
+    } catch (err) {
+      app.innerHTML = '<div class="err">This day’s data could not be displayed (' + esc(err && err.message) + '). The Excel workbook for the same date has the full results.</div>';
+    }
+  }
+
+  data.sort(function (a, b) { return String(b.date).localeCompare(String(a.date)) || ((b.run || 1) - (a.run || 1)); });
+  for (var i = 0; i < data.length; i++) {
+    var o = document.createElement('option');
+    o.value = String(i); o.textContent = data[i].date + (data[i].run > 1 ? ' (run ' + data[i].run + ')' : '') + ' · ' + data[i].total_selected + ' selected';
+    daySel.appendChild(o);
+  }
+  if (!data.length) { var none = document.createElement('option'); none.textContent = 'No hunts yet'; daySel.appendChild(none); daySel.disabled = true; }
+  daySel.onchange = function () { render(daySel.selectedIndex); };
+  render(0);
+})();
+</script>

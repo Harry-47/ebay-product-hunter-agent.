@@ -1,0 +1,24 @@
+2026-11-11 hunt notes, part 2 (continues 2026-11-11_hunt_notes.txt; written separately because shell writes were declined)
+
+GD-20261111-23 DROPPED - DUPLICATE: calming plush donut pet bed is a previous pass (user, 11 Nov). Not counted. (cardys item 304421736339 prices: XL 80cm 18.49, L 70cm 17.99, M 60cm 14.99, S 50cm 11.99)
+GD-20261111-24 FAIL (price) 5 pcs Non Stick Oven Liner BBQ Grill Mat GBP 5.71 (+5% = 6.00), stock 694; 5-pack refs cometuk1 7.65 (12/30d), mags1122 8.69, adsat 9.29 -> under GBP 1 profit.
+GD-20261111-25 FAIL (demand) 12 pcs Stainless Steel Flat Meat Skewers GBP 5.09, stock 926; ZIK 42 sold/30d (off season).
+GD-20261111-26 FAIL (strong sellers) Adult Elderly Mealtime Bib GBP 5.33, stock 905; ZIK 82 sold, no seller 30+/30d.
+GD-20261111-27 FAIL (strong sellers) 10 pcs Double Coat Hooks GBP 4.97/6.14; ZIK 173 sold, only sisiuk 43/30d.
+GD-20261111-28 FAIL (strong sellers) Large Natural Suede Leather Car Cleaning Cloth GBP 4.45, stock 616; ZIK 159 sold, only ukdepot22 131/30d.
+GD-20261111-29 FAIL (demand/price) 6 x Precision Tweezers Set GBP 4.44, stock 695; ZIK 75 sold, avg 3.17.
+GD-20261111-30 FAIL (price) Garden Leaf Blower Bag GBP 4.47 (+5% = 4.69), stock 934; eBay universal bag 2.94-3.24 (yaad1226 72/30d).
+GD-20261111-31 FAIL (strong sellers) 5 Pcs Collapsible Caravan Drainage Pipes GBP 4.93, stock 1,348; ZIK 151 sold, only valuewell 42/30d.
+GD-20261111-32 FAIL (price) Spectacle Glasses Repair Kit GBP 3.93 (+5% = 4.13), stock 686; ZIK 385 sold, avg 3.50.
+GD-20261111-33 FAIL (strong sellers) 10pcs 2 Pin Super Seal Waterproof Connector GBP 4.31, stock 446; ZIK 119 sold, no seller 30+/30d.
+GD-20261111-34 FAIL (price) BBQ Cover 190x71x117cm GBP 8.74 (+5% = 9.18), stock 527; market strong (ZIK 1,653 sold; foido 240/30d, healthbeauty2008 91, 500+ totals met) but the 190x71x117 size sells at GBP 12.16 (healthbeauty2008 item 175408664107 sales history, 92 units/30d) to 13.99 (exact-title copies 11.45-13.99) -> ROI under 20%.
+GD-20261111-35 FAIL (demand) Solar Floating Fountain Pump GBP 7.33; ZIK 48 sold/30d (off season).
+GD (36th, not counted) Christmas LED hanging ornament set GBP 3.99: ZIK 12 sold.
+=> Go Dropship reached 35 evaluated: 1 pass (GD-20261111-05 frost fleece plant jacket).
+
+AE-20261111-02 FAIL (price) 10kg stainless digital kitchen scale: eBay strong (greenspire 229/30d, buybetter14 194; 500+ foido 4,849, kyrie0201 3,087, zestric 1,533, faringouk 1,019; 10kg refs 8.49-9.95) but AliExpress Choice sale prices 8.80-28 (pre-sale higher) >= eBay.
+AE-20261111-03 FAIL (strong sellers 500+) Christmas LED projector night light: 30+/30d swiftcartsales 127, budget-value-mart 107, ary8145 61 but no seller 500+ total (max 228).
+AE-20261111-04 FAIL (strong sellers) Christmas tree skirt: fragmented, only ukdepot22 69/30d on one type.
+AE-20261111-05 IN PROGRESS USB rechargeable T6 bike light set: eBay strong (2,660 sold; tradeup92 422/30d, ecomm_world 274, shm-93 208; 500+ shm-93 2,769, hamab 763, raal 637, jaessentials 555, trgf04 518); refs trgf04 waterproof set 9.99 (72/30d), lightingstoreno1 10.99 (63/30d). AliExpress Choice: "2 T6 Bicycle Front Light Type-C" 8K+ sold, sale 1.80 + save 4.16 = 5.96 pre-sale (front only?); "Bicycle Smart Brake Sensing Light Front Rear Sets" 1K+ sold, sale 4.40 + save 6.08 = 10.48 pre-sale. Item page not yet opened (Chrome froze; browser guard out of memory).
+
+Stopped ~10:25: VPS out of memory (browser guard OutOfMemoryException, pages blocked repeatedly).

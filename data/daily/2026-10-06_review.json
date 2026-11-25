@@ -1,0 +1,2512 @@
+{
+    "date":  "2026-10-06",
+    "run":  1,
+    "generated_uk":  "2026-10-06 17:33",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  1,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  2,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  5,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  8,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  8,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  4,
+                        "selected":  0
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  3,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  false,
+    "allocation_reason":  "",
+    "counts":  {
+                   "evaluated":  15,
+                   "qualified":  1,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  9,
+                   "unknown":  5
+               },
+    "blocked":  [
+                    "Run notes: 2026-10-06 hunt (checkpoint report). Order used: AliExpress, Go Dropship, Amazon (user). Budgets used: AliExpress 5 recorded (about 18 search cards screened; 1 item page + 3 ZIK checks fully done), Go Dropship 8 (Weekly Top list), Amazon 2 (earlier Amazon work this day was the 5 Oct completion). Accepted so far: 1 (Go Dropship memory foam coccyx seat cushion, GBP 14.99 competitor price, estimated profit GBP 2.99). No product passed on AliExpress or Amazon. Competitor-store research first (aman786, ramus_6213, hus2885, azeglobal) produced no accepted product. Rules applied: Go Dropship delivery 5-7 days, reference competitor and small sellers 5+ sales, minimum price GBP 2, battery-only electronics exclusion, Amazon stop rule 5 passed or 35 evaluated (not reached; run paused for user review). Seller Sprite did not fill the basket on 6 Oct after the user cleared it (basket 0 on every page read). See data/notes/2026-10-06_session_notes.txt."
+                ],
+    "run_notes":  "2026-10-06 hunt (checkpoint report). Order used: AliExpress, Go Dropship, Amazon (user). Budgets used: AliExpress 5 recorded (about 18 search cards screened; 1 item page + 3 ZIK checks fully done), Go Dropship 8 (Weekly Top list), Amazon 2 (earlier Amazon work this day was the 5 Oct completion). Accepted so far: 1 (Go Dropship memory foam coccyx seat cushion, GBP 14.99 competitor price, estimated profit GBP 2.99). No product passed on AliExpress or Amazon. Competitor-store research first (aman786, ramus_6213, hus2885, azeglobal) produced no accepted product. Rules applied: Go Dropship delivery 5-7 days, reference competitor and small sellers 5+ sales, minimum price GBP 2, battery-only electronics exclusion, Amazon stop rule 5 passed or 35 evaluated (not reached; run paused for user review). Seller Sprite did not fill the basket on 6 Oct after the user cleared it (basket 0 on every page read). See data/notes/2026-10-06_session_notes.txt.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  25,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  52,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  55,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  56,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  80,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  86,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  87,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  131,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  152,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  173,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  238,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  257,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  330,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/158306433991"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  3.28,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.19899999999999998,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "2.99",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261006-03",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "14.99",
+                         "prefStart":  "N/A",
+                         "name":  "Memory Foam Seat Cushion for Coccyx Tailbone Pain Relief Ergonomic Coccyx Cushion for Office Chair Car Travel",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.63",
+                         "ebayPrice":  "14.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 328; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 3",
+                         "minPrice":  {
+                                          "Value":  "12.53",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "elitefinds_uk",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  {
+                                     "Value":  0.36200000000000004,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  {
+                                         "Value":  "2.86",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.61",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "728",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/memory-foam-seat-cushion-for-coccyx-tailbone-pain-relief-ergonomic-coccyx-cushion-for-office-chair-car-travel-long-sitting-gaming"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "1 (2 options listed)",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "631.8 g",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261006-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "10\" Outdoor Garden Broom with Wooden Handle Natural Stiff Bassine Hard Bristle",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "11.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "2026-10-06 hunt. Only 1 seller on the listing (rule 3-20); FBM not evidenced (Prime delivery Fri 9 Oct); bulky broom (weight not read)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/offer_sellers",
+                         "reason":  "Not 3-20 sellers on the Amazon listing (seen: 1; rule: 3-20 sellers on the Amazon listing)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B0CS6J6LPD"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261006-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "CLEANHOME Upgrade Garden Broom, Yard Brush Heavy Duty Outdoor 17.7in",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "12.34",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "2026-10-06 hunt. Dispatched by Amazon (FBA, not FBM)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/seller_type",
+                         "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B0CLGPMQ6L"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.8,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261006-01",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "4pcs Pet Safe Scissors - Ambidextrous Stainless Steel Dog Grooming Shears",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "12.14",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 80; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt (UK-ship + Choice filter). new-shopper 0.99 (not used); struck-through 12.14 = baseline",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005009791613623.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  4.5862,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261006-02",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Stainless Steel Hob Scraper Kitchen Glass\u0026Ceramic Scraper with Replacement Blades",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "2.79",
+                         "ebayPrice":  "7.18",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 133; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "aman786",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt (UK-ship + Choice filter). new-shopper 0.99 (not used); struck-through 2.79 = baseline; razor-blade product (safety risk)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/trend",
+                         "reason":  "eBay sales trend not up-trending or continuous (seen: Sales trend not continuous (one blip then zero); market average price GBP 2.11; rule: up-trending or continuous)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005010737369504.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261006-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "icafilas Refillable Coffee 60/180/200/220ML Capsule for Bosch Tassimo Machine Reusable Filter Pod",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "2026-10-06 hunt (UK-ship + Choice filter). 0.99 = 3 pcs new-shopper style deal (orig 10.10); no single-unit baseline visible; names Bosch Tassimo (brand/VeRO check)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: price_baseline; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005009782325426.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  2,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261006-04",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Folding Portable Silicone Dog Feeder Bowl 2 In 1 Pet Dispenser Outdoor Travel",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.65",
+                         "ebayPrice":  "2.99",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 200; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "DailyDealsUK.1",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt (UK-ship + Choice filter). search card only (item page not opened); struck-through 1.65",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.79,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261006-05",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Funny Simulated Animal No Stuffing Dog Toy with Squeakers Durable Stuffingless Plush",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.03",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 79; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt (UK-ship + Choice filter). search card only (item page not opened); struck-through 3.03",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_evidence_unavailable",
+                         "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: Market average price GBP 4.20 is below the minimum listing price (about GBP 6.4 for cost GBP 3.03); sellers not drilled; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.9688,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-01",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "9.95",
+                         "prefStart":  "N/A",
+                         "name":  "5PCS Rat Sticky Traps Large Extra Strong Mouse Glue Trap Sticky Pads Pest Trap Board",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.39",
+                         "ebayPrice":  "9.95",
+                         "history":  "RESEARCHED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 93; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "gallan-27",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-13",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.51",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "UNKNOWN_DATA",
+                         "reason":  "Required data unknown: unknown inputs: ebay_fee_rate;ebay_fixed_fee. Not a failure; will be rechecked.",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.039,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-02",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "100Pack Puppy Pads 33x45cm Super Absorbent Pet Dog Training Pads Leakproof",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.75",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 3; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/str; EBAY/trend",
+                         "reason":  "eBay sell-through below 20% (seen: sell-through 3.9% (below 20%); rule: \u003e= 20%). eBay sales trend not up-trending or continuous (seen: sell-through 3.9% (below 20%); rule: up-trending or continuous)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  2.32,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-04",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Thicken Self-adhesive Wallpaper Linen Plain Color Decor",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.13",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 232; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_evidence_unavailable",
+                         "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: eBay average price GBP 6.67 is below the item cost of GBP 7.13; no reference seller read; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.78,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-05",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "9.99",
+                         "prefStart":  "N/A",
+                         "name":  "4X Garden Gazebo Foot Leg Feet Weights Sand Bags for Marquee Party Tent",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.98",
+                         "ebayPrice":  "9.99",
+                         "history":  "RESEARCHED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 78; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "amartglobal",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-13",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.48",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "UNKNOWN_DATA",
+                         "reason":  "Required data unknown: unknown inputs: ebay_fee_rate;ebay_fixed_fee. Not a failure; will be rechecked.",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  2.4,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-06",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "6.99",
+                         "prefStart":  "N/A",
+                         "name":  "5 Pcs Collapsible Flexible Drainage Waste Water Pipes for Caravan Motorhome Kitchen Bathroom - Grey",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.93",
+                         "ebayPrice":  "6.99",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 240; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 2",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "e_hub92",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.39",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  6.62,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-07",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "2 Pack Laundry Basket Folding Hamper Bag Storage Bin with Handle - Grey+Black",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.80",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 662; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  16.1,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261006-08",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "2 PCS 165 Degree Kitchen Cabinet Hinges Soft Close Cupboard Hinges with Fixing Screws",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.67",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 1610; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-20",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "2026-10-06 hunt, Weekly Top list.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_evidence_unavailable",
+                         "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: eBay average price GBP 5.25 is below the item cost of GBP 5.67; no reference seller read; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/158306433991"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  3.28,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.19899999999999998,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "2.99",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261006-03",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "14.99",
+                    "prefStart":  "N/A",
+                    "name":  "Memory Foam Seat Cushion for Coccyx Tailbone Pain Relief Ergonomic Coccyx Cushion for Office Chair Car Travel",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.63",
+                    "ebayPrice":  "14.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 328; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 3",
+                    "minPrice":  {
+                                     "Value":  "12.53",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "elitefinds_uk",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  {
+                                "Value":  0.36200000000000004,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  {
+                                    "Value":  "2.86",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.61",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "728",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/memory-foam-seat-cushion-for-coccyx-tailbone-pain-relief-ergonomic-coccyx-cushion-for-office-chair-car-travel-long-sitting-gaming"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "1 (2 options listed)",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "631.8 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.79,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261006-05",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Funny Simulated Animal No Stuffing Dog Toy with Squeakers Durable Stuffingless Plush",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.03",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 79; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt (UK-ship + Choice filter). search card only (item page not opened); struck-through 3.03",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_evidence_unavailable",
+                    "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: Market average price GBP 4.20 is below the minimum listing price (about GBP 6.4 for cost GBP 3.03); sellers not drilled; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.9688,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-01",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "9.95",
+                    "prefStart":  "N/A",
+                    "name":  "5PCS Rat Sticky Traps Large Extra Strong Mouse Glue Trap Sticky Pads Pest Trap Board",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.39",
+                    "ebayPrice":  "9.95",
+                    "history":  "RESEARCHED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 93; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "gallan-27",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-13",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.51",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "UNKNOWN_DATA",
+                    "reason":  "Required data unknown: unknown inputs: ebay_fee_rate;ebay_fixed_fee. Not a failure; will be rechecked.",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  2.32,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-04",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Thicken Self-adhesive Wallpaper Linen Plain Color Decor",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.13",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 232; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_evidence_unavailable",
+                    "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: eBay average price GBP 6.67 is below the item cost of GBP 7.13; no reference seller read; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.78,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-05",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "9.99",
+                    "prefStart":  "N/A",
+                    "name":  "4X Garden Gazebo Foot Leg Feet Weights Sand Bags for Marquee Party Tent",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.98",
+                    "ebayPrice":  "9.99",
+                    "history":  "RESEARCHED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 78; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "amartglobal",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-13",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.48",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "UNKNOWN_DATA",
+                    "reason":  "Required data unknown: unknown inputs: ebay_fee_rate;ebay_fixed_fee. Not a failure; will be rechecked.",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  16.1,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-08",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "2 PCS 165 Degree Kitchen Cabinet Hinges Soft Close Cupboard Hinges with Fixing Screws",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.67",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 1610; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_evidence_unavailable",
+                    "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: eBay average price GBP 5.25 is below the item cost of GBP 5.67; no reference seller read; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.8,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261006-01",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "4pcs Pet Safe Scissors - Ambidextrous Stainless Steel Dog Grooming Shears",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "12.14",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 80; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt (UK-ship + Choice filter). new-shopper 0.99 (not used); struck-through 12.14 = baseline",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005009791613623.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  4.5862,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261006-02",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Stainless Steel Hob Scraper Kitchen Glass\u0026Ceramic Scraper with Replacement Blades",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "2.79",
+                    "ebayPrice":  "7.18",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 133; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "aman786",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt (UK-ship + Choice filter). new-shopper 0.99 (not used); struck-through 2.79 = baseline; razor-blade product (safety risk)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/trend",
+                    "reason":  "eBay sales trend not up-trending or continuous (seen: Sales trend not continuous (one blip then zero); market average price GBP 2.11; rule: up-trending or continuous)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005010737369504.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261006-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "icafilas Refillable Coffee 60/180/200/220ML Capsule for Bosch Tassimo Machine Reusable Filter Pod",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "2026-10-06 hunt (UK-ship + Choice filter). 0.99 = 3 pcs new-shopper style deal (orig 10.10); no single-unit baseline visible; names Bosch Tassimo (brand/VeRO check)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: price_baseline; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005009782325426.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  2,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261006-04",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Folding Portable Silicone Dog Feeder Bowl 2 In 1 Pet Dispenser Outdoor Travel",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.65",
+                    "ebayPrice":  "2.99",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 200; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "DailyDealsUK.1",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt (UK-ship + Choice filter). search card only (item page not opened); struck-through 1.65",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261006-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "10\" Outdoor Garden Broom with Wooden Handle Natural Stiff Bassine Hard Bristle",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "11.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "2026-10-06 hunt. Only 1 seller on the listing (rule 3-20); FBM not evidenced (Prime delivery Fri 9 Oct); bulky broom (weight not read)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/offer_sellers",
+                    "reason":  "Not 3-20 sellers on the Amazon listing (seen: 1; rule: 3-20 sellers on the Amazon listing)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B0CS6J6LPD"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261006-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "CLEANHOME Upgrade Garden Broom, Yard Brush Heavy Duty Outdoor 17.7in",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "12.34",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "2026-10-06 hunt. Dispatched by Amazon (FBA, not FBM)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/seller_type",
+                    "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B0CLGPMQ6L"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.039,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-02",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "100Pack Puppy Pads 33x45cm Super Absorbent Pet Dog Training Pads Leakproof",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.75",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 3; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/str; EBAY/trend",
+                    "reason":  "eBay sell-through below 20% (seen: sell-through 3.9% (below 20%); rule: \u003e= 20%). eBay sales trend not up-trending or continuous (seen: sell-through 3.9% (below 20%); rule: up-trending or continuous)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  2.4,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-06",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "6.99",
+                    "prefStart":  "N/A",
+                    "name":  "5 Pcs Collapsible Flexible Drainage Waste Water Pipes for Caravan Motorhome Kitchen Bathroom - Grey",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.93",
+                    "ebayPrice":  "6.99",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 240; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 2",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "e_hub92",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: ebay_fee_rate;ebay_fixed_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.39",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  6.62,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261006-07",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "2 Pack Laundry Basket Folding Hamper Bag Storage Bin with Handle - Grey+Black",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.80",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 662; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-20",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "2026-10-06 hunt, Weekly Top list.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

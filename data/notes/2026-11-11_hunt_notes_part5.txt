@@ -1,0 +1,16 @@
+2026-11-11 hunt notes, part 5 (AliExpress winter/Christmas; continues part 4)
+
+AE-20261111-05 FAIL (price) USB rechargeable bike light set, AliExpress item 1005005200740874 variant 2218: price without sale GBP 5.86 (sale 2.56), stock 124.
+  Reference check: lightingstoreno1 10.99 is a different product (large headlight with battery display, +0.30 postage); trgf04 9.99 is a waterproof torch set.
+  The same round-front + clip-on rear set sells at 5.72-5.99 on eBay (ecomm_world 5.99, 379 sold; calyxonline 5.72; unitedexpo 5.99) -> no profit.
+  CORRECTION: profit rows AX-20261111-05A (PASS on paper, non-matching reference) and AX-20261111-05B (FAIL) in data/profit/2026-11-11_profit.csv are superseded by this FAIL. Not a pass.
+  eBay active (BIN, New, UK) "usb rechargeable bike light set front rear": 1,700+; ZIK 2,660 sold -> sell-through 156%.
+  T6 torch sets sell higher (jaessentials 14.97, 557 sold; skybluee05 11.99) but no matching AliExpress set seen (box headlights with display, or torch-only).
+
+AE-20261111-06 IN PROGRESS Christmas window clings / stickers.
+  ZIK 11 Nov "christmas window stickers" (ebay.co.uk, UK, Fixed Price, New, 30d): 1,230 sold, avg 5.06.
+  Snowflake clings: usun_official 219/30d (500 pcs 4.50), super-covery 89/30d (100 pcs 3.85, 16,221 total), SawagBazaar 54 (3.50), haurition1 33 (2.99), royalmart-ltd 27.
+  Tree-shape clings: tindaianyamp 67/30d "3Sheets Christmas Window Clings Static Stickers Christmas Tree Shape" 5.19.
+  500+ total (product type): super-covery 16,221, christmasiscomi 3,648, lovelife_25 1,721, martinlc81 1,147, lumemerchant 1,124, christmasiscomi 1,026.
+  AliExpress (Choice, by orders, 11 Nov): 137 snowflake clings 3K+ sold sale 1.60 + save 6.00 = 7.60 without sale (fails vs 3.85-4.50); gingerbread stickers 2K+ sold 1.80 + 2.63 = 4.43; "1/2Sheets Static Cling Window Stickers Reusable PVC" 726 sold 4.8, 2.10 (no sale shown) - to open; houses 680 sold 1.98 + 2.73 = 4.71; 9 sheets 493 sold (under 500).
+  Extension disconnected before opening the 1/2 sheets item.

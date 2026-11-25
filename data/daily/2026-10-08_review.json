@@ -1,0 +1,2823 @@
+{
+    "date":  "2026-10-08",
+    "run":  1,
+    "generated_uk":  "2026-10-09 14:08",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  1,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  0,
+                           "has_file":  false,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  3,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  14,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  5,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  5,
+                        "selected":  0
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  5,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "User instruction 2026-10-08: for October 2026 focus 70% on Christmas, New Year and winter and 30% on evergreen",
+    "counts":  {
+                   "evaluated":  17,
+                   "qualified":  1,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  13,
+                   "unknown":  3
+               },
+    "blocked":  [
+                    "Amazon UK: no stage file (not researched or blocked)",
+                    "Run notes: 2026-10-08 hunt (started 21:40 UK 8 Oct, continued 9 Oct to 14:00 UK; first run under the 2026-10-08/09 rules). ebay.co.uk OK; godropship.co.uk OK; aliexpress.com PARTIAL: item pages OK but search pages were redirected by a browser-extension image-search loop from about 22:40 on 8 Oct, so AliExpress searching was limited to 3 products; amazon.co.uk PAUSED: basket showed GBP 999.00 (100 x GBP 9.99) on 9 Oct, not added by the agent, user notified, no Amazon product pages evaluated (search cards only); zikanalytics via amzsuccesstools OK (UI unstable, several screenshots timed out). Eight source-stage and eBay checks are UNKNOWN or unresolved because the browser froze (see data/notes/2026-10-09_session_notes.txt). Mix: October 2026 user instruction, 70% Christmas/New Year/winter and 30% evergreen. CORRECTION NOTE (s19): GDS-20261003-01 and GDS-20261004-18 (cat scat mat) were accepted on 2026-10-03/04 with reference seller EnjoylifeStore, which has 48,074 feedback (limit under 5,000); past files not edited. Rule changes applied this run: Amazon FBA with Prime free delivery allowed (user 2026-10-09), margin/ROI/ad-rate tiers, AliExpress rating 4.3, eBay first, nearest-match passes."
+                ],
+    "run_notes":  "2026-10-08 hunt (started 21:40 UK 8 Oct, continued 9 Oct to 14:00 UK; first run under the 2026-10-08/09 rules). ebay.co.uk OK; godropship.co.uk OK; aliexpress.com PARTIAL: item pages OK but search pages were redirected by a browser-extension image-search loop from about 22:40 on 8 Oct, so AliExpress searching was limited to 3 products; amazon.co.uk PAUSED: basket showed GBP 999.00 (100 x GBP 9.99) on 9 Oct, not added by the agent, user notified, no Amazon product pages evaluated (search cards only); zikanalytics via amzsuccesstools OK (UI unstable, several screenshots timed out). Eight source-stage and eBay checks are UNKNOWN or unresolved because the browser froze (see data/notes/2026-10-09_session_notes.txt). Mix: October 2026 user instruction, 70% Christmas/New Year/winter and 30% evergreen. CORRECTION NOTE (s19): GDS-20261003-01 and GDS-20261004-18 (cat scat mat) were accepted on 2026-10-03/04 with reference seller EnjoylifeStore, which has 48,074 feedback (limit under 5,000); past files not edited. Rule changes applied this run: Amazon FBA with Prime free delivery allowed (user 2026-10-09), margin/ROI/ad-rate tiers, AliExpress rating 4.3, eBay first, nearest-match passes.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  23,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  50,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  53,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  54,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  78,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  84,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  85,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  129,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  150,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  171,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  236,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  255,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  328,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/377275901348"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  0.99,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.172,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "1.55",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261008-01",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "8.99",
+                         "prefStart":  "N/A",
+                         "name":  "Chrome Muslim Shower Head and Hose Bidet Spray Tap for Toilet Hygienic",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.06",
+                         "ebayPrice":  "8.99",
+                         "history":  "KEEP",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 99; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "8.37",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "homiely",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  {
+                                     "Value":  0.297,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Recheck of GDS-20261004-19 under the 2026-10-08 rules; source and reference re-read 2026-10-09.",
+                         "ebayFee":  {
+                                         "Value":  "1.69",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.15",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "212 (eBay active Buy It Now, New, UK only)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/chrome-muslim-shower-head-and-hose-bidet-spray-tap-for-toilet-hygienic"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "220 g",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  1.15,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261008-01",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "5M Brush Strip Self Adhesive Door Window Sealing Strip Windproof Anti Insect Gasket",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.30",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 115; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Found from eBay draught-excluder demand.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005003878648344.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  1.15,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261008-02",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "5.89",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Self-adhesive Bristles Wool Pile Weatherstrip Door Window Brush Seal (Grey 7x6, 10M)",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.09",
+                         "ebayPrice":  "5.89",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 115; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "topviewergoodshop",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Other 10M options: Grey 9x5 baseline 4.01, Grey 9x15 5.61, Grey 9x23 8.19.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.25",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "226 (eBay active, brush strip 5m keyword)",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005005993184194.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/377467571759"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261008-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "4.11",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Car Hand Tool Set Car Disassembly Tool Kit Stereo Repair DVD Repair Tool Dashboard Removal Interior (5 pcs trim removal kit)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "2.85",
+                         "ebayPrice":  "4.11",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 57; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "ah_60860",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Cheapest matching kit found from eBay demand (ah_60860, 57 sold).",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.23",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "5.45",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "6M Rubber Seal Weather Strip Foam Sticky Tape for Door Window Draught Excluder",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.52",
+                         "ebayPrice":  "5.45",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "wesellanything24",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Found from eBay demand (ZIK draught excluder). Search-card data only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.17",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "226 (eBay active, brush strip keyword)",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2m Draught Excluder Strong Adhesive Door Draft Stopper (brown)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.31",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/stock",
+                         "reason":  "Stock too low or out of stock (seen: UK Stock 6 is under the 20 minimum (s7.2); rule: Amazon FBM seller \u003e= 30 units or In stock; Go Dropship \u003e= 20 units)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2m Draught Excluder Strong Adhesive Door Draft Stopper (white)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.31",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/stock",
+                         "reason":  "Stock too low or out of stock (seen: UK Stock 1 is under the 20 minimum (s7.2); rule: Amazon FBM seller \u003e= 30 units or In stock; Go Dropship \u003e= 20 units)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "4.89",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "28cm Door Wreath Hanger Christmas Hook Xmas Decoration - Black",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "Christmas",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.38",
+                         "ebayPrice":  "4.89",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 182; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "on.262",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Christmas best-seller list; search-card data only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.10",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-06",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Christmas Table Runner Table Snowflake Dining Party Placemat",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "Christmas",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.20",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 9; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Christmas best-seller list; search-card data only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/287615027214"
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-07",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "50pcs Christmas Gift Bags 4 Designs Santa Snowman Party Loot Sweet Bags",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "Christmas",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.60",
+                         "ebayPrice":  "7.99",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 6; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "primeseasons",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Christmas best-seller list; search-card data only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  6.48,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-08",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "11.60",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Memory Foam Seat Cushion for Coccyx Tailbone Pain Relief Ergonomic Coccyx Cushion for Office Chair Car Travel",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.63",
+                         "ebayPrice":  "11.60",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 648; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "hadeed9999",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Recheck of GDS-20261006-03: old reference listing ended 2026-10-06.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.23",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/168204490170"
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  7.69,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-09",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "12pcs Cat Scat Mat Animal Deterrent Mat with Spikes Prickle Strip Dig Stopper",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.31",
+                         "ebayPrice":  "6.99",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 769; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "EnjoylifeStore",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Recheck of GDS-20261003-01: old reference seller has 48,074 feedback.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/12pcs-cat-scat-mat-animal-deterrent-mat-with-spikes-prickle-strip-dig-stopper-35467"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/285969080115"
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-10",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Stainless Steel Tin Can Opener",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.56",
+                         "ebayPrice":  "10.99",
+                         "history":  "RESEARCHED",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "aman786",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-15",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Recheck of GDS-20261005-09.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "UNKNOWN_DATA",
+                         "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/stainless-steel-tin-can-opener-55687"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "221 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/336441376292"
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-11",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Cat Puppy Calming Plush Cushion Round Pet Bed without Zippers and Non-removable - Grey Diameter 60cm",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "8.65",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "RESEARCHED",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "hus2885 (Bloomwings ltd)",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-15",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Recheck of GDS-20261005-14. Source offers 4 sizes; the planned listing is the 60cm size only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "UNKNOWN_DATA",
+                         "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/cat-puppy-calming-plush-cushion-round-pet-bed-without-zippers-and-non-removable---grey-diameter-60cm"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "750 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-12",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "BBQ Cover Barbecue Cover Grill Cover Protector Waterproof 190x71x117cm",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "8.74",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "RESEARCHED",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "azeglobal",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-15",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Recheck of GDS-20261004-04.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "UNKNOWN_DATA",
+                         "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/bbq-cover-barbecue-cover-grill-cover-protector-waterproof-190x71x117cm-30684"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "466 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-13",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "7.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2L Large Hot Water Bottle Quality Hot Water Bottles Body Warmer Hand Warmer",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.96",
+                         "ebayPrice":  "7.99",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 1200; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "evergoodsuk",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Winter theme; search-card data only. Other 2L variants have stock 9, 31.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.18",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=hot+water+bottle"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261008-14",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2.5ft Long Hot Water Bottle with Fleece Cover for Compress Pain Relief",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "10.50",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 1200; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-22",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Winter theme; search-card data only.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=hot+water+bottle"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/377275901348"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  0.99,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.172,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "1.55",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261008-01",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "8.99",
+                    "prefStart":  "N/A",
+                    "name":  "Chrome Muslim Shower Head and Hose Bidet Spray Tap for Toilet Hygienic",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.06",
+                    "ebayPrice":  "8.99",
+                    "history":  "KEEP",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 99; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "8.37",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "homiely",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  {
+                                "Value":  0.297,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Recheck of GDS-20261004-19 under the 2026-10-08 rules; source and reference re-read 2026-10-09.",
+                    "ebayFee":  {
+                                    "Value":  "1.69",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.15",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "212 (eBay active Buy It Now, New, UK only)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/chrome-muslim-shower-head-and-hose-bidet-spray-tap-for-toilet-hygienic"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "220 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/285969080115"
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-10",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Stainless Steel Tin Can Opener",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.56",
+                    "ebayPrice":  "10.99",
+                    "history":  "RESEARCHED",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "aman786",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-15",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Recheck of GDS-20261005-09.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "UNKNOWN_DATA",
+                    "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/stainless-steel-tin-can-opener-55687"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "221 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/336441376292"
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-11",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Cat Puppy Calming Plush Cushion Round Pet Bed without Zippers and Non-removable - Grey Diameter 60cm",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "8.65",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "RESEARCHED",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "hus2885 (Bloomwings ltd)",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-15",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Recheck of GDS-20261005-14. Source offers 4 sizes; the planned listing is the 60cm size only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "UNKNOWN_DATA",
+                    "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/cat-puppy-calming-plush-cushion-round-pet-bed-without-zippers-and-non-removable---grey-diameter-60cm"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "750 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-12",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "BBQ Cover Barbecue Cover Grill Cover Protector Waterproof 190x71x117cm",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "8.74",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "RESEARCHED",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "azeglobal",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-15",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Recheck of GDS-20261004-04.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "UNKNOWN_DATA",
+                    "reason":  "Required data unknown: Profit Engine not run. Not a failure; will be rechecked.",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/bbq-cover-barbecue-cover-grill-cover-protector-waterproof-190x71x117cm-30684"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "466 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  1.15,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261008-01",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "5M Brush Strip Self Adhesive Door Window Sealing Strip Windproof Anti Insect Gasket",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.30",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 115; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Found from eBay draught-excluder demand.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005003878648344.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  1.15,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261008-02",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "5.89",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Self-adhesive Bristles Wool Pile Weatherstrip Door Window Brush Seal (Grey 7x6, 10M)",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.09",
+                    "ebayPrice":  "5.89",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 115; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "topviewergoodshop",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Other 10M options: Grey 9x5 baseline 4.01, Grey 9x15 5.61, Grey 9x23 8.19.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.25",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "226 (eBay active, brush strip 5m keyword)",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005005993184194.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/377467571759"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261008-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "4.11",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Car Hand Tool Set Car Disassembly Tool Kit Stereo Repair DVD Repair Tool Dashboard Removal Interior (5 pcs trim removal kit)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "2.85",
+                    "ebayPrice":  "4.11",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 57; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "ah_60860",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Cheapest matching kit found from eBay demand (ah_60860, 57 sold).",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.23",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "5.45",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "6M Rubber Seal Weather Strip Foam Sticky Tape for Door Window Draught Excluder",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.52",
+                    "ebayPrice":  "5.45",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "wesellanything24",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Found from eBay demand (ZIK draught excluder). Search-card data only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.17",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "226 (eBay active, brush strip keyword)",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2m Draught Excluder Strong Adhesive Door Draft Stopper (brown)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.31",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/stock",
+                    "reason":  "Stock too low or out of stock (seen: UK Stock 6 is under the 20 minimum (s7.2); rule: Amazon FBM seller \u003e= 30 units or In stock; Go Dropship \u003e= 20 units)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2m Draught Excluder Strong Adhesive Door Draft Stopper (white)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.31",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/stock",
+                    "reason":  "Stock too low or out of stock (seen: UK Stock 1 is under the 20 minimum (s7.2); rule: Amazon FBM seller \u003e= 30 units or In stock; Go Dropship \u003e= 20 units)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=draught+excluder"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "4.89",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "28cm Door Wreath Hanger Christmas Hook Xmas Decoration - Black",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "Christmas",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.38",
+                    "ebayPrice":  "4.89",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 182; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "on.262",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Christmas best-seller list; search-card data only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.10",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-06",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Christmas Table Runner Table Snowflake Dining Party Placemat",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "Christmas",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.20",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 9; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Christmas best-seller list; search-card data only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/287615027214"
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-07",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "50pcs Christmas Gift Bags 4 Designs Santa Snowman Party Loot Sweet Bags",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "Christmas",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.60",
+                    "ebayPrice":  "7.99",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 6; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "primeseasons",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Christmas best-seller list; search-card data only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=christmas"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  6.48,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-08",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "11.60",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Memory Foam Seat Cushion for Coccyx Tailbone Pain Relief Ergonomic Coccyx Cushion for Office Chair Car Travel",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.63",
+                    "ebayPrice":  "11.60",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 648; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "hadeed9999",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Recheck of GDS-20261006-03: old reference listing ended 2026-10-06.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.23",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/168204490170"
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  7.69,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-09",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "12pcs Cat Scat Mat Animal Deterrent Mat with Spikes Prickle Strip Dig Stopper",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.31",
+                    "ebayPrice":  "6.99",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 769; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "EnjoylifeStore",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Recheck of GDS-20261003-01: old reference seller has 48,074 feedback.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/12pcs-cat-scat-mat-animal-deterrent-mat-with-spikes-prickle-strip-dig-stopper-35467"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-13",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "7.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2L Large Hot Water Bottle Quality Hot Water Bottles Body Warmer Hand Warmer",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.96",
+                    "ebayPrice":  "7.99",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 1200; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "evergoodsuk",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Winter theme; search-card data only. Other 2L variants have stock 9, 31.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.18",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=hot+water+bottle"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261008-14",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2.5ft Long Hot Water Bottle with Fleece Cover for Compress Pain Relief",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "10.50",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 1200; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-22",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Winter theme; search-card data only.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=hot+water+bottle"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

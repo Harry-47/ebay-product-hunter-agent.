@@ -1,0 +1,118 @@
+# UK seasonal event calendar for the Seasonal Planning Engine (CLAUDE.md §13–§16).
+#
+# Lead times come from config.yaml (planning.preferred_listing_lead_days = 60,
+# planning.minimum_listing_lead_days = 30). These are the USER'S BUSINESS PLANNING
+# ASSUMPTIONS, NOT eBay requirements or ranking guarantees.
+#
+# Two kinds of entry:
+#   type: event   -> a single date, from a fixed MM-DD or a computed rule.
+#   type: window  -> a season spanning a date range (may cross the year end).
+#                    `anchor` is the date the 60/30-day lead times count back from.
+#                    `anchor`, `main_start` and `main_end` are configurable (MM-DD).
+#
+# Supported rules (type: event):
+#   fixed                          -> uses `date` (MM-DD)
+#   western_easter_sunday          -> Western (Gregorian) Easter Sunday
+#   easter_minus_21_days           -> UK Mothering Sunday (fourth Sunday of Lent)
+#   third_sunday_june              -> UK Father's Day
+#   day_after_fourth_thursday_november -> Black Friday
+#   monday_after_black_friday      -> Cyber Monday (Black Friday + 3 days)
+#
+# Engine calculations for each entry (next upcoming or current occurrence):
+#   event_date / anchor_date      -> resolved date for the occurrence
+#   window (window entries only)  -> main_start .. main_end
+#   days_until                    -> anchor_date (or event_date) minus today's UK date
+#   preferred_listing_start       -> anchor/event date minus preferred_listing_lead_days
+#   minimum_listing_start         -> anchor/event date minus minimum_listing_lead_days
+#   phase:
+#     days_until > 60                     -> PREPARE_EARLY
+#     30 <= days_until <= 60              -> START_NOW
+#     0 <= days_until < 30                -> LATE_EVENT_WINDOW
+#     window only: main_start <= today <= main_end -> IN_SEASON (takes precedence;
+#                  also report days remaining until main_end)
+#     event passed / window ended         -> POST_EVENT (then roll to next occurrence)
+#
+# Optional field `priority`: reported only if explicitly set on an entry; otherwise
+# "Not defined". The engine must not invent priority labels. Priority never changes
+# the 50/30/20 allocation. (No entry currently sets a priority.)
+
+events:
+  - name: Christmas
+    type: event
+    rule: fixed
+    date: "12-25"
+    themes: [gifting, home, entertaining, organisation, winter]
+
+  - name: New Years Eve
+    type: event
+    rule: fixed
+    date: "12-31"
+    themes: [party, entertaining, decorations, celebration, gifts]
+
+  - name: New Year
+    type: event
+    rule: fixed
+    date: "01-01"
+    themes: [organisation, home]
+
+  - name: Valentines Day
+    type: event
+    rule: fixed
+    date: "02-14"
+    themes: [gifting, couples, home]
+
+  - name: UK Mothering Sunday
+    aliases: [UK Mother's Day]
+    type: event
+    rule: easter_minus_21_days
+    themes: [gifting, home]
+
+  - name: Easter
+    type: event
+    rule: western_easter_sunday
+    themes: [spring, gifting, home, entertaining]
+
+  - name: Fathers Day
+    type: event
+    rule: third_sunday_june
+    themes: [gifting, hobbies, home]
+
+  - name: Halloween
+    type: event
+    rule: fixed
+    date: "10-31"
+    themes: [party, home, entertaining]
+
+  - name: Black Friday
+    type: event
+    rule: day_after_fourth_thursday_november
+    themes: [deals, gifting, home]
+
+  - name: Cyber Monday
+    type: event
+    rule: monday_after_black_friday
+    themes: [deals, gifting, home]
+
+  - name: UK Summer Season
+    type: window
+    anchor: "06-01"        # lead times count back from here (~60-day prep starts early April)
+    main_start: "06-01"
+    main_end: "08-31"
+    themes: [outdoor, garden, travel]
+    notes: Dates configurable.
+
+  - name: UK Back To School
+    type: window
+    anchor: "09-01"        # main early-September return (England/UK default basis)
+    main_start: "07-01"
+    main_end: "09-30"
+    themes: [organisation, home]
+    notes: England/UK timing by default. School dates vary by area (e.g. Scotland returns mid-August); adjust anchor/window here if needed.
+
+  - name: UK Winter Season
+    type: window
+    anchor: "12-01"
+    main_start: "12-01"
+    main_end: "02-end"     # last day of February (28 or 29); window crosses the year end
+    themes: [winter, home, organisation]
+    notes: Dates configurable.

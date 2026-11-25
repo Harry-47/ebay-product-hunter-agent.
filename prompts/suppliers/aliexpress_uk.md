@@ -1,0 +1,38 @@
+﻿# AliExpress UK: supplier rules (ACTIVE)
+
+This is the full rule text moved unchanged from CLAUDE.md on 2026-11-25; section numbers are the same. It contains dated history: the current values are in CLAUDE.md section 0, and the newest user instruction in docs/rulebook_changelog.md applies where they differ.
+
+## 6. AliExpress sourcing workflow
+1. Demand (required, user rule 2026-10-04, revised the same day): the product must be a **Choice** product (AliExpress "Choice" badge) **and** show **500+ sold**.
+   - The 500+ is the sold count AliExpress shows (e.g. "1,000+ sold"). AliExpress shows only all-time totals, so no period is required; record the period as "not stated".
+   - PASS if 500 or more; FAIL if under 500 (e.g. "493 sold"); UNKNOWN if no count is shown.
+   - A best-seller badge alone does not meet the demand rule.
+2. Rating: 4.3+ (user rule 2026-10-08; was 4.5+).
+3. Supplier (store) feedback: **90%+** positive (user rule 2026-10-04; was 95%).
+4. Delivery to the UK: **maximum 10 days** (confirmed by the user 2026-10-06).
+   - **No Ship from filter (user rule 2026-10-10):** use the Ship to: UK filter only. Do **not** apply the Ship from: UK filter; items shipping from China (or anywhere) are searched together with UK-warehouse items. Record the ship-from country shown. Delivery must still be 10 days or less.
+   - **China allowed:** if no suitable item ships from the UK, items shipping from China may be used, but delivery must still be 10 days or less.
+   - **Shipping method:** AliExpress Selection Standard or Cainiao (or another method shown with delivery of 10 days or less). Record the method.
+5. **Search filters to apply where AliExpress offers them:**
+   - Ship to: UK;
+   - Choice;
+   - 4.5+ rating;
+   - shipping method / delivery time.
+6. **AliExpress item cost, current rule (user rule 2026-10-12, supersedes the baseline/struck-through-price and 5+ day price wording below for AliExpress):** the item cost is the **actual price** of the exact variant as a **logged-out visitor** sees it, read in an **incognito window** (no sign-in). The price must **exclude** promotional discounts and new-shopper deals: welcome/new-shopper prices, coupons, coins, flash/sale/limited-time/'x% off' prices, bundle or multi-buy prices and Brand-day style promotions. **AliExpress cost model (user rule 2026-10-13, final; replaces the SKU-List "calculated price" cost):** the landed cost per unit is the sum of (1) **AliExpress listed item cost**: the actual price of the exact variant, read from the extension SKU List "Price" column, using the **highest price of the last month** on the AliPrice chart if the price changed in that month, never the struck-through "was" price and never new-shopper / Welcome-deal, coupon, coin or other discounted prices (user rule 2026-10-24: a SuperDeals / Limited Offers badge on the item page is ignored; the SKU List "Price" column is the cost); (2) **AliExpress shipping** for a single-item order (0 with the Free shipping filter; a shown fee is added); (3) **AliExpress VAT charged at checkout**: **0% extra** (the listed UK price already includes the 20% VAT, so the VAT is inside the listed item cost; checked against the user's first order, where the total paid equalled the listed price; the daily file keeps a `VAT_RATE` and a non-zero value is applied to item + shipping if checkout ever adds VAT); (4) **FX / payment-processing buffer**: **4%** of item + shipping (user rule 2026-10-13: the user pays with a UK card from now on; the first order on a Pakistani PKR card cost 6.3% all-in: GBP 18.49 charged PKR 7,210.42 against 366.95 x 18.49 = PKR 6,784.8 at the xe.com mid-market rate; re-measure on the first UK-card order statement); and (5) the other rules of this book: the AliExpress **6% cost buffer** (§10 cost safety), 0% sourcing buying fee, stock 20+ (50+ seasonal), `max_safe_cost`. `tools/profit_calc.ps1` computes (3) and (4) for every AliExpress row (as the sourcing-cost estimate, source recorded). The VAT and FX factors are **read and recorded every day** in `data/fees/YYYY-MM-DD_aliexpress_cost_factors.csv` (like the eBay fee page, §10); if a day's file is missing the config values are used and the row is marked ESTIMATED. The extension SKU List is used **only for information** (variant price, stock, free-shipping note, exchange rate); its "Calculated Price" column is never used as a cost (user rule 2026-10-13). No cart is used: the agent never adds to the AliExpress cart, never clicks Buy now, never opens checkout and never signs in. If the actual price, the chart or the SKU List cannot be read, the cost is `UNKNOWN`. Every AliExpress search always uses the **Choice** and **Free shipping** filters (plus ship to United Kingdom, GBP). The 8% sourcing fee and the single-item shipping rules still apply. Never sign in to read prices, and never open the basket or checkout (§24). The old 5+ day price-history condition no longer applies to AliExpress.
+6a. **Final price check (user rule 2026-10-04):** use the item page for the selected option, with ship-to UK and GBP.
+   - Record the item price, UK shipping, and any other fee or charge shown on the page (e.g. tax/VAT lines, service or handling fees).
+   - A fee that the page doesn't show is `UNKNOWN`, never assumed to be zero.
+   - **Never** click "Buy Now", "Add to cart" or open the checkout/order page, even just to read a price (§24).
+   - The 8% sourcing buying fee (§10) still applies on top.
+   - **Item cost (user rule 2026-10-04):** the **higher of** today's price and the **highest price that stayed for 5+ days** (same principle as Amazon/Keepa, §5.4).
+     - Today's price means the **baseline seller price** for the exact variant (§10 baseline rule). Welcome/new-shopper, coupon, coin, flash/sale, bundle and "from" prices are never used.
+     - The standalone single-item shipping fee is added when Choice free shipping needs a minimum basket value.
+     - The 5+ day price comes from an observed price history (a chart or tool on the item page, recorded with its URL and the dates). It is never estimated.
+     - If no price history is visible, record `max_held_price` = `UNKNOWN`. The cost is then today's repeatable price, marked "cost basis: current price only, history UNKNOWN" and listed as a risk.
+     - A strikethrough "was" price is recorded but is **not** treated as a 5+ day price.
+6b. **Inventory (user rule 2026-10-13, revised the same day):** the exact variant to be sold must show stock of at least **20** units (at least **50** for seasonal items; user rule 2026-10-24: back to 20 / 50, equal to Go Dropship §7a.1; it was 50 / 100 from 2026-10-17), read from the price/SKU-list extension panel on the item page (the extension shows each SKU's inventory and total price without placing an order; the agent never clicks "Buy now", "Add to cart" or checkout, §24). A visible stock figure under the limit fails; no stock figure shown is `UNKNOWN`. Decide on the day's reading (user rule 2026-10-17: no multi-day observation; the earlier "record on 2 different days" step is dropped).
+6c. **Price history (user approved 2026-10-12, extension now working 2026-10-13):** the price-history chart of the AliPrice extension on the item page is read for the last 3 months; the cost follows the §10 cost-safety rule (highest price that stayed at least 5 days, or today's price if higher), recorded with the dates. Every price read is still logged in `data/price_watch/aliexpress_price_log.csv`.
+7. Verify on eBay UK (§9).
+8. Calculate fees and profit (§10).
+9. Compliance status defaults to `COMPLIANCE_REVIEW` (§22).
+

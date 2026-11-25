@@ -1,0 +1,5 @@
+﻿"candidate_id","date","source","product_name","failed_gate","observed_value","threshold","notes"
+"AX-20261023-01","2026-10-23","AliExpress UK","Shower head 4 modes 1005010228964029","stock / cost","Only 10 left; 1.59 is 50% off promo","stock 50+; baseline price","WATCH: eBay side passes (ZIK STR 466%)"
+"AX-20261023-02","2026-10-23","AliExpress UK","Shower head 5 modes hose 1005007096808809","stock / cost","Only 2 left; 2.95 is 49% off promo","stock 50+; baseline price","WATCH"
+"GD-20261023-01","2026-10-23","Go Dropship UK","Digital kitchen scale","profit","ZIK passes; source economics fail","1 GBP profit / margin","WATCH"
+"AX-20261023-03","2026-10-23","AliExpress UK","LED make-up mirror","ZIK gates","fails ZIK strong-seller/sell-through gates","see CLAUDE.md s3","reject"

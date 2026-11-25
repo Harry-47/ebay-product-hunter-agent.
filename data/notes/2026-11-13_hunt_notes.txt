@@ -1,0 +1,116 @@
+2026-11-13 hunt notes (continuation of the 11 Nov AliExpress winter/Christmas hunt; see data/notes/2026-11-11_hunt_notes_part1-9)
+
+User instructions 13 Nov: "These are old products" (curtain lights dropped); "If cushion pass profit pass it" (Christmas cushion covers: pass if the profit test passes, strong-seller gate waived for this product by the user); "Dont select the products that can cause compliance issues later" (avoid electrical / mains / battery / safety-regulated items from now on); ZIK signed in.
+
+AE-20261111-11 DROPPED (user, compliance) USB LED curtain lights item 1005006125200079 - electrical item, not selected (cost without sale 3.82, stock 153; eBay ref purelygenuineuk 7.19, 9 sold 30d).
+
+AE-20261113-12 FAIL (price) Christmas cushion covers (user: pass if profit passes):
+  eBay Terapeak 30d: 4pcs Christmas Cushion Cover Animals 9.91 (20 sold), 4pcs Merry Christmas Santa & Snowman 6.28 (24), 4x 45x45 Santa 7.47 (9), 4 Pack 8.03 (7).
+  AliExpress 13 Nov (Choice, by orders), prices without sale: 4pcs gnome gingerbread 1K+ sold 4.20 + 6.86 = 11.06; 4pcs Xmas Merry Bright 878 sold 15.06; 4pcs vintage Santa deer 799 sold 4.80 + 5.64 = 10.44; 4pcs Merry Santa snowman 739 sold 5.00 + 5.56 = 10.56; single covers 4.62-5.82 each.
+  -> every 4-pack costs more than the eBay 4-pack price; profit test fails.
+
+ZIK: opening zik2 in the automation tab redirects to the login page (session only in the user's own tab) - eBay Product Research used.
+
+AE-20261113-13 FAIL (price) Women's fluffy coral fleece bed socks (one size, non-electrical):
+  eBay Terapeak 30d "christmas socks" (1,055 sellers): 5 Pairs Women Soft Fluffy Bed Socks 5.85 (104 sold), 5.02 (27), 5.52 (17); single pair Fluffy Cosy Bed Socks Candy 2.56 (40), 2.67 (35).
+  AliExpress (Choice, by orders): coral velvet cat-claw socks item 1005004818298661, 8,370 orders, 4.7, without sale 1.10 per pair (1.03 shown is a first-try/new-shopper price, not used); 5 Pairs Thickened Coral Fleece 5K+ sold 2.80 + 9.96 = 12.76 without sale.
+  -> 5 pairs = 5.50 vs eBay 5.85 (loss after fees); single pair 2.56: fees ~0.86 + cost 1.14 = profit ~0.56 (< GBP 1).
+Other eBay leads from the same search (not checked on AliExpress yet): 12 Pairs Gents Santa Christmas socks 9.03 (45); alpaca socks 2 pairs 13.79 (101) - "alpaca" claim needs a genuine source.
+
+User rule 13 Nov (later): AliExpress cost = SKU List price; read AliPrice 3-month chart (flat = fake sale). No compliance-risk products. Go Dropship: another 35 budget, eBay demand first. Recorded in CLAUDE.md change log and memory.
+
+Rechecks under the SKU-price rule:
+- AX-20261111-01 seal strip (item 1005006995198589): default 25mm chart flat at 1.23 (fake sale). SKU List 35mmx5m 1pc now 3.55 (was 2.85 on 11 Nov), stock 995 -> vs manchester.beds 5.99 profit ~0.72 (<1) FAIL; 35mmx5m 2pcs 6.05 vs 2-roll 9.49 -> profit ~1.00, ROI ~16% FAIL.
+- AE-20261113-14 FAIL (price) 137 pcs Christmas snowflake window clings, item 1005010289273339 (Choice, 1,000+ sold, 4.8, store 93.9%): SKU WHITE 2.32, chart flat 2.32, stock 230; first store item 1005007898573103 WHITE 2.29 stock 46 (<50). eBay active 999, snowflake sold 483/30d (sell-through 48%). Profit rows AX-20261113-14A (royalmart-ltd 3.98) profit 0.36, 14B (super-covery 3.85) profit 0.26; minimum listing price 4.77 -> FAIL.
+
+ZIK now opens in the automation tab (user signed in). Filters set each search: ebay.co.uk, UK, 30 days, Fixed Price, Brand New, no price limits.
+
+eBay-stage: hot water bottle with cover - ZIK 2,796 sold; cardys 430/30d (10,260 total), infinitedeals776 381, adorehome 279 + 177, onlineappliance 191; 500+ total many. NOT selected: rubber hot water bottles must meet BS 1970 (safety-regulated) - user rule 13 Nov, no compliance-risk products. Cover only (hamdans_94 177/30d at 5.99) not on Go Dropship.
+
+Go Dropship third budget (eBay demand first), 13 Nov:
+GD3-01 FAIL (price + compliance) 2.5ft Long Hot Water Bottle with Fleece Cover GBP 10.50 (UK stock 50) vs eBay long bottle 6.79-7.85 (infinitedeals776 381/30d at 7.85); BS 1970 risk. (Go Dropship 2L bottles 5.96 stock 8-37; covers not stocked.)
+GD3-02 FAIL (price) Large Christmas Santa Sack 60x50cm GBP 4.36 (+5% = 4.58), stock 97; eBay same fabric "Special Delivery" sack qdsupplies 4.45 (80/30d); other sacks are multi-packs/personalised.
+GD3-03 FAIL (price) 3pcs 28cm Door Wreath Hanger Black GBP 5.12 (+5% = 5.38), stock 499; eBay 3-pack 28cm black elara-london 7.99 (0 sold) -> profit ~0.93; singles 4.29-4.99 (britishdesignho 28/30d, 3,200 total).
+GD3-04 FAIL (strong sellers) 20x Christmas Baubles 6cm Red Green Shatterproof GBP 8.13, stock 94; ZIK "shatterproof christmas baubles" 320 sold, top seller 20/30d (no seller 30+); exact GD title copies 0 sold.
+Not on Go Dropship: window insulation film.
+GD3-05 FAIL (demand) Christmas Table Runner Snowflake GBP 4.20 (stock 166); ZIK "christmas table runner" 199 sold across 100 listings, top sellers single digits.
+GD3-06 FAIL (strong sellers) Magnetic Thermal Insulated Door Curtain GBP 10.92-11.99 (stock 173-188); ZIK 203 sold: neflaca 92/30d at 15.29, then extrastaruk 12, first4magnets 12 (only 1 seller 30+).
+DROPPED - previous pass (user 13 Nov): 2 pcs outside tap cover HOM-60214 (passed 14 Oct). Data read anyway: GD 4.67, 92 g, stock 419 (green 10,440), price updated 2026-04-13, Royal Mail Large Letter; eBay ninjaspeedpro 2X 8.99 (32/30d, 391 total); ZIK 1,393 sold. Not counted.
+Skipped (already researched before): thermal touch-screen gloves (sizes M/L/XL), fleece beanie (price / strong sellers fail 15 Oct, 9 Nov).
+GD3-07 FAIL (demand) 15x Mini Robin Birds Christmas Decorations GBP 5.13 (stock 84); Terapeak 30d: 8 sellers; 15x robin listings 5, 2, 2, 1 sold at 6.30-9.07; only a clip-on 6x/12x robin listing reaches 37.
+Already rejected earlier (skipped): nutcracker ornaments (24 Oct), glitter Santa banners (8 Oct).
+Go Dropship third budget: 7 evaluated / 0 pass (tap cover dropped as previous pass).
+User 13 Nov (later): compliance rule removed; generic Go Dropship items allowed. Then (latest): eBay sent the user a compliance email about curtain lights -> drop electrical lighting and similar electrical/battery items.
+Curtain lights = previous pass (24 Oct, item 1005006994725087, ukeypoint 6.56) - skipped.
+AX-20261113-15 DROPPED (user, electrical lighting) bike light set item 1005005200740874 variant 2218: profit row PASS on paper (SKU 2.56 vs ecomm_world 5.99: profit 1.59, ROI 59.6%, buffer pass) but excluded after the eBay compliance email. Not counted as a pass.
+User (final, 13 Nov): AW Dropship Christmas gifts - eBay price does not matter (recorded in CLAUDE.md); but FIRST AliExpress and Go Dropship until 5 passes, THEN AW Dropship. AW leads saved for later: Christmas Bath Bomb Gift Packs XBB-01..06 GBP 6.10 ex-VAT (RRP 11.75; landed ~6.10 x 1.2 + 2.99 = 10.31), Christmas log decor sets WXD-01/02 GBP 4.77, Chill Pills Gift Pack White Christmas ChillP-15 GBP 6.70.
+Go Dropship generic items (eBay demand first; dedupe grep of the whole data/ folder done for 30 homepage items - new: cat scratch mat, 2-in-1 pet feeder, deburring tool, luggage connector straps, seat back organiser, pop-up basin plug, disposable slippers, pet stain remover, car headrest pillow, cabinet knobs):
+GD3-08 FAIL (strong sellers) Detachable Seat Back Hanging Organiser with Zippers GBP 7.90 (stock 550); ZIK "car seat back organiser" 302 sold, top organiser 24/30d; the GD design sells 1 (digiworldstore 12.20).
+GD3-09 FAIL (strong sellers) 2 in 1 Pet Feeder Food Water Dispenser GBP 8.64 (stock 320); ZIK top 17/30d (selectifyltd 5.90), thinkprice 14 at 19.99.
+GD3-10 FAIL (strong sellers) 10 pairs White Hotel Disposable Slippers GBP 6.11 (stock 902); ZIK: 30+/30d only mrsha_87 30 (3 pairs 8.12) and wakerup 30 (10/20 pairs 10.99); then homiely 16, starfish-00 15 (2 sellers, gate needs 3).
+Go Dropship third budget: 10 evaluated / 0 pass. Not yet checked (new): deburring tool 5.91, luggage connector straps 4.72, pop-up basin plug 4.37, cabinet knobs 3.72, car headrest pillow 4.72, cat scratch mat 4.69, pet stain remover 4.97.
+User rule 13 Nov: extra demand route - 3+ small sellers (<20k fb) with 5+ sales/30d can replace the strong-seller gate; all other rules (incl. 40% hand sell-through) unchanged. Rechecks:
+- GD3-09 2 in 1 Pet Feeder PET-73110 GBP 8.64, 978 g, stock 320, Tracked 2 Business Days, price updated 2024-11-14: small sellers 5+/30d selectifyltd 17 (9.7k), trustedhomedirect 9 (3.3k), persimmon4 8 (5.7k), lumah-77 7 (4.0k) -> demand route met; reference thinkprice same feeder 19.99 (14/30d, was 29.99) would give profit ~6. BUT sell-through 109 sold / 535 active (eBay UK BIN/New/UK, 13 Nov) = 20% < 40% -> still FAIL (sell-through).
+- GD3-06 Magnetic Thermal Door Curtain: small sellers 5+ neflaca 92, chiragtandel01 6, fairmontcommerc 6, naham-33 6, roshline 6 -> demand route met; sell-through 203 / 666 active = 30% < 40% -> still FAIL (sell-through).
+User rule 13 Nov: products passing via the small-seller route need sell-through of at least 20% (40% stays for the strong-seller route).
+*** PASS GD-20261113-11 2 in 1 Pet Feeder PET-73110 (Go Dropship 8.64, stock 320, 978 g, Tracked 2 days, price stable since 2024-11-14). Demand: small-seller route (4 small sellers 5+/30d), sell-through 109/535 = 20.4%. Reference thinkprice same feeder 19.99 (14/30d): profit 5.70, margin 28.5%, ROI 62.9%, minimum listing 15.02, max safe cost 11.72. Coupon check at 15.99: profit 2.58, ROI 28.4% (still pass). Recorded in passing_sellers.csv and godropship_price_log.csv. criteria_relaxed: demand via small-seller route.
+GD3-06 Magnetic Thermal Door Curtain recheck: FAIL (price). fairmontcommerceltd sells the 90x210 at 18.81 / same-title 18.93; GD 90x210 = 11.99 -> profit 1.58, ROI 12.6% (rows GD-20261113-12); vs neflaca 16.49 loss (-0.35). Only the 80x200 (10.92) would clear max safe cost 11.24, but no matching 80x200 reference at that price.
+Tally after recheck: passes 2 (GD-20261111-05 frost jacket, GD-20261113-11 pet feeder).
+Chrome restarted by the agent (user instruction: if Chrome freezes, close it and load again).
+User target (13 Nov): 5 passes EACH from AliExpress and Go Dropship.
+GD-20261113-13 FAIL (price, by 2p) 10 Pcs Double Coat Hooks Black HOM-65780 GBP 4.97 (stock 209, 158 g, tracked, price stable since 2025-01-09). Demand small-seller route met (hidiryuksel 23, tamarc5 6, techlot 5), sell-through 47/64 = 73%. Reference Banstoreltd item 117266215468 10PCS Black 8.49 (26 sold 1M) -> profit 1.03, ROI 19.8% (<20%), minimum listing 8.51. (tamarc5 10PCS 14.30 is a different long retro hook, not used.)
+GD-28 recheck FAIL (price + demand) Large Natural Suede Leather Car Cleaning Cloth GBP 4.45 (+5% = 4.67): Terapeak 30d 5 sellers, chamois cloth listings 3.69-6.53, max 4 sold per listing -> no small-seller route, no profit.
+ZIK logged out after the Chrome restart - user asked to sign in again.
+User 13 Nov: compliance rule for electrical items REMOVED (electrical/lighting allowed again, risk recorded). Recorded in CLAUDE.md + memory.
+AX-20261113-15 bike light set recheck: original item 1005005200740874 now 404 (listing removed). Same store's other listing 1005005200736894 (Choice, 1,000+ sold, 4.6, Cycle Zone): AliPrice chart NOT flat - default variant ~2.71 Sep-Oct, 1.64 only in the 11.11 sale; page shows "Max. 1 pcs/shopper at this price" -> sale price is limited, not repeatable (baseline rule §10). Set variant sale 2.46 (pdp 5.58 struck); after the sale the cost is expected near 4 (> max safe cost 3.12 vs eBay 5.99). FAIL (cost not repeatable). Recheck after the sale ends (18 Nov 16:59 GMT).
+Dedupe method fixed: grep the whole data/ folder (no glob filter) before each product.
+
+Tally (11-13 Nov hunt): AliExpress 13 evaluated / 0 pass (1 dropped for compliance); Go Dropship 44 evaluated / 1 pass.
+*** PASS GD-20261113-14 5 Pcs Collapsible Drainage Waste Water Pipes Grey (GD 4.93, stock 1,335, 198 g, tracked, price stable since 2025-02-07). Small-seller route: e_hub92 22, aisal_7194 8, la220594 7; STR 179/47 = 381%. Reference la220594 8.99 (7/30d): profit 1.49, ROI 28.7%, min listing 8.45, max safe cost 5.28. Passes now: GD 3 (frost jacket, pet feeder, drainage pipes), AE 0.
+GD2-09 recheck FAIL (price) 24 Pockets Over Door Shoe Organiser GBP 7.06: small sellers ok (smartify_trading 19, uk-perfect100 16, bestdealsbysoft 14, feel-sogood 12, naham-33 8) but best same-product price creeper-43 11.58 -> profit ~1.16, ROI ~15.6% (<20%).
+*** PASS GD-20261113-15 Black Car Headrest Pillow 1pc (GD 4.72, stock 290, 137 g, tracked, price updated 2026-07-14 -> PRICE_RECENTLY_CHANGED). Small-seller route (mehrozeltd 21, rogueassassi 15, onlinebuysky 9, dealzmaster365 7, selectifyltd 6); STR 325/964 = 34%. Reference autobits_uk single black pillow 10.92 (88/30d): profit 3.17, ROI 64.0%, min listing 7.90, max safe cost 6.45. Passes now: GD 4, AE 0.
+*** PASS GD-20261113-16 Cat Scratch Mat 30x100cm Self Adhesive Gray (GD 4.69, stock 309, 119 g, Tracked 2 days, price updated 2026-07-07 -> PRICE_RECENTLY_CHANGED). Small-seller route (naveed_eshop 33, am_864296 24, brighthavenstore 16, primedeals804 15, the_elite-store 10, cheap_treat 9, sharpix1 9); STR 170/421 = 40%. Reference am_864296 (Trovia CO) item 188858329600 30x100 Light Grey 9.90 (26 in 1M): profit 2.09, ROI 42.5%, min listing 8.51, max safe cost 5.57.
+=> GO DROPSHIP TARGET MET: 5 passes (GD-20261111-05 frost jacket, GD-20261113-11 pet feeder, GD-20261113-14 drainage pipes, GD-20261113-15 car headrest pillow, GD-20261113-16 cat scratch mat). AliExpress 0 - continue AliExpress.
+*** PASS AX-20261113-16 Lint Remover LED Display Grey, AliExpress 1005007097015654 (Choice, 10,000+ sold, 4.9, SKU Grey 3.69 stock 291, no per-shopper cap, delivery Nov 18-21). eBay: strong-seller gate met (glamortime 227, jogistore 113, pipestation 71; 500+ glamortime 1,099, pipestation 1,154, vgr-uk 744), STR 729/1,100 = 66%. Reference carmen-l33 same grey/white round-LED remover 8.99 (20/30d): profit 2.81, ROI 73.2%, 6% buffer pass, max safe cost 5.32. RISK: AliPrice chart 5.52 Aug-Sep -> at 5.52 profit 0.91 FAIL (row 16R); recheck after 18 Nov. Small electric gadget (battery) - compliance risk. Passes: GD 5, AE 1.
+CORRECTION: AX-20261113-16 lint remover DROPPED - DUPLICATE (previous pass, 09 Nov review; user 13 Nov). Not counted. Passes: GD 5, AE 0.
+User 13 Nov: recheck all previously rejected products under the new rules (SKU-price cost for AliExpress, small-seller demand route with 20% STR, electrical small gadgets allowed).
+Recheck AE-03 Christmas snowflake projector (small-seller route): small sellers 5+ muhammadumer-1 20 (8.99), seewi_2 16 (13.95), aksmartdeals4 12 (7.99), qiuguo1 7, mzjoutlet-uk 8 (8.29) - route met; 'Star Shower' listings skipped (brand). Sell-through 142/934 = 15% < 20% -> FAIL (sell-through). AliExpress checks: 1005007635301282 16-pattern USB-C 5.02 stock 42 (<50 seasonal); 1005006207241570 2.12 is a one-time offer (max 1 per shopper) - not usable; 1005010439327513 white snowflake 4.99 stock 92, 4,000+ sold, 4.9 - not tested further (market sell-through fails).
+Tally: GD 5 (target met), AE 0.
+Competitor method (user 13 Nov): reference sellers of earlier passes analysed in ZIK Competitor Research. moni-3019 (8,157 fb, 1,402 sold/30d): top item Embroidery Stitch Book Kit 43/30d.
+*** PASS AX-20261113-17 Embroidery Stitch Book for Beginners, AliExpress 1005010332244987 variant 2391A1 (Choice, 2,000+ sold, 4.9, SKU 3.74, stock 440, chart flat, delivery Nov 19-23). Small-seller route (moni-3019 43, akintere-87 26, jowat_4967 19, tedmon-0 15); STR 288/329 = 87%. Reference moni-3019 7.99: profit 1.82, ROI 46.8%, 6% buffer pass (1.59), max safe cost 4.53. Passes: GD 5, AE 1.
+Competitor jawad_16: top items (doorbell, solar PIR lights, COB strip, holographic projector) already researched 6 Nov - skipped. Competitor ye46063: gloves (researched, sized), eye mask (previous pass), WiFi extender, kids electric toothbrush 36/30d, ear wax camera.
+AE kids sonic electric toothbrush FAIL (stock): eBay small-seller route met (juba3636 39 at 10.49, ye46063 36 at 11.99, iqsaif-23 18, fisherxu2013 14), STR 145/538 = 27%. AliExpress 1005006392879326 Children Sonic Electric Toothbrush (Choice, 1,000+ sold, 4.7, SKU 3.99 / 4.09) stock 4 and 8 (<20). Other AliExpress results adult models or brands (Seago, POCON, Fairywill, SUBORT).
+Tally: GD 5, AE 1 (embroidery stitch book kit).
+
+--- AliExpress (competitor route, akintere-87 hose clamp market) ---
+FAIL 1005009508923644 hose clamp pliers: 4pc set stock 0; singles not matched.
+FAIL 1005008660255509 long reach hose clamp pliers: not Choice (Brand+); variants stock 11-20.
+FAIL 1005008955232147 long-reach cable variant 7.87: stock 11.
+PASS AX-20261113-18 45 deg hose clip pliers swivel jaw, Color A, AliExpress 1005008955232147 SKU 3.31 stock 49, Choice 2,000+ sold 4.6.
+  eBay ref dgoautopartsteam 6.99 (63/30d). ZIK 277 sold / eBay 445 active = STR 62%. Strong-seller gate met on keyword (30+: skybluee05 69, dgoautopartsteam 63, storemanagers 49; 500+: skybluee05 2,980, hippoproduct 1,019).
+  Profit 1.79, ROI 52.1%, min list 6.03, max safe cost 4.07, buffer PASS. Chart high 3.60 (Oct): profit 1.49 PASS. AliExpress passes today: 2/5.
+
+--- Competitor scans (13 Nov, late) ---
+dgoautopartsteam: 4pc trim clip pliers 7.99 (41/30d) -> AliExpress 4pc set 8.40, FAIL price. Rest of store: car electronics (high price).
+we-sell-genuine: insoles / back belts -> sized items (section 4), skipped.
+sa-825109: bike cover = 4 Nov pass (repeat, skipped).
+alpha-store1-01: top items 1-4/30d, nothing.
+homedepo_0: tea lights (6 Nov pass), electric hot water bottle (4 Nov stock fail), leg pillow (11 Oct GD pass) skipped; travel pillow set: AliExpress 5.90-6.60 vs 9.99, too thin.
+PASS AX-20261113-19 self-heating pet pad Gray 40x50cm, AliExpress 1005010155238697 SKU 3.20 stock 394, Choice 10,000+ sold 4.9.
+  eBay ref ronch_5215 7.29 (30/30d, size not stated -> nearest match). ZIK 629 sold / eBay 1,400+ active = STR 45%. Small-seller route (strong-seller fails on 500+ total). Profit 1.82, ROI 54.6%, min list 6.28, max safe cost 3.98, buffer PASS. 50x70 (4.71) FAILS vs 7.29 - sell 40x50 only. Crowded price-war market (risk).
+AliExpress passes today: 3/5.
+
+--- More competitor scans (13 Nov, evening) ---
+homedepo_0 bath pillow: ref is branded Your Bathroom (EAN) 12.99; AliExpress like-for-like 8.40 (profit <1), mesh 4.00 vs 5.79 - FAIL. Staple gun 3in1: AliExpress 3.76 one-time offer, Local+ not Choice - FAIL.
+fastsamshop (re-scan; 9 Nov done): 21pc cat toys - eBay price war 2-3 for 21pc, FAIL. Circuit breaker 30-300A: demand ok (mnuma_76 59, bestbuy-lw2020 7 @9.49, everydaygoodsuk_7 7) but AliExpress YONGRUN price 1.99 is max-1/shopper; struck 7.97 fails vs 9.49 - FAIL.
+marlonqb: solar camping lantern (kirkl41 112/30d 7.55; route B demand) - AliExpress match 1005007344511475 regular SKU 5.91 vs eBay 8.49-8.87 -> profit ~0.25 FAIL. Christmas village wall hanging - no AliExpress match. Ping head cover - brand, skipped.
+PASS AX-20261113-20 digital pocket scale 500g x 0.01g, AliExpress 1005010285414833 SKU 3.55 stock 114, Choice 10,000+ sold 4.9, chart flat.
+  eBay ref lupo-store 7.99 (133/30d). ZIK 498 sold / eBay 599 active = STR 83%. Strong-seller gate met. Profit 1.83 (Jewellery 14.9% fee assumed), ROI 49.6%, min list 6.93, max safe cost 4.34, buffer PASS. Nearest match (500g vs 200g). Price war risk (many sellers 3.99-5.98).
+AliExpress passes today: 4/5.
+
+--- lupo-store scan (13 Nov, evening) ---
+Nose hair trimmer: demand ok (1,053 sold, 2,900+ active = STR 36%, small-seller route). AliExpress capsule 1005009926534484 stock 0/10/1 FAIL; 1005009708458772 black 1.60 max-1/shopper, orange/blue 3.30-3.33 but eBay capsule style sells ~3.63 (growmore 9.49 is a different stick design) FAIL; stick 1005010044148565 stock 14 FAIL.
+Digital caliper 150mm stainless: route B demand ok (STR 310/553 = 56%) but AliExpress Choice 13.40 vs 17.21 FAIL.
+PASS AX-20261113-21 universal pushchair/pram rain cover, AliExpress 1005008675941671 C174 PVC SKU 4.12 stock 20, Choice 900+ sold 4.6.
+  eBay ref lupo-store 7.99 (34/30d). ZIK 405 sold / eBay 950 active = STR 43%. Strong-seller gate met. Profit 1.62, ROI 37.9%, min list 7.24, max safe cost 4.72, buffer PASS. No exact match (pram-shaped cover, title says for pushchairs); stock exactly 20. Confidence LOW.
+AliExpress passes today: 5/5 (AX-20261113-17 embroidery kit, -18 hose clip pliers, -19 self-heating pet pad, -20 pocket scale, -21 rain cover). Go Dropship 5/5. Next: AW Dropship Christmas gifts.

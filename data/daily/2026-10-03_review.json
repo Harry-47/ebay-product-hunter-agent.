@@ -1,0 +1,2930 @@
+{
+    "date":  "2026-10-03",
+    "run":  1,
+    "generated_uk":  "2026-10-03 15:00",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  1,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  5,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  5,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  7,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  8,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  4,
+                        "selected":  0
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  3,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  false,
+    "allocation_reason":  "",
+    "counts":  {
+                   "evaluated":  17,
+                   "qualified":  1,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  15,
+                   "unknown":  1
+               },
+    "blocked":  [
+                    "Run notes: TEST RUN under rules of 2026-10-03 (3 sources, target 15; pricing tiers; 8% buying fee; config fees 13.25% + GBP 0.30 + GBP 0.36 insertion, 8% ads -\u003e ESTIMATED). ACCESS: Amazon OK; AliExpress OK (7-day delivery filter; delivery Oct 08-11 = 8 days); Go Dropship OK on public pages only (header showed Sign In; not signed in; prices are the public view); eBay OK (one Checking your browser page cleared by itself earlier); eBay Seller Hub Product Research UNAVAILABLE (redirects to Seller Hub overview) -\u003e ZIK sell-through used (CLAUDE.md s9); ZIK OK (shipping location reset to United States on every page load, set to United Kingdom each time); Seller Sprite inventory view NOT FOUND on Amazon pages. AMAZON: 5 Best Sellers evaluated earlier today, all FBA/Amazon-retail (FBM rule); the new 1,000+/month discovery rule was not yet applied to a fresh Amazon search. GO DROPSHIP: 7 of 16 Weekly Top items evaluated; not evaluated: glue traps (legal-restriction risk), 100-pack puppy pads (likely over 1 kg) and 7 others (research budget NOT_SET). No CHANGE_PROPOSAL."
+                ],
+    "run_notes":  "TEST RUN under rules of 2026-10-03 (3 sources, target 15; pricing tiers; 8% buying fee; config fees 13.25% + GBP 0.30 + GBP 0.36 insertion, 8% ads -\u003e ESTIMATED). ACCESS: Amazon OK; AliExpress OK (7-day delivery filter; delivery Oct 08-11 = 8 days); Go Dropship OK on public pages only (header showed Sign In; not signed in; prices are the public view); eBay OK (one Checking your browser page cleared by itself earlier); eBay Seller Hub Product Research UNAVAILABLE (redirects to Seller Hub overview) -\u003e ZIK sell-through used (CLAUDE.md s9); ZIK OK (shipping location reset to United States on every page load, set to United Kingdom each time); Seller Sprite inventory view NOT FOUND on Amazon pages. AMAZON: 5 Best Sellers evaluated earlier today, all FBA/Amazon-retail (FBM rule); the new 1,000+/month discovery rule was not yet applied to a fresh Amazon search. GO DROPSHIP: 7 of 16 Weekly Top items evaluated; not evaluated: glue traps (legal-restriction risk), 100-pack puppy pads (likely over 1 kg) and 7 others (research budget NOT_SET). No CHANGE_PROPOSAL.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  28,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  55,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  58,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  59,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  83,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  89,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  90,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  134,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  155,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  176,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  241,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  260,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  333,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  "https://www.ebay.co.uk/str/enjoylifestore"
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/168204490170"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  7.33,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.16399999999999998,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "1.97",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: upstream: none",
+                         "id":  "GDS-20261003-01",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "11.99",
+                         "prefStart":  "N/A",
+                         "name":  "12pcs Cat Scat Mat Animal Deterrent Mat with Spikes Prickle Strip Dig Stopper",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=cat+scat+mat\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                     },
+                         "sourcePrice":  "6.31",
+                         "ebayPrice":  "11.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.08,
+                         "compSales":  "Matched sold in window: 733; sellers with 100+ sales/30d: 1; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "10.76",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "EnjoylifeStore (enjoylifestore)",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  {
+                                     "Value":  0.29,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                         "notes":  "HOLD: YES shown on page",
+                         "ebayFee":  {
+                                         "Value":  "2.25",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.50",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "\u003c 295 (upper bound)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/12pcs-cat-scat-mat-animal-deterrent-mat-with-spikes-prickle-strip-dig-stopper-35467"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "416.88 g",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261003-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES/LOW",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "AIDEA Microfibre Cleaning Cloth Lint Free Washable Pack of 8 30x30cm",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.39",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "DEPRIORITISE",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-12-02",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/stock; SOURCE/seller_type; SOURCE/variations",
+                         "reason":  "Stock too low or out of stock (seen: Buy Box seller is FBA (dispatched by Amazon) and no other sellers exist, so no FBM inventory; 12+ variations; rule: in stock (Amazon \u003e= 30)). Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Buy Box seller is FBA (dispatched by Amazon) and no other sellers exist, so no FBM inventory; 12+ variations; rule: \u003c= 3)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B07ZF9C3WP"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261003-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Roe Tenpo Air Fryer Liners, 100Pcs Disposable Baking Parchment Paper",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.84",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/seller_type",
+                         "reason":  "Amazon seller is not FBM (seen: AMAZON_RETAIL; rule: FBM)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B0F5HT5NRN"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261003-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES/LOW",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "wyewye A4 Frame Wooden Photo Frames with A5 Mount",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.45",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "DEPRIORITISE",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-12-02",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/seller_type; SOURCE/variations",
+                         "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Dispatched by Amazon (FBA), not FBM; more than 3 variations (colours x sizes); rule: \u003c= 3)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B0BW8WT1ZL"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261003-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES/LOW",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Caroline Shatuik Waterproof Mattress Protector Single 30cm Extra Deep",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "DEPRIORITISE",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-12-02",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/seller_type; SOURCE/variations",
+                         "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Dispatched by Amazon (FBA), not FBM; 6 size variations; rule: \u003c= 3)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B09TNFJX22"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261003-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "ANSIO Dehumidifier Disposable Pack of 10 Room Moisture Absorber",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.95",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/seller_type",
+                         "reason":  "Amazon seller is not FBM (seen: AMAZON_RETAIL; rule: FBM)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B015AOGP1S"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261003-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Thicken Clothes Organizer Pants Sweater Storage Box (item 1005008901763749)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Opened from the bundle-deal search card; GBP 0.99 welcome deal shown",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/rating",
+                         "reason":  "Rating below 4.5 (seen: 4.2; rule: \u003e= 4.5)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005008901763749.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261003-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Thicken Clothes Organizer Storage Box Grey M 1PC (item 1005006995257180)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.49",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/delivery",
+                         "reason":  "Delivery too slow (seen: Delivery up to 10 days (Oct 13) exceeds the 7-8 day maximum; rule: Amazon \u003c= 5 days; AliExpress \u003c= 7 days)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005006995257180.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261003-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Sports Bra Underwear Organizer Storage Box (item 1005013255433191)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.78",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/delivery",
+                         "reason":  "Delivery too slow (seen: Delivery up to 10 days (Oct 13) exceeds the 7-8 day maximum; rule: Amazon \u003c= 5 days; AliExpress \u003c= 7 days)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005013255433191.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  "https://www.ebay.co.uk/str/qqashop"
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/144051626351"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  1.96,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  -0.098,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=underwear+drawer+organiser\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                    },
+                         "profit":  {
+                                        "Value":  "-0.49",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: EXCEPTION: delivery up to 8 days (Oct 11) vs 7-day pass level; within the stated 7-8 day maximum; strong rating 4.8 and 5,000+ sold | EXCEPTION (hunter): AliExpress delivery up to 8 days vs 7-day pass level | upstream: EXCEPTION (hunter): AliExpress delivery up to 8 days vs 7-day pass level",
+                         "id":  "ALI-20261003-04",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable; CLAUDE.md s9 rule 2026-10-03)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "4.99",
+                         "prefStart":  "N/A",
+                         "name":  "Underwear Organizers Foldable Storage Box grey-7grids (item 1005009409540075)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=underwear+drawer+organiser\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                     },
+                         "sourcePrice":  "3.48",
+                         "ebayPrice":  "4.99",
+                         "history":  "WATCH",
+                         "adRate":  0.08,
+                         "compSales":  "Matched sold in window: 120; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "6.89",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "QQASHOP (kristylu1158-5)",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  {
+                                     "Value":  -0.13,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable; CLAUDE.md s9 rule 2026-10-03)",
+                         "notes":  "Found with AliExpress 7 day delivery filter, sorted by orders | Correction 2026-10-03: variations_total_offered set to UNKNOWN (observation not evidenced).",
+                         "ebayFee":  {
+                                         "Value":  "1.32",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.28",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "\u003c 606 (upper bound)",
+                         "failed":  "PROFIT/price; PROFIT/profit",
+                         "reason":  "eBay listed price outside GBP 5-35 (seen: 4.99; rule: GBP 5-GBP 35 listed price). Profit below GBP 1 (seen: -0.49; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005009409540075.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "0.410 kg",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "EXCEPTION: EXCEPTION: delivery up to 8 days (Oct 11) vs 7-day pass level; within the stated 7-8 day maximum; rating 4.8 and 5,000+ sold | EXCEPTION (hunter): AliExpress delivery up to 8 days",
+                         "id":  "ALI-20261003-05",
+                         "strSource":  "N/A",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Transparent Box Storage Organizer Desk Plastic Drawer Organizer 4PCS-A (item 1005006710131045)",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=clear+plastic+drawer+organiser\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                     },
+                         "sourcePrice":  "6.94",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Found with AliExpress 7 day delivery filter, sorted by orders",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_evidence_unavailable",
+                         "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: no comparable eBay evidence (LOOSE match only); rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005006710131045.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN (eBay evidence unavailable)",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "0.460 kg",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/267431294560"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "LOW",
+                         "str":  1.08,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  -0.047,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "-0.40",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: upstream: none",
+                         "id":  "GDS-20261003-02",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "8.53",
+                         "prefStart":  "2027-04-02",
+                         "name":  "4X Garden Gazebo Foot Leg Feet Weights Sand Sand Bags for Marquee Party Tent",
+                         "seasonal":  "hybrid (summer_plus_evergreen)",
+                         "eventDate":  "2027-06-01",
+                         "minStart":  "2027-05-02",
+                         "target":  "UK Summer Season",
+                         "phase":  "PREPARE_EARLY",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.98",
+                         "ebayPrice":  "8.53",
+                         "history":  "WATCH",
+                         "adRate":  0.08,
+                         "compSales":  "Matched sold in window: 108; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "10.32",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "drizzle-96 (shop ashleyuk0758)",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  {
+                                     "Value":  -0.062,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "1.79",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.48",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: -0.40; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/4x-garden-gazebo-foot-leg-feet-weights-sand-sand-bags-for-marquee-party-tent"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "241",
+                         "source":  "Go Dropship UK",
+                         "weight":  "151.20 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/167547628618"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "HIGH",
+                         "str":  2.9882,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.032,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "0.29",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: upstream: none",
+                         "id":  "GDS-20261003-03",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "8.98",
+                         "prefStart":  "N/A",
+                         "name":  "2 PCS 165 Degree Kitchen Cabinet Hinges Soft Close Cupboard Hinges with Fixing Screws",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.67",
+                         "ebayPrice":  "8.98",
+                         "history":  "WATCH",
+                         "adRate":  0.08,
+                         "compSales":  "Matched sold in window: 254; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 2",
+                         "minPrice":  {
+                                          "Value":  "9.88",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "laure-l32 (shop miba639)",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  {
+                                     "Value":  0.048,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "1.85",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.45",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "\u003c 85 (ZIK listing total)",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: 0.29; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/2-pcs-165-degree-kitchen-cabinet-hinges-soft-close-cupboard-hinges-with-fixing-screws-10589"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "417.96 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  0.08,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261003-04",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2 Pack Laundry Basket Folding Hamper Bag Storage Bin with Handle - Grey+Black",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.80",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 8; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/str",
+                         "reason":  "eBay sell-through below 20% (seen: sell-through 8% \u003c 20% (ZIK); rule: \u003e= 20%)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/2-pack-laundry-basket-folding-hamper-bag-storage-bin-with-handle---grey+black-90677"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "889.92 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/318225689631"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "HIGH",
+                         "str":  5.37,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  -0.408,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  {
+                                        "Value":  "-2.86",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: upstream: none",
+                         "id":  "GDS-20261003-05",
+                         "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "6.99",
+                         "prefStart":  "N/A",
+                         "name":  "Thicken Self-adhesive Wallpaper Linen Plain Color Decor",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.13",
+                         "ebayPrice":  "6.99",
+                         "history":  "WATCH",
+                         "adRate":  0.08,
+                         "compSales":  "Matched sold in window: 537; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                         "minPrice":  {
+                                          "Value":  "11.89",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "sillyguys",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-17",
+                         "roi":  {
+                                     "Value":  -0.371,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "1.59",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.57",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: -2.86; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/thicken-self-adhesive-wallpaper-linen-plain-color-decor-65659"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "0",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "583.20 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261003-06",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "LOW/NO",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "28cm Clear Glass Replacement Pan Lid with Knob",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.39",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "RETIRE",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Screened from the Weekly Top list",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/variations; SOURCE/avoid_list",
+                         "reason":  "Too many variations (more than 3) (seen: CLAUDE.md s4: breakables / fragile items (glass lid); rule: \u003c= 3). On the avoid list (CLAUDE.md s4) (seen: CLAUDE.md s4: breakables / fragile items (glass lid); rule: CLAUDE.md s4)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/28cm-clear-glass-replacement-pan-lid-with-knob"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "14",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261003-07",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "NO",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "5.3 Inch Smart Simple Silent LED Digital Alarm Clock w/ Date Temp Display",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.58",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "RETIRE",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Screened from the Weekly Top list",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/avoid_list",
+                         "reason":  "On the avoid list (CLAUDE.md s4) (seen: CLAUDE.md s4: electronics; rule: CLAUDE.md s4)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  "https://www.ebay.co.uk/str/enjoylifestore"
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/168204490170"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  7.33,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.16399999999999998,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "1.97",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: upstream: none",
+                    "id":  "GDS-20261003-01",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "11.99",
+                    "prefStart":  "N/A",
+                    "name":  "12pcs Cat Scat Mat Animal Deterrent Mat with Spikes Prickle Strip Dig Stopper",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=cat+scat+mat\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                },
+                    "sourcePrice":  "6.31",
+                    "ebayPrice":  "11.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.08,
+                    "compSales":  "Matched sold in window: 733; sellers with 100+ sales/30d: 1; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "10.76",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "EnjoylifeStore (enjoylifestore)",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  {
+                                "Value":  0.29,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                    "notes":  "HOLD: YES shown on page",
+                    "ebayFee":  {
+                                    "Value":  "2.25",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.50",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "\u003c 295 (upper bound)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/12pcs-cat-scat-mat-animal-deterrent-mat-with-spikes-prickle-strip-dig-stopper-35467"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "416.88 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "EXCEPTION: EXCEPTION: delivery up to 8 days (Oct 11) vs 7-day pass level; within the stated 7-8 day maximum; rating 4.8 and 5,000+ sold | EXCEPTION (hunter): AliExpress delivery up to 8 days",
+                    "id":  "ALI-20261003-05",
+                    "strSource":  "N/A",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Transparent Box Storage Organizer Desk Plastic Drawer Organizer 4PCS-A (item 1005006710131045)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=clear+plastic+drawer+organiser\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                },
+                    "sourcePrice":  "6.94",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Found with AliExpress 7 day delivery filter, sorted by orders",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_evidence_unavailable",
+                    "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: no comparable eBay evidence (LOOSE match only); rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005006710131045.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN (eBay evidence unavailable)",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "0.460 kg",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261003-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Thicken Clothes Organizer Pants Sweater Storage Box (item 1005008901763749)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Opened from the bundle-deal search card; GBP 0.99 welcome deal shown",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/rating",
+                    "reason":  "Rating below 4.5 (seen: 4.2; rule: \u003e= 4.5)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005008901763749.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261003-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Thicken Clothes Organizer Storage Box Grey M 1PC (item 1005006995257180)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.49",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/delivery",
+                    "reason":  "Delivery too slow (seen: Delivery up to 10 days (Oct 13) exceeds the 7-8 day maximum; rule: Amazon \u003c= 5 days; AliExpress \u003c= 7 days)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005006995257180.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261003-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Sports Bra Underwear Organizer Storage Box (item 1005013255433191)",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.78",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/delivery",
+                    "reason":  "Delivery too slow (seen: Delivery up to 10 days (Oct 13) exceeds the 7-8 day maximum; rule: Amazon \u003c= 5 days; AliExpress \u003c= 7 days)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005013255433191.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  "https://www.ebay.co.uk/str/qqashop"
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/144051626351"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  1.96,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  -0.098,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=underwear+drawer+organiser\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                               },
+                    "profit":  {
+                                   "Value":  "-0.49",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: EXCEPTION: delivery up to 8 days (Oct 11) vs 7-day pass level; within the stated 7-8 day maximum; strong rating 4.8 and 5,000+ sold | EXCEPTION (hunter): AliExpress delivery up to 8 days vs 7-day pass level | upstream: EXCEPTION (hunter): AliExpress delivery up to 8 days vs 7-day pass level",
+                    "id":  "ALI-20261003-04",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable; CLAUDE.md s9 rule 2026-10-03)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "4.99",
+                    "prefStart":  "N/A",
+                    "name":  "Underwear Organizers Foldable Storage Box grey-7grids (item 1005009409540075)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=underwear+drawer+organiser\u0026LH_Sold=1\u0026LH_Complete=1\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1\u0026_ipg=60"
+                                },
+                    "sourcePrice":  "3.48",
+                    "ebayPrice":  "4.99",
+                    "history":  "WATCH",
+                    "adRate":  0.08,
+                    "compSales":  "Matched sold in window: 120; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "6.89",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "QQASHOP (kristylu1158-5)",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  {
+                                "Value":  -0.13,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable; CLAUDE.md s9 rule 2026-10-03)",
+                    "notes":  "Found with AliExpress 7 day delivery filter, sorted by orders | Correction 2026-10-03: variations_total_offered set to UNKNOWN (observation not evidenced).",
+                    "ebayFee":  {
+                                    "Value":  "1.32",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.28",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "\u003c 606 (upper bound)",
+                    "failed":  "PROFIT/price; PROFIT/profit",
+                    "reason":  "eBay listed price outside GBP 5-35 (seen: 4.99; rule: GBP 5-GBP 35 listed price). Profit below GBP 1 (seen: -0.49; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005009409540075.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "0.410 kg",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261003-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES/LOW",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "AIDEA Microfibre Cleaning Cloth Lint Free Washable Pack of 8 30x30cm",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.39",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "DEPRIORITISE",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-12-02",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/stock; SOURCE/seller_type; SOURCE/variations",
+                    "reason":  "Stock too low or out of stock (seen: Buy Box seller is FBA (dispatched by Amazon) and no other sellers exist, so no FBM inventory; 12+ variations; rule: in stock (Amazon \u003e= 30)). Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Buy Box seller is FBA (dispatched by Amazon) and no other sellers exist, so no FBM inventory; 12+ variations; rule: \u003c= 3)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B07ZF9C3WP"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261003-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Roe Tenpo Air Fryer Liners, 100Pcs Disposable Baking Parchment Paper",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.84",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/seller_type",
+                    "reason":  "Amazon seller is not FBM (seen: AMAZON_RETAIL; rule: FBM)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B0F5HT5NRN"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261003-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES/LOW",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "wyewye A4 Frame Wooden Photo Frames with A5 Mount",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.45",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "DEPRIORITISE",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-12-02",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/seller_type; SOURCE/variations",
+                    "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Dispatched by Amazon (FBA), not FBM; more than 3 variations (colours x sizes); rule: \u003c= 3)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B0BW8WT1ZL"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261003-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES/LOW",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Caroline Shatuik Waterproof Mattress Protector Single 30cm Extra Deep",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "DEPRIORITISE",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-12-02",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/seller_type; SOURCE/variations",
+                    "reason":  "Amazon seller is not FBM (seen: FBA; rule: FBM). Too many variations (more than 3) (seen: Dispatched by Amazon (FBA), not FBM; 6 size variations; rule: \u003c= 3)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B09TNFJX22"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.amazon.co.uk/gp/bestsellers/kitchen)"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261003-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "ANSIO Dehumidifier Disposable Pack of 10 Room Moisture Absorber",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.95",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Discovered on Amazon Best Sellers Home \u0026 Kitchen (https://www.amazon.co.uk/gp/bestsellers/kitchen)",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/seller_type",
+                    "reason":  "Amazon seller is not FBM (seen: AMAZON_RETAIL; rule: FBM)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B015AOGP1S"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/267431294560"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "LOW",
+                    "str":  1.08,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  -0.047,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "-0.40",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: upstream: none",
+                    "id":  "GDS-20261003-02",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "8.53",
+                    "prefStart":  "2027-04-02",
+                    "name":  "4X Garden Gazebo Foot Leg Feet Weights Sand Sand Bags for Marquee Party Tent",
+                    "seasonal":  "hybrid (summer_plus_evergreen)",
+                    "eventDate":  "2027-06-01",
+                    "minStart":  "2027-05-02",
+                    "target":  "UK Summer Season",
+                    "phase":  "PREPARE_EARLY",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.98",
+                    "ebayPrice":  "8.53",
+                    "history":  "WATCH",
+                    "adRate":  0.08,
+                    "compSales":  "Matched sold in window: 108; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "10.32",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "drizzle-96 (shop ashleyuk0758)",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  {
+                                "Value":  -0.062,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "1.79",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.48",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: -0.40; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/4x-garden-gazebo-foot-leg-feet-weights-sand-sand-bags-for-marquee-party-tent"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "241",
+                    "source":  "Go Dropship UK",
+                    "weight":  "151.20 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/167547628618"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "HIGH",
+                    "str":  2.9882,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.032,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "0.29",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: upstream: none",
+                    "id":  "GDS-20261003-03",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "8.98",
+                    "prefStart":  "N/A",
+                    "name":  "2 PCS 165 Degree Kitchen Cabinet Hinges Soft Close Cupboard Hinges with Fixing Screws",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.67",
+                    "ebayPrice":  "8.98",
+                    "history":  "WATCH",
+                    "adRate":  0.08,
+                    "compSales":  "Matched sold in window: 254; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 2",
+                    "minPrice":  {
+                                     "Value":  "9.88",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "laure-l32 (shop miba639)",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  {
+                                "Value":  0.048,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "1.85",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.45",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "\u003c 85 (ZIK listing total)",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: 0.29; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/2-pcs-165-degree-kitchen-cabinet-hinges-soft-close-cupboard-hinges-with-fixing-screws-10589"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "417.96 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  0.08,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261003-04",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2 Pack Laundry Basket Folding Hamper Bag Storage Bin with Handle - Grey+Black",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.80",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 8; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/str",
+                    "reason":  "eBay sell-through below 20% (seen: sell-through 8% \u003c 20% (ZIK); rule: \u003e= 20%)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/2-pack-laundry-basket-folding-hamper-bag-storage-bin-with-handle---grey+black-90677"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "889.92 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/318225689631"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "HIGH",
+                    "str":  5.37,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  -0.408,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  {
+                                   "Value":  "-2.86",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: upstream: none",
+                    "id":  "GDS-20261003-05",
+                    "strSource":  "ZIK Analytics (eBay Product Research unavailable)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "6.99",
+                    "prefStart":  "N/A",
+                    "name":  "Thicken Self-adhesive Wallpaper Linen Plain Color Decor",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.13",
+                    "ebayPrice":  "6.99",
+                    "history":  "WATCH",
+                    "adRate":  0.08,
+                    "compSales":  "Matched sold in window: 537; sellers with 100+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                    "minPrice":  {
+                                     "Value":  "11.89",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "sillyguys",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-17",
+                    "roi":  {
+                                "Value":  -0.371,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;ebay_fee_rate;ebay_fixed_fee;insertion_fee; sell-through source: ZIK Analytics (eBay Product Research unavailable)",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "1.59",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.57",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: -2.86; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/thicken-self-adhesive-wallpaper-linen-plain-color-decor-65659"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "0",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "583.20 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261003-06",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "LOW/NO",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "28cm Clear Glass Replacement Pan Lid with Knob",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.39",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "RETIRE",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Screened from the Weekly Top list",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/variations; SOURCE/avoid_list",
+                    "reason":  "Too many variations (more than 3) (seen: CLAUDE.md s4: breakables / fragile items (glass lid); rule: \u003c= 3). On the avoid list (CLAUDE.md s4) (seen: CLAUDE.md s4: breakables / fragile items (glass lid); rule: CLAUDE.md s4)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/28cm-clear-glass-replacement-pan-lid-with-knob"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "14",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261003-07",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "NO",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "5.3 Inch Smart Simple Silent LED Digital Alarm Clock w/ Date Temp Display",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.58",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "RETIRE",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Screened from the Weekly Top list",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/avoid_list",
+                    "reason":  "On the avoid list (CLAUDE.md s4) (seen: CLAUDE.md s4: electronics; rule: CLAUDE.md s4)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/weekly_top.html"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

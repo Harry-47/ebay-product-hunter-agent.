@@ -1,0 +1,14 @@
+2026-11-11 hunt notes, part 6 (AliExpress winter/Christmas; eBay Product Research (Terapeak) used because ZIK logged out after Chrome restart)
+
+AE-20261111-06 FAIL (price) Christmas tree static cling sheet, AliExpress item 1005010161496563 "1/2Sheets Static Cling Window Stickers": variant "tree 1pc" without sale GBP 5.02 (sale 2.10), 700+ sold; eBay tindaianyamp 3 sheets 5.19 (67/30d) -> no profit.
+
+eBay-stage screens (no AliExpress product counted):
+- Christmas gnome plush: Terapeak 30d ~80 sold, 37 sellers, top listing 15 -> weak market.
+- LED flameless candles: strong (Set of 3 pillar remote 8.87 61 sold; 6x rechargeable tea lights timer remote 12.31 31; set of 6 pillar 5.88 32). AliExpress rechargeable tea lights without sale ~29-35 (12.4 + 18.45 etc.), pack of 3 remote pillar 7.78 + 7.39 = 15.17 -> no AliExpress match under eBay price (not counted).
+- Christmas cushion covers: fragmented, top listing 24/30d -> strong-seller gate (3 sellers 30+) not met.
+
+AE-20261111-07 IN PROGRESS Electric rechargeable hot water bottle (grey dot pattern, hand pocket).
+  eBay Terapeak 30d "hot water bottle with cover": 1,054 sellers; "ELECTRIC RECHARGEABLE HOT WATER BOTTLE GREY BED HAND WARMER MASSAGING HEAT PAD" 13.05 (147 sold), 13.34 (74), 13.49 (66), 13.54 (34), 9.88 (26). Same type also "Rechargeable Electric Hot Water Bottle ... Cheaper Than a Kettle" 4.72-6.78 (146, 145, 87, 56, 55, 45, 43, 42) - need to confirm which matches.
+  AliExpress item 1005008144760827 "Dot Pattern Electric Hot Water Bag 500W 220V Rechargeable" (aggregated page, seller Shop1103764267 Store; Choice not shown on item page): 4.9 (828 reviews), seller 2,000+ / total 5,000+ sold; Gray G530B without sale 6.31 (sale 2.31); "Only 3 left" for Gray G530B (stock fails if no other variant has 20+).
+  RISKS: 220V EU plug (review: UK buyers need a 13A adapter) - mains electrical heating item, compliance risk (UKCA, plug); stock.
+  Extension disconnected before reading the SKU List.

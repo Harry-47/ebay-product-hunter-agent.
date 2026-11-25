@@ -1,0 +1,2566 @@
+{
+    "date":  "2026-10-12",
+    "run":  4,
+    "generated_uk":  "2026-10-13 08:44",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  3,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  6,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  4,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  5,
+                           "has_file":  true,
+                           "qualified":  2,
+                           "selected":  2,
+                           "shortfall":  3
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  5,
+                        "selected":  2
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  5,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  5,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "October 2026 adjusted mix: 70% Christmas/New Year/winter, 30% evergreen (user)",
+    "counts":  {
+                   "evaluated":  15,
+                   "qualified":  3,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  12,
+                   "unknown":  0
+               },
+    "blocked":  [
+                    "Run notes: RE-SCORED under the Go Dropship 5% cost-buffer rule (CLAUDE.md s7a): the 2x10m frost fleece roll (GDS-20261012-01) now FAILS the buffer (ROI 21.2%, thin) and is not selected. Selected: posture corrector (GDS-20261012-02, Quickglimpse reference, 4 size variations + health-adjacent flags) and AliExpress 200pc copper crush washers (ALI-20261012-04, incognito actual price 3.90, 10% buffer PASS). Amazon 6, Go Dropship 5, AliExpress 4 evaluated: 35-per-source budget NOT used up (ZIK logged out on 13 Oct stopped further research; shortfalls reported). Rules changed during this run are listed in the CLAUDE.md change log (2026-10-12)."
+                ],
+    "run_notes":  "RE-SCORED under the Go Dropship 5% cost-buffer rule (CLAUDE.md s7a): the 2x10m frost fleece roll (GDS-20261012-01) now FAILS the buffer (ROI 21.2%, thin) and is not selected. Selected: posture corrector (GDS-20261012-02, Quickglimpse reference, 4 size variations + health-adjacent flags) and AliExpress 200pc copper crush washers (ALI-20261012-04, incognito actual price 3.90, 10% buffer PASS). Amazon 6, Go Dropship 5, AliExpress 4 evaluated: 35-per-source budget NOT used up (ZIK logged out on 13 Oct stopped further research; shortfalls reported). Rules changed during this run are listed in the CLAUDE.md change log (2026-10-12).",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  19,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  46,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  49,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  50,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  74,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  80,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  81,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  125,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  146,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  167,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  232,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  251,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  324,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/366588700430?var=636272371793"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  1.06,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.363,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=200+copper+crush+washers+assorted+set\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                    },
+                         "profit":  {
+                                        "Value":  "4.34",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALI-20261012-04",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "11.95",
+                         "prefStart":  "N/A",
+                         "name":  "100/200PCS Copper Washer Gasket Nut And Bolt Set Flat Ring Seal Assortment Kit With Box M4-M14 (200PCS variant)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.90",
+                         "ebayPrice":  "11.95",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 106; top-20 sellers with 50+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                         "minPrice":  {
+                                          "Value":  "7.33",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "busi_9380",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  {
+                                     "Value":  1.031,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Same product as GDS-20261011-25 (Go Dropship, cost 5.67). Cross-source duplicate kept because the economics differ materially (profit 4.34 vs 2.71). First price check of 3 (incognito).",
+                         "ebayFee":  {
+                                         "Value":  "2.68",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.31",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "175",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005005091607964.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "2",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/402577633841"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  5.8538999999999994,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.128,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2m+x+10m+frost+fleece+plant+protection+garden+cover\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                    },
+                         "profit":  {
+                                        "Value":  "1.28",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "EXCEPTION: size/gsm not stated on eBay; nearest possible match",
+                         "id":  "GDS-20261012-01",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "9.99",
+                         "prefStart":  "2026-10-02",
+                         "name":  "2x10m Wide Garden Cold Frost Wind Fleece for Winter Plant Protection",
+                         "seasonal":  "seasonal (winter)",
+                         "eventDate":  "2026-12-01",
+                         "minStart":  "2026-11-01",
+                         "target":  "UK Winter Season",
+                         "phase":  "START_NOW",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.86",
+                         "ebayPrice":  "9.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 521; top-20 sellers with 50+ sales/30d: 5; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "9.90",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "hardware-gardenware",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  {
+                                     "Value":  0.212,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Carry-over from 2026-10-11 frost jacket lead (user: product name frost protection garden fleece plant winter cold frame cover horticulture). The 80x100cm jacket itself still has no confirmed reference; this 2x10m roll does.",
+                         "ebayFee":  {
+                                         "Value":  "2.07",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.18",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "170",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/2x10m-wide-garden-cold-frost-wind-fleece-for-winter-plant-protection-19170"
+                                     },
+                         "bucket":  "current_event",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "50",
+                         "source":  "Go Dropship UK",
+                         "weight":  "354.30 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/267193296842"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  9.59,
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.225,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=Adjustable+Posture+Corrector+Back+Brace+Men+Women+Lumbar+Shoulder+Support+Belt\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                    },
+                         "profit":  {
+                                        "Value":  "2.70",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261012-02",
+                         "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                                  },
+                         "mayChange":  "",
+                         "listed":  "11.99",
+                         "prefStart":  "N/A",
+                         "name":  "Adjustable Posture Corrector Slouch Shoulder Corset Back Lumbar Brace Orthosis Support Shoulder Straight Hold - S",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.93",
+                         "ebayPrice":  "11.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 959; top-20 sellers with 50+ sales/30d: 3; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                         "minPrice":  {
+                                          "Value":  "10.16",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "Quickglimpse",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  {
+                                     "Value":  0.442,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                         "notes":  "Requested by user 2026-10-12. Variant S verified; per-variant eBay sales are not shown, so the highest-selling variant could not be read (all four sizes cost GBP 5.93-5.96). | Reference upgraded to Quickglimpse (43 sales/30d).",
+                         "ebayFee":  {
+                                         "Value":  "2.46",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.18",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "510",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/adjustable-posture-corrector-slouch-shoulder-corset-back-lumbar-brace-orthosis-support-shoulder-straight-hold---s-44369"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "4",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "174.00 g",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Korbond 12 Pack of Lint Roller Refills 252 Sheets",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Korbond Lint Roller Refills 6 Pack 360 Sheets",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Armo Lint Rollers With 6 x Refills 420 Sheets",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.73",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "FINDMAG Magnetic Hooks 6 Pack 10kg",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.79",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=magnetic+hooks+6+pack"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Neosmuk Magnetic Hooks 10 Pack",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=magnetic+hooks+6+pack"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261012-06",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Oven Mitts Anti-Slip Silicone Oven Gloves 500F",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.99",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/s?k=silicone+oven+gloves"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261012-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Adjustable Posture Corrector (Choice, 10,000+ sold, 4.9) - clavicle strap type",
+                         "seasonal":  "UNKNOWN",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.3",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/w/wholesale-adjustable-posture-corrector-back-brace-lumbar.html?SearchText=adjustable+posture+corrector+back+brace+lumbar\u0026shipToCountry=GB\u0026isFavorite=y"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261012-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Adjustable Scoliosis Posture Corrector (3,000+ sold, 4.3)",
+                         "seasonal":  "UNKNOWN",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.47",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: demand; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/w/wholesale-adjustable-posture-corrector-back-brace-lumbar.html?SearchText=adjustable+posture+corrector+back+brace+lumbar\u0026shipToCountry=GB\u0026isFavorite=y"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "ALI-20261012-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Large 2M x 10M Garden fleece/subsoil cover (not Choice)",
+                         "seasonal":  "UNKNOWN",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.89",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: demand; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/w/wholesale-garden-frost-fleece-plant-protection-cover-roll.html?SearchText=garden+frost+fleece+plant+protection+cover+roll\u0026shipToCountry=GB\u0026isFavorite=y"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261012-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Large Pet Carrier Bag Soft Fabric Fold Portable Travel Puppy Cat Bag - Grey",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "10.15",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=PET-73720"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261012-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Outdoor Cushion Dustproof Cover Storage Bag Garden Furniture Covers 173x76x51cm - Black",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.14",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=HOM-49057"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "N/A (rejected at source)",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261012-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Adjustable Extendable Rack Closet Cupboard Divider Rack Storage Organizer Shelf Easy to install",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "UNKNOWN",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.96",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-26",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; no eBay verification",
+                         "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "SOURCE/source_check",
+                         "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=HOM-63098"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/366588700430?var=636272371793"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  1.06,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.363,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=200+copper+crush+washers+assorted+set\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                               },
+                    "profit":  {
+                                   "Value":  "4.34",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALI-20261012-04",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "11.95",
+                    "prefStart":  "N/A",
+                    "name":  "100/200PCS Copper Washer Gasket Nut And Bolt Set Flat Ring Seal Assortment Kit With Box M4-M14 (200PCS variant)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.90",
+                    "ebayPrice":  "11.95",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 106; top-20 sellers with 50+ sales/30d: 0; small sellers (\u003c=2k feedback, 10+ sales): 1",
+                    "minPrice":  {
+                                     "Value":  "7.33",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "busi_9380",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  {
+                                "Value":  1.031,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Same product as GDS-20261011-25 (Go Dropship, cost 5.67). Cross-source duplicate kept because the economics differ materially (profit 4.34 vs 2.71). First price check of 3 (incognito).",
+                    "ebayFee":  {
+                                    "Value":  "2.68",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.31",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "175",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005005091607964.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "2",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/402577633841"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  5.8538999999999994,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.128,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2m+x+10m+frost+fleece+plant+protection+garden+cover\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                               },
+                    "profit":  {
+                                   "Value":  "1.28",
+                                   "Estimated":  true
+                               },
+                    "exception":  "EXCEPTION: size/gsm not stated on eBay; nearest possible match",
+                    "id":  "GDS-20261012-01",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "9.99",
+                    "prefStart":  "2026-10-02",
+                    "name":  "2x10m Wide Garden Cold Frost Wind Fleece for Winter Plant Protection",
+                    "seasonal":  "seasonal (winter)",
+                    "eventDate":  "2026-12-01",
+                    "minStart":  "2026-11-01",
+                    "target":  "UK Winter Season",
+                    "phase":  "START_NOW",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.86",
+                    "ebayPrice":  "9.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 521; top-20 sellers with 50+ sales/30d: 5; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "9.90",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "hardware-gardenware",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  {
+                                "Value":  0.212,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Carry-over from 2026-10-11 frost jacket lead (user: product name frost protection garden fleece plant winter cold frame cover horticulture). The 80x100cm jacket itself still has no confirmed reference; this 2x10m roll does.",
+                    "ebayFee":  {
+                                    "Value":  "2.07",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.18",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "170",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/2x10m-wide-garden-cold-frost-wind-fleece-for-winter-plant-protection-19170"
+                                },
+                    "bucket":  "current_event",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "50",
+                    "source":  "Go Dropship UK",
+                    "weight":  "354.30 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/267193296842"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  9.59,
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.225,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=Adjustable+Posture+Corrector+Back+Brace+Men+Women+Lumbar+Shoulder+Support+Belt\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                               },
+                    "profit":  {
+                                   "Value":  "2.70",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261012-02",
+                    "strSource":  "ZIK (THIRD_PARTY_TOOL)",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  "https://zik2.amzsuccesstools.com/product-research/ebay"
+                             },
+                    "mayChange":  "",
+                    "listed":  "11.99",
+                    "prefStart":  "N/A",
+                    "name":  "Adjustable Posture Corrector Slouch Shoulder Corset Back Lumbar Brace Orthosis Support Shoulder Straight Hold - S",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.93",
+                    "ebayPrice":  "11.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 959; top-20 sellers with 50+ sales/30d: 3; small sellers (\u003c=2k feedback, 10+ sales): 0",
+                    "minPrice":  {
+                                     "Value":  "10.16",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "Quickglimpse",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  {
+                                "Value":  0.442,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee; sell-through source: ZIK (THIRD_PARTY_TOOL)",
+                    "notes":  "Requested by user 2026-10-12. Variant S verified; per-variant eBay sales are not shown, so the highest-selling variant could not be read (all four sizes cost GBP 5.93-5.96). | Reference upgraded to Quickglimpse (43 sales/30d).",
+                    "ebayFee":  {
+                                    "Value":  "2.46",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.18",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "510",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/adjustable-posture-corrector-slouch-shoulder-corset-back-lumbar-brace-orthosis-support-shoulder-straight-hold---s-44369"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "4",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "174.00 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261012-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Adjustable Posture Corrector (Choice, 10,000+ sold, 4.9) - clavicle strap type",
+                    "seasonal":  "UNKNOWN",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.3",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/w/wholesale-adjustable-posture-corrector-back-brace-lumbar.html?SearchText=adjustable+posture+corrector+back+brace+lumbar\u0026shipToCountry=GB\u0026isFavorite=y"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261012-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Adjustable Scoliosis Posture Corrector (3,000+ sold, 4.3)",
+                    "seasonal":  "UNKNOWN",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.47",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: demand; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/w/wholesale-adjustable-posture-corrector-back-brace-lumbar.html?SearchText=adjustable+posture+corrector+back+brace+lumbar\u0026shipToCountry=GB\u0026isFavorite=y"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "ALI-20261012-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Large 2M x 10M Garden fleece/subsoil cover (not Choice)",
+                    "seasonal":  "UNKNOWN",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.89",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen at baseline price; item page not opened because the card already fails.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: demand; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/w/wholesale-garden-frost-fleece-plant-protection-cover-roll.html?SearchText=garden+frost+fleece+plant+protection+cover+roll\u0026shipToCountry=GB\u0026isFavorite=y"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Korbond 12 Pack of Lint Roller Refills 252 Sheets",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Korbond Lint Roller Refills 6 Pack 360 Sheets",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Armo Lint Rollers With 6 x Refills 420 Sheets",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.73",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=lint+roller+refill"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "FINDMAG Magnetic Hooks 6 Pack 10kg",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.79",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=magnetic+hooks+6+pack"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Neosmuk Magnetic Hooks 10 Pack",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=magnetic+hooks+6+pack"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261012-06",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Oven Mitts Anti-Slip Silicone Oven Gloves 500F",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.99",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "Card-level screen (Amazon basket 0; no product page opened). eBay comparison at ZIK keyword level.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: profit; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/s?k=silicone+oven+gloves"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261012-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Large Pet Carrier Bag Soft Fabric Fold Portable Travel Puppy Cat Bag - Grey",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "10.15",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=PET-73720"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261012-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Outdoor Cushion Dustproof Cover Storage Bag Garden Furniture Covers 173x76x51cm - Black",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.14",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=HOM-49057"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "N/A (rejected at source)",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261012-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Adjustable Extendable Rack Closet Cupboard Divider Rack Storage Organizer Shelf Easy to install",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "UNKNOWN",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.96",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-26",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; no eBay verification",
+                    "notes":  "History recheck (due 2026-10-12). Status -\u003e WATCH.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "SOURCE/source_check",
+                    "reason":  "Failed a source-site check (seen: price (no qualifying eBay reference at or above minimum listing price); rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=HOM-63098"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

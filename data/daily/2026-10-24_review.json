@@ -1,0 +1,3912 @@
+﻿{
+    "date":  "2026-10-24",
+    "run":  1,
+    "generated_uk":  "2026-10-24",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  3,
+    "per_source":  [
+                       {
+                           "selected":  0,
+                           "qualified":  0,
+                           "source":  "Amazon UK",
+                           "has_file":  false,
+                           "evaluated":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "selected":  3,
+                           "qualified":  3,
+                           "source":  "AliExpress UK",
+                           "has_file":  true,
+                           "evaluated":  19,
+                           "shortfall":  2
+                       },
+                       {
+                           "selected":  0,
+                           "qualified":  0,
+                           "source":  "Go Dropship UK",
+                           "has_file":  true,
+                           "evaluated":  5,
+                           "shortfall":  5
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "selected":  2,
+                        "target":  5
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "selected":  0,
+                        "target":  5
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "selected":  1,
+                        "target":  5
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "October 2026 mix 70% Christmas/winter, 30% evergreen (user); today\u0027s only pass is evergreen.",
+    "counts":  {
+                   "qualified":  3,
+                   "surplus":  0,
+                   "rejected":  17,
+                   "evaluated":  20,
+                   "duplicates":  0,
+                   "unknown":  0
+               },
+    "blocked":  "Go Dropship, ZIK and AliExpress each logged out once (resumed); AE Dropshippes and CJ assessed, not used",
+    "run_notes":  "Hand-built wind-up (daily_report.ps1 not run: no stage files). See 2026-10-24_summary.md and data/notes/2026-10-15_hunt_notes.txt.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  7,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  34,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  37,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  45,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  62,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  68,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  69,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  113,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  134,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  155,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  227,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  239,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  319,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "15032% (ZIK usb c charging cable 2m fast charge braided)",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.405,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "1.90",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261024-01",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "4.69",
+                         "prefStart":  "N/A",
+                         "name":  "USB-C to USB-C PD 60W cable white 1m (1005007129679040)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.17",
+                         "ebayPrice":  "4.69",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.03,
+                         "compSales":  "ZIK 24 Oct: dozens of sellers 50+/30d (crazy4fones 2,784, za_693924 1,020, next_level_digi 972, rexgadgets 867, jomegadgets 633, alpha-store1-01 540); 500+ total: crazy4fones 71,544, rexgadgets 15,932, jomegadgets 12,476, gadgets_house 8,809.",
+                         "minPrice":  {
+                                          "Value":  "3.70",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "alpha-store1-01 (25,426 feedback), 540 sales/30d",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "Cost 1.30 used (chart high) +4% FX; buffer profit 1.82; ESTIMATED fee category; reference is a 1-3m cable (nearest similar); charger/UKCA compliance risk; 1 usable variant (white 1m, stock 1,195).",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "100 ZIK listings (info only)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005007129679040.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A",
+                         "trend":  ""
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "1202% (ZIK 2x soft eye mask)",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.474,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "3.06",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261024-02",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "6.45",
+                         "prefStart":  "N/A",
+                         "name":  "3D contoured sleep eye mask Black (1005007539830949)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "1.51",
+                         "ebayPrice":  "6.45",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.03,
+                         "compSales":  "ZIK 24 Oct: 6 sellers 50+/30d (danio.deals 220, ye46063 160, moderntrade123uk 142, johnone 127, trimmingshop 96, mirhaditrendyshop 60); 500+ total: trimmingshop 9,953, sourcing4u 17,845, moderntrade123uk 5,987, sysrstore5000 1,282 and others.",
+                         "minPrice":  {
+                                          "Value":  "2.9",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "ye46063 (5.3K feedback), 160 sales/30d, 769 sold",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "Cost = SKU List price Black 1.51 stock 34 (SuperDeals badge ignored per user rule 24 Oct); Brown 1.55 / Gray 1.60 stock about 1,970-1,983; +4% FX; 6% buffer profit 2.96; reference ye46063 6.45-6.95 free delivery (checked on eBay UK); at 3.95 reference profit would be 0.98; ESTIMATED fee category (Health \u0026 Beauty); many colour variations (list max 3).",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "100 ZIK listings (info only)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005007539830949.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS (user-confirmed)",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A",
+                         "trend":  ""
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "PRE_EVENT (16a): not gated",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.369,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "2.42",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261024-03",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "6.56",
+                         "prefStart":  "2026-10-26",
+                         "name":  "Christmas window curtain fairy lights Warm 3x3m 300 LED (1005006994725087)",
+                         "seasonal":  "christmas (christmas)",
+                         "eventDate":  "2026-12-25",
+                         "minStart":  "2026-11-25",
+                         "target":  "Christmas",
+                         "phase":  "PREPARE_EARLY",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "2.37",
+                         "ebayPrice":  "6.56",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.03,
+                         "compSales":  "16a: source demand Choice 10,000+ sold; product-type proof Christmas lights; 5 lowest credible active listings 5.99, 6.49, 6.56, 6.59, 6.99 (23 Oct) all above the 4.83 minimum.",
+                         "minPrice":  {
+                                          "Value":  "4.83",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "ukeypoint (median of 5 lowest active listings)",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "Cost = SKU price Warm 3x3m 300 LED 2.37 stock 931 (seasonal 50+ ok); +4% FX; 6% buffer profit 2.27; delivery 30 Oct-3 Nov; electrical UKCA/CE compliance risk; list by 26 Oct (preferred) / 25 Nov (minimum); recheck at event minus 30 and minus 14 days.",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "100 ZIK listings (info only)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005006994725087.html"
+                                     },
+                         "bucket":  "next_event_preparation",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS (PRE_EVENT, 16a)",
+                         "daysUntil":  62,
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A",
+                         "trend":  ""
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-c37d08",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Retractable dog lead (1005012986704439)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers 50+/30d",
+                         "reason":  "1 seller (cardys 136) vs 3 needed",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-6216e3",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "8pcs plant pots",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers 50+/30d",
+                         "reason":  "2 sellers; exact 8-pack 0-6 sold",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-f5d88c",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Table cloth clips",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "sell-through / strong sellers",
+                         "reason":  "STR 55%; 0 sellers 50+",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-0c904a",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Magnetic whiteboard pens",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers 50+/30d",
+                         "reason":  "1 seller (moneycruncher 250)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-7afe6d",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Fitness smart watch band",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers",
+                         "reason":  "1 seller at 50+; none 500+ total",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "ZIK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-43fdeb",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Motion sensor night light (1005006860874836)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "cost basis",
+                         "reason":  "SuperDeals 1.60; chart 22.99 -\u003e 1.60 (WATCH)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-7fecc7",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Humane mouse trap",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers",
+                         "reason":  "2 true humane sellers at 50+/30d (WATCH near-miss)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-02a037",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "10-pack clothes hangers",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "sell-through",
+                         "reason":  "STR 5.77%, 3 sold",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-0ddad9",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Fly catcher stickers",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers",
+                         "reason":  "0 sellers at 50+/30d",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-4d87b4",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "USB motion night light",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "profit",
+                         "reason":  "cost 7.70 vs eBay 2.4-5",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-1e73c4",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Soldering iron kit",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers",
+                         "reason":  "only 1 seller with 500+ total sold",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-0d1896",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Tea lights 8hr",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "no source",
+                         "reason":  "no wax multipack source (WATCH)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "none",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-45fbce",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Dual USB car charger",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "not sourced",
+                         "reason":  "passes seller gates; price 1.9-3.0 so cost must be about 0.7 (WATCH)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "ZIK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-2cfadb",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Foam draught excluder tape",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "strong sellers 50+/30d",
+                         "reason":  "2 sellers (the-daily-foundry 525, moneycruncher 373)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-62a5d8",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Taper dinner candles",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "sell-through / strong sellers",
+                         "reason":  "STR 69%; no seller at 50+",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-144112",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Copper wire fairy lights battery",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "profit",
+                         "reason":  "cheapest credible eBay listings 2.59-3.29 vs cost 1.09-1.23 plus fees",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "R-a5ff4b",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Rechargeable hand warmers",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "AliExpress demand",
+                         "reason":  "top Choice listing 459 sold (500+ needed)",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "15032% (ZIK usb c charging cable 2m fast charge braided)",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.405,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "1.90",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261024-01",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "4.69",
+                    "prefStart":  "N/A",
+                    "name":  "USB-C to USB-C PD 60W cable white 1m (1005007129679040)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.17",
+                    "ebayPrice":  "4.69",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.03,
+                    "compSales":  "ZIK 24 Oct: dozens of sellers 50+/30d (crazy4fones 2,784, za_693924 1,020, next_level_digi 972, rexgadgets 867, jomegadgets 633, alpha-store1-01 540); 500+ total: crazy4fones 71,544, rexgadgets 15,932, jomegadgets 12,476, gadgets_house 8,809.",
+                    "minPrice":  {
+                                     "Value":  "3.70",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "alpha-store1-01 (25,426 feedback), 540 sales/30d",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "Cost 1.30 used (chart high) +4% FX; buffer profit 1.82; ESTIMATED fee category; reference is a 1-3m cable (nearest similar); charger/UKCA compliance risk; 1 usable variant (white 1m, stock 1,195).",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "100 ZIK listings (info only)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005007129679040.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A",
+                    "trend":  ""
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "1202% (ZIK 2x soft eye mask)",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.474,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "3.06",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261024-02",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "6.45",
+                    "prefStart":  "N/A",
+                    "name":  "3D contoured sleep eye mask Black (1005007539830949)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "1.51",
+                    "ebayPrice":  "6.45",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.03,
+                    "compSales":  "ZIK 24 Oct: 6 sellers 50+/30d (danio.deals 220, ye46063 160, moderntrade123uk 142, johnone 127, trimmingshop 96, mirhaditrendyshop 60); 500+ total: trimmingshop 9,953, sourcing4u 17,845, moderntrade123uk 5,987, sysrstore5000 1,282 and others.",
+                    "minPrice":  {
+                                     "Value":  "2.9",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "ye46063 (5.3K feedback), 160 sales/30d, 769 sold",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "Cost = SKU List price Black 1.51 stock 34 (SuperDeals badge ignored per user rule 24 Oct); Brown 1.55 / Gray 1.60 stock about 1,970-1,983; +4% FX; 6% buffer profit 2.96; reference ye46063 6.45-6.95 free delivery (checked on eBay UK); at 3.95 reference profit would be 0.98; ESTIMATED fee category (Health \u0026 Beauty); many colour variations (list max 3).",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "100 ZIK listings (info only)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005007539830949.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS (user-confirmed)",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A",
+                    "trend":  ""
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "PRE_EVENT (16a): not gated",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.369,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "2.42",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261024-03",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "6.56",
+                    "prefStart":  "2026-10-26",
+                    "name":  "Christmas window curtain fairy lights Warm 3x3m 300 LED (1005006994725087)",
+                    "seasonal":  "christmas (christmas)",
+                    "eventDate":  "2026-12-25",
+                    "minStart":  "2026-11-25",
+                    "target":  "Christmas",
+                    "phase":  "PREPARE_EARLY",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "2.37",
+                    "ebayPrice":  "6.56",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.03,
+                    "compSales":  "16a: source demand Choice 10,000+ sold; product-type proof Christmas lights; 5 lowest credible active listings 5.99, 6.49, 6.56, 6.59, 6.99 (23 Oct) all above the 4.83 minimum.",
+                    "minPrice":  {
+                                     "Value":  "4.83",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "ukeypoint (median of 5 lowest active listings)",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "Cost = SKU price Warm 3x3m 300 LED 2.37 stock 931 (seasonal 50+ ok); +4% FX; 6% buffer profit 2.27; delivery 30 Oct-3 Nov; electrical UKCA/CE compliance risk; list by 26 Oct (preferred) / 25 Nov (minimum); recheck at event minus 30 and minus 14 days.",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "100 ZIK listings (info only)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005006994725087.html"
+                                },
+                    "bucket":  "next_event_preparation",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS (PRE_EVENT, 16a)",
+                    "daysUntil":  62,
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A",
+                    "trend":  ""
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-c37d08",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Retractable dog lead (1005012986704439)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers 50+/30d",
+                    "reason":  "1 seller (cardys 136) vs 3 needed",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-6216e3",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "8pcs plant pots",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers 50+/30d",
+                    "reason":  "2 sellers; exact 8-pack 0-6 sold",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-f5d88c",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Table cloth clips",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "sell-through / strong sellers",
+                    "reason":  "STR 55%; 0 sellers 50+",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-0c904a",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Magnetic whiteboard pens",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers 50+/30d",
+                    "reason":  "1 seller (moneycruncher 250)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-7afe6d",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Fitness smart watch band",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers",
+                    "reason":  "1 seller at 50+; none 500+ total",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "ZIK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-43fdeb",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Motion sensor night light (1005006860874836)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "cost basis",
+                    "reason":  "SuperDeals 1.60; chart 22.99 -\u003e 1.60 (WATCH)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-7fecc7",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Humane mouse trap",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers",
+                    "reason":  "2 true humane sellers at 50+/30d (WATCH near-miss)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-02a037",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "10-pack clothes hangers",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "sell-through",
+                    "reason":  "STR 5.77%, 3 sold",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-0ddad9",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Fly catcher stickers",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers",
+                    "reason":  "0 sellers at 50+/30d",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-4d87b4",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "USB motion night light",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "profit",
+                    "reason":  "cost 7.70 vs eBay 2.4-5",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-1e73c4",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Soldering iron kit",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers",
+                    "reason":  "only 1 seller with 500+ total sold",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-0d1896",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Tea lights 8hr",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "no source",
+                    "reason":  "no wax multipack source (WATCH)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "none",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-45fbce",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Dual USB car charger",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "not sourced",
+                    "reason":  "passes seller gates; price 1.9-3.0 so cost must be about 0.7 (WATCH)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "ZIK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-2cfadb",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Foam draught excluder tape",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "strong sellers 50+/30d",
+                    "reason":  "2 sellers (the-daily-foundry 525, moneycruncher 373)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-62a5d8",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Taper dinner candles",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "sell-through / strong sellers",
+                    "reason":  "STR 69%; no seller at 50+",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-144112",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Copper wire fairy lights battery",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "profit",
+                    "reason":  "cheapest credible eBay listings 2.59-3.29 vs cost 1.09-1.23 plus fees",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "R-a5ff4b",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Rechargeable hand warmers",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "AliExpress demand",
+                    "reason":  "top Choice listing 459 sold (500+ needed)",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

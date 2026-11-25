@@ -1,0 +1,42 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+credentials*
+*secret*.json
+
+# browser profiles, cookies, sessions
+storage/
+cookies/
+session/
+User Data/
+chrome_profile*/
+chrome-profile*/
+*.cookies
+
+# machine-local Claude Code files
+.claude/settings.local.json
+.claude/browser_guard_state.json
+.claude/basket_clear_approval.json
+.claude/scheduled_tasks.lock
+
+# temporary logs and built output (the page is rebuilt by tools/build_review_page.ps1)
+*.log
+*.tmp
+*.bak
+*.lock
+data/evidence/browser_guard_log.csv
+data/review_page/*.html
+~$*
+
+# OS and editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+.vscode/
+node_modules/

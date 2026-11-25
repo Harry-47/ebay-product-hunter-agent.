@@ -1,0 +1,18 @@
+date,source,product_name,source_url,failed_gate,observed_value,threshold,evidence_urls,notes
+2026-10-15,Amazon UK,Sistema Microwave Soup Mug 656ml,UNKNOWN,no eBay reference seller at/above minimum listing price,"no seller with 5+/30d at >= 6.68 (best 6.52)",minimum_listing_price 6.68,data/notes/2026-10-15_hunt_notes.txt,ZIK Fixed Price UK 179 sold/30d
+2026-10-15,Amazon UK,E14 golf ball bulbs 10-pack,UNKNOWN,price gap,"Amazon 10-pack 12.99-18.68 vs eBay 9.99-12.99",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Microwave pasta cooker,UNKNOWN,Amazon demand 500+/month,"max 400+ label",500+ bought in past month,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Shout Triple Action stain remover 6-pack,UNKNOWN,price (pack of 6 cost 24.00 vs eBay 18.99),loss,profit rule,data/notes/2026-10-15_hunt_notes.txt,VeRO status UNKNOWN
+2026-10-15,Amazon UK,Tower CeraGlide steam iron T22008,UNKNOWN,price / margin,"profit -1.81 to 1.27; min listing 39.21-42.14 over 35 cap",listing price max 35,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Target Darts Luke Littler Brass 22G,UNKNOWN,price gap,"Amazon 14.95 vs eBay 15.26",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Target Swiss Point Diamond Pro 3-pack,UNKNOWN,no reference seller; brand owner undercuts,"brand 820/30d at 6.36; resellers 0-4/30d",5+ sales/30d reference at min 12.53,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Silentnight self-inflating mat,UNKNOWN,price / demand,"Amazon 37.98 above eBay 26.99; no 500+ label",500+ bought in past month,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,E-Cloth / Vileda Cordomatic / Earth Rated 315 and 120x2 / Sovereign silicone,UNKNOWN,price or demand,"see notes line 22",profit rule,data/notes/2026-10-15_hunt_notes.txt,counted as evaluated 10-12
+2026-10-15,Amazon UK,UniBond AERO 360 lavender 2x450g (B08JM944ZC),https://www.amazon.co.uk/dp/B08JM944ZC,Amazon sellers on listing,"New (39) offers",3 to 20 sellers,data/notes/2026-10-15_hunt_notes.txt,Profit passes (2.48 / ROI 38%) vs ninjaspeedpro 11.99; Henkel VeRO unchecked; eye irritation warning. Other Unibond options fail on profit
+2026-10-15,Amazon UK,Universal cooker hood grease filters,UNKNOWN,price gap,"Amazon 4.95-7.49 vs eBay 3.10-7.99",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,Amazon Basics tin can opener,UNKNOWN,4% cost buffer,"profit 1.53 ROI 23.1% at eBay 10.99; min listing 10.74",cost_buffer_gate,data/notes/2026-10-15_hunt_notes.txt,Similar item only; WATCH if Amazon price falls below ~6.30
+2026-10-15,Amazon UK,Frost fleece 2m x 10m,UNKNOWN,price gap,"Amazon 9.49-17.99 vs eBay 9.99",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,A1 self-healing cutting mat,UNKNOWN,price gap,"Amazon 12.85+ vs eBay 9.59",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Amazon UK,30pc hex key set,UNKNOWN,price gap,"Amazon 8.90-13.50 vs eBay 9.95",profit rule,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Go Dropship UK,Christmas 3-jar scented candle gift set,UNKNOWN,price (16a median below minimum),"median 10.79 vs min 12.26",minimum_listing_price,data/notes/2026-10-15_hunt_notes.txt,
+2026-10-15,Go Dropship UK,3pcs 28cm door wreath hanger,UNKNOWN,no reference seller / price,"2-pack route 6.76 vs 5.87",5+/30d at minimum price,data/notes/2026-10-15_hunt_notes.txt,

@@ -1,0 +1,26 @@
+date,source,product_name,failed_gate,observed_value,threshold,notes
+2026-10-16,Go Dropship UK,Insulated 70L food delivery bag,profit,"GD 7.98 vs homiely 10.99: profit -0.10",1 GBP profit,
+2026-10-16,Go Dropship UK,10 zinc door/coat hooks,profit,"GD 6.14 vs foido 6.95: profit -0.94",1 GBP profit,
+2026-10-16,Go Dropship UK,Paint roller set with pole,margin/ROI,"GD 8.69 vs homiely 13.49: profit 1.17 ROI 13.4%; min listing 14.21",20% ROI or 30% margin,
+2026-10-16,Go Dropship UK,Faux fur sheepskin rug,margin/ROI,"baseline 9.25 (8.33 is a 10% promo) vs homiely 13.99: profit 1.00 ROI 10.9%",20% ROI or 30% margin,
+2026-10-16,Go Dropship UK,Puppy pads 100pk 33x45cm,eBay demand / reference seller,"2 sold/30d market-wide; STR 2.5%",20% STR; 5+/30d reference,
+2026-10-16,Go Dropship UK,5L LED ice bucket,eBay demand,"6 sold/30d market-wide; STR 6%",20% STR,
+2026-10-16,Go Dropship UK,Organ accordion cat scratching board (PET-74017),eBay demand,"4 sold/30d market-wide; STR 4%",20% STR,history WATCH
+2026-10-16,Go Dropship UK,Kitchen sink mixer tap,price,"GD 19.94 vs eBay 15.50",profit rule,
+2026-10-16,Go Dropship UK,Yoga mat 61x173cm,price,"GD 8.30 vs eBay 9.99 (10mm version)",profit rule,
+2026-10-16,Go Dropship UK,Dog harness lines (several),stock / no price gap,"stock 6-15 on several; others 7.70 not matching 11.99-12.95 no-pull harness",stock 50+,
+2026-10-16,Go Dropship UK,Mouse traps,stock,"all out of stock",UK stock,
+2026-10-16,AliExpress UK,Castor wheels set of 4 (1005006862618396),cost,"Welcome deal 3.81 -> actual (cut-off) 10.56 vs eBay 6.99-8.59: profit -4.65",profit rule,
+2026-10-16,AliExpress UK,147pc watch opener repair kit,6% cost buffer,"search-page price 5.40 (unconfirmed): profit 1.50 ROI 26.8% but buffer test FAIL (min listing 9.11 vs 9.59)",cost_buffer_gate,AliPrice chart not read
+2026-10-16,AliExpress UK,5-in-1 wall stud finder,rating / demand,"Choice item rating 4.1 (under 4.3); other items not Choice or under 500 sold",rating 4.3+; Choice; 500+ sold,
+2026-10-16,AliExpress UK,Garden tool sets,demand,"Choice sets 12-103 sold",Choice and 500+ sold,
+2026-10-16,AliExpress UK,Telescopic shower shelf (Choice 10.4),margin,"AliExpress 10.40 vs eBay 10.99",profit rule,search page only
+2026-10-16,Amazon UK,Carlube DOT4 brake fluid 1L,no reference seller,"only seller at min price the_name_of_trust 0 sales/30d",5+/30d at minimum price,WATCH
+2026-10-16,Amazon UK,UniBond AERO 360 lavender 2x450g,Amazon sellers on listing,"39 offers",3 to 20,profit passes
+2026-10-16,Amazon UK,Air fryer liners 100pc,profit,"profit 0.83-0.95 at eBay 6.49-6.63; min listing 6.70",1 GBP profit,also rejected 3 Oct
+2026-10-16,Amazon UK,ANSIO dehumidifier 10-pack,eBay demand,"3 sold/30d market-wide",20% STR,
+2026-10-16,Amazon UK,Reusable hot/cold gel packs 3-pack,price / demand,"Amazon 9.98 vs eBay 10.99; cheaper packs under 500+ label",profit rule; 500+ bought,
+2026-10-16,Amazon UK,Cork-backed placemat set 8pc,price / demand,"Amazon 13.49-16.99 vs eBay 12.99; no 500+ label",profit rule; 500+ bought,
+2026-10-16,Amazon UK,Posture corrector (Quickglimpse 11.99),price / demand,"no 500+ label offer below eBay price",profit rule; 500+ bought,
+2026-10-16,Amazon UK,30pc hex key set,price,"Amazon 8.90-13.50 vs eBay 9.95",profit rule,
+2026-10-16,Excluded,Chrome Muslim bidet spray (GD HOM-59579),previously passed,"passed 4 and 8 Oct",do not reselect (user rule 2026-10-16),not counted

@@ -1,0 +1,13 @@
+﻿date_read,product_code,product_name,price,stock,price_updated_on,source_note
+2026-10-16,HB-75863,32 inch grabber,4.11,61,2026-03-19,backfill from 16 Oct hunt
+2026-10-16,HOM-61511,Extendable duster 280cm,5.26,1106,2024-10-25,backfill from 16 Oct hunt
+2026-10-16,HOM-66913,2 pack laundry basket,7.80,1545,2025-06-16,backfill from 16 Oct hunt
+2026-10-18,HB-75863,32 inch grabber,4.11,61,2026-03-19,second-day check
+2026-10-18,HOM-66913,2 pack laundry basket,7.80,1544,2025-06-16,second-day check
+2026-10-21,UNKNOWN,Heated Underblanket Single Electric Under Blanket 3 Heat Levels,19.80,47,UNKNOWN,search page read (rejected: stock 47)
+2026-11-06,APP-57959,Mens X Shape Braces 50mm,5.93,357,2025-04-02,product page read (provisional pass)
+2026-11-11,HOM-55114,Heavy Duty Frost Protection Fleece Plant Covers Jacket 80x100cm 30gsm,3.13,1295,2026-04-13,11 Nov hunt
+2026-11-13,PET-73110,2 in 1 Pet Feeder Food Water Dispenser Bowl,8.64,320,2024-11-14,13 Nov hunt
+2026-11-13,GD-drainage-5pcs-grey,5 Pcs Collapsible Flexible Drainage Waste Water Pipes Grey,4.93,1335,2025-02-07,13 Nov hunt
+2026-11-13,GD-car-headrest-pillow-1pc-black,Black Car Headrest Pillow Neck Support Cushion 1pc,4.72,290,2026-07-14,13 Nov hunt
+2026-11-13,GD-cat-scratch-mat-30x100-gray,Cat Scratch Mat 30x100cm Self Adhesive Gray,4.69,309,2026-07-07,13 Nov hunt

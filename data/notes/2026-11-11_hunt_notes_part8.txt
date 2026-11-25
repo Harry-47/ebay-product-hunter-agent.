@@ -1,0 +1,11 @@
+2026-11-11 hunt notes, part 8
+
+eBay-stage screens (Terapeak, 30d, UK, New, Fixed price; no AliExpress product counted):
+- Window insulation film kit: strong (1-5PK 7.08 188 sold; 1.5x4m 6.16 68; 2.58 74; 2.83 53; 6.37 31) but AliExpress search returns no insulation film kits (only heat-shrink tubing / privacy film).
+- Christmas tree storage bag: only 2 listings 30+ (Ram 7ft 5.97 48; bauble organiser 9.81 31) -> strong-seller gate not met.
+- Car ice scraper: cheap market 1.10-6.01; electric scraper 19.97 only 17 sold -> no fit.
+- LED curtain lights: 30+ listings 6Mx3M 7.87 (45), 300 LED 3.74 (41), 6x4m net mesh 26.14 (33); USB 3x3m remote 8.99 (26), 5.76 (27); smart app curtain 24-43 (max 15 sold).
+
+AE-20261111-10 FAIL (price) USB curtain fairy lights with remote, AliExpress item 1005006995282413 (Choice, 4.9, 4,090 reviews, 10,000+ sold): WHITE 3Mx2M without sale 7.82 (sale 3.05); WHITE 3Mx3M sale 3.71 (stock 492) -> without sale above 7.82; Warm White 3Mx3M stock 17 (under 50 seasonal). eBay USB 3x3m curtain 8.99 (26 sold) -> no profit.
+
+Tally 11 Nov after part 8: AliExpress 10 evaluated / 0 pass; Go Dropship 35 + 9 evaluated / 1 pass (GD-20261111-05 frost fleece plant jacket).

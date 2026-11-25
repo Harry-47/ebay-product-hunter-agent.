@@ -1,0 +1,43 @@
+- [Daily review page](daily-review-page.md) â€” pinned "eBay Daily 20" artifact URL; republish to the same URL after every hunt
+- [Runs start manually](remote-daily-schedule.md) â€” no schedule; user signs in then says "run the daily hunt"; notify + pause on logged-out sites, resume on "continue"
+- [Basket rules](never-touch-basket.md) â€” never add/delete basket items; if Seller Sprite fills the Amazon basket, notify the user and pause until they say it's clear
+- [Source stop rule](amazon-minimum-15.md) â€” every source incl. Amazon runs until 5 pass or 35 evaluated; never stop a source early by my own choice
+- [5 Oct hunt paused](hunt-2026-10-05-postponed.md) â€” next "start today hunt" = finish 5 Oct first, then that day's hunt; Amazon first in each
+- [Drive upload of daily files](drive-daily-hunt-upload.md) â€” folder "Daily hunt files" id; user wants the .xlsx workbooks there each day; connector can't upload binaries
+- [Browsing: pop-ups and cookies](browsing-popups-cookies.md) â€” always close pop-ups and reject cookies while browsing; never accept-all or press pop-up CTAs
+- [October 2026 mix](october-2026-mix.md) â€” rest of Oct 2026: 70% Christmas/New Year/winter, 30% evergreen (adjusted mix, not default)
+- [Amazon basket pause 9 Oct](amazon-basket-pause-2026-10-09.md) â€” basket showed GBP 999 (100 x mats); Amazon paused until user says "basket is clear"
+- [No image-search button](no-image-search-extension.md) â€” the eBay "Image search on AliExpress" button looped AliExpress search; use text search only
+- [Amazon price gap](amazon-price-gap-finding.md) — Amazon never passes: its price >= eBay sold price; tried 1K/500/200 demand + reverse eBay-first (9 Oct)
+- [Go Dropship remote surcharge](godropship-remote-surcharge.md) - offshore/remote UK regions may carry surcharges; note as a risk on every Go Dropship product
+- [AliExpress workflow 13 Oct](aliexpress-workflow-13oct.md) - cost model (no VAT, 4% FX, 6% buffer), Choice + free shipping, stock 20+, no cart; browser tabs freeze, use fresh tabs
+- [ZIK first, eBay fills gaps](zik-first-then-ebay.md) - 14 Oct: check ZIK first per product; Amazon branded non-VeRO only; keep going to 5 pass/35 evaluated; skip seat cushion
+- [Save passing sellers](save-passing-sellers.md) - append the reference seller of every passing product to data/competitors/passing_sellers.csv for later competitor analysis
+- [Pre-event selection](pre-event-selection.md) - winter/Christmas use CLAUDE.md 16a (lifetime eBay proof + active-price reference) instead of 5+ sales in 30 days
+- [Amazon margin and seller rules](amazon-margin-and-seller-rules.md) - 14 Oct: Amazon 15% margin (or 20% ROI), small-seller rule dropped, FBA and Amazon-sold allowed
+- [No repeat passes](no-repeat-passed-products.md) - 16 Oct: never re-select or re-count a product that already passed earlier; dedupe against all past passes
+- [Skip researched products](skip-already-researched-products.md) - 21 Oct: check product_register/candidates first; don't redo selected, watched or already-listed items
+- [ZIK Amazon badge](zik-amazon-dropshipper-badge.md) - purple diamond + Amazon "a" in ZIK rows = Amazon dropshipper listing; use to find Amazon products
+- [Total sellers gate removed](total-sellers-limit-2000.md) - 23 Oct: no limit on total listings/sellers (record count only); GBP 2-35 price range unchanged
+- [AW Dropship source](aw-dropship-source.md) - 23 Oct: aw-dropship.com extra giftware source; prices need user login; cost = net x 1.20 + shipping 2.79/2.99/5.99 (+1 if under 3 net)
+- [AW relaxed demand](aw-dropship-relaxed-demand.md) - 4 Nov: AW only - pass if ZIK sell-through above 200% and profit at least GBP 1 (no strong-seller gate)
+- [Sell-through 40% by hand](sell-through-40-hand-calculated.md) - 4 Nov: gate 40%+ all sources; sold / eBay UK active (BIN, New, UK) x 100; not ZIK's %
+- [Saleyee source](saleyee-source.md) - 23 Oct: saleyee.com extra source, UK warehouse only; prices need the user's login (automation tab not signed in); ask for shortcut URL
+- [Strong sellers 500+ total](strong-sellers-500-total.md) - SUPERSEDED 4 Nov by the strong sellers gate below; do not apply
+- [Strong sellers gate](strong-sellers-30-per-30d.md) - 4 Nov: 3+ top-20 sellers with 30+ sales/30d AND 2+ with 500+ total sold
+- [Open ZIK via shortcut](open-zik-via-shortcut.md) - 4 Nov: always start ZIK at zik2.amzsuccesstools.com/dashboard; set UK filters every search
+- [Stock 20 / 50 seasonal](stock-20-normal-50-seasonal.md) - 24 Oct standing rule: AliExpress + Go Dropship stock 20+ normal, 50+ seasonal
+- [AE Dropshippes and CJ check](ae-dropshippes-and-cj-assessment.md) - 24 Oct desk check: AE Dropshippes high risk (new Ltd, 83% 1-star), CJ real but variable; not yet browsed/approved
+- [Go Dropship low yield](godropship-low-yield.md) - 9 Nov: GD 0/29; eBay-first then GD (user rule); AE big-market method works
+- [AliExpress SKU price, ignore SuperDeals](aliexpress-sku-price-ignore-superdeals.md) - 24 Oct: cost = SKU List price; SuperDeals badge ignored; keep hunting to 35/source via competitors + ZIK trending
+- [AliExpress price without sale](aliexpress-price-without-sale.md) - SUPERSEDED 13 Nov (cost = SKU List price again); do not apply
+- [AliExpress SKU price + chart (13 Nov)](aliexpress-sku-price-chart-check.md) - cost = SKU List price; flat 3-month chart = fake sale; compliance rule withdrawn same day; GD 3rd 35 budget eBay-first, generic items OK
+- [Demand: 3 small sellers 5+/30d](demand-3-small-sellers-5-sales.md) - 13 Nov: alternative to the strong-seller gate only; 40% STR + all other rules still apply
+- [Electrical items allowed again](no-electrical-lighting-items.md) - 13 Nov: no-electrical rule WITHDRAWN by user; record compliance risk only
+- [Dedupe: grep whole data/](dedupe-grep-whole-data.md) - grep all of data/ for keywords before researching; glob filter missed the tap cover pass
+- [Operating loop](operating-loop.md) - 25 Nov: tools first; preflight, lessons, selftest, run_close; fix the cause and add a test (CLAUDE.md s29)
+- [Active sources 25 Nov](pound-wholesale-source.md) - daily hunt = AliExpress, Go Dropship, AW Dropship; Amazon paused; Pound Wholesale = stock model, only when the user asks
+- [11 Nov hunt paused](hunt-2026-11-11-paused.md) - 1 GD pass, calming bed half-checked; VPS 2 GB RAM causes drops; GitHub move prepared, not pushed
+- [New suppliers: user decides](new-suppliers-user-decides.md) - 25 Nov: user will say when to add a supplier and whether dropship or stock; do not propose or add any
+- [Links, codes, variants](links-codes-variants.md) - 25 Nov: eBay listing link, source link, item + variant code for every product; MAX 3 selling variants, full info each
+- [Terminal + Remote Control setup](terminal-remote-setup.md) - 25 Nov: start the daily hunt = run at once; CLAUDE.md section 0; changelog in docs/; Git/CLI not installed yet

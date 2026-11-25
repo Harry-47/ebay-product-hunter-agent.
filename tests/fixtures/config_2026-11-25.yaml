@@ -1,0 +1,82 @@
+planning:
+  preferred_listing_lead_days: 60
+  minimum_listing_lead_days: 30
+  lead_time_is_business_assumption: true
+  default_daily_mix:
+    evergreen: 0.50
+    current_event: 0.30
+    next_event_preparation: 0.20
+  late_event_threshold_days: 30
+fees:
+  # Editable settings, not fixed business rules. Set a value (e.g. 0.13 for 13%) or leave UNKNOWN.
+  # An observed fee for the specific product/listing always overrides these.
+  # Any UNKNOWN or assumed value used in a calculation => profit marked ESTIMATED, assumption stated.
+  # eBay fees use CURRENT data (user rule 2026-10-03): each run records eBay's business-seller fee page into
+  # data/fees/<date>_ebay_business_fees.csv; the Profit Engine looks up the product's eBay category there
+  # (final value fee + 0.35% regulatory fee + per-order fee GBP 0.30 / 0.40 / reduced 0.10), then adds VAT.
+  ebay_seller_account_type: business (sole trader)   # user, 2026-10-03
+  vat_registered: false     # user, 2026-10-03: not VAT registered -> eBay adds VAT to its fees
+  fee_vat_rate: 0.20
+  ebay_fee_rate: CURRENT_FEE_PAGE              # not a fixed number any more (13.25% setting retired 2026-10-03)
+  ad_rate: 0.05            # listing price GBP 8 or more; may be raised, never below ad_rate_minimum (user, 2026-10-03)
+  ad_rate_minimum: 0.05    # user rule (CLAUDE.md §10): ads at least 5% when the listing price is GBP 8 or more
+  ad_rate_low_price: 0.03  # listing price under GBP 8 (user rule 2026-10-08): ads 3%, never lower
+  ad_rate_amazon: 0.03      # Amazon-sourced products (user rule 2026-10-13): promoted-listing ad rate 3% at every listing price (+ VAT)
+  ad_fee_vat: true         # not VAT registered: eBay adds VAT to promoted-listing fees too (5% -> 6%, 3% -> 3.6% of the sale)
+  ebay_fixed_per_order_fee: CURRENT_FEE_PAGE   # read from today's fee table
+  insertion_fee: 0.36      # per sale, inc. VAT; charged when over the free monthly listing allowance
+  include_insertion_fee: true   # false = leave it out (or run profit_calc.ps1 -NoInsertionFee)
+  sourcing_buying_fee: UNKNOWN         # fixed GBP amount per order, if ever known (overrides the rate below)
+  sourcing_buying_fee_rate: 0.00       # user rule 2026-10-13: AliExpress buying fee removed (was 0.08 from 2026-10-03); Amazon and Go Dropship are also 0
+  sourcing_buying_fee_rate_godropship: 0.05   # user rule 2026-10-20: 5% buying fee on Go Dropship (was 0.00 from 2026-10-13, 0.03 from 2026-10-07)
+  sourcing_buying_fee_rate_amazon: 0.00       # user rule 2026-10-13: no buying fee charged by Amazon (was 0.08); AliExpress keeps sourcing_buying_fee_rate 0.08
+  prefer_observed_ebay_fee_calculator: true
+profit:
+  # Listed price used in the Profit Engine. User rule (CLAUDE.md §10): the eBay competitor's listing price.
+  # reference_seller_price = listing price of the reference eBay competitor recorded at verification
+  listed_price_basis: reference_seller_price
+history:
+  # OPERATIONAL / RESEARCH-HISTORY DEFAULTS (tools/history.ps1). Configurable workflow defaults ONLY.
+  # - NOT permanent business rules, NOT product-selection criteria, NOT eBay requirements.
+  # - NOT from the user's original product-hunting criteria; proposed as defaults and accepted by the user (2026-10-02).
+  # - They only control WHEN products are rechecked; they never decide whether a product passes or fails.
+  # - Changing a value here is not a change to the user's business strategy and does not require
+  #   a CLAUDE.md change or CHANGE_PROPOSAL (unless a permanent business rule is also being changed).
+  watch_recheck_days: 14         # WATCH (failure that may change): recheck after this many days
+  deprioritise_recheck_days: 60   # DEPRIORITISE: longer recheck interval
+  researched_recheck_days: 7      # RESEARCHED (outcome UNKNOWN / incomplete): recheck when data may be available
+  qualified_review_days: 14       # QUALIFIED / KEEP: lifecycle review interval (CLAUDE.md §21)
+  max_consecutive_watch: 3        # after this many consecutive WATCH results, the next failure -> DEPRIORITISE
+  # Seasonal-timing failures are rechecked at the next occurrence's preferred listing start (seasonal engine).
+browser:
+  # Browser research settings (prompts/stages/browser_research.md). Operational settings, NOT business rules.
+  # Safe defaults: nothing is browsed until the user connects a browser tool and approves sites.
+  connected: true                   # Claude in Chrome connected to this Claude Code session (confirmed 2026-10-02)
+  browser_tool: claude-in-chrome    # user's existing Chrome profile; safety guard: tools/browser_guard.ps1 (.claude/settings.json)
+  # Approved by the user for RESEARCH ONLY (no purchasing, checkout, payment, listing, listing changes,
+  # messaging, bidding, offers, subscriptions/upgrades or account changes). Do not add other sites.
+  # Morrisons UK removed 2026-10-03 (user: dropshipping from Morrisons is not allowed).
+  approved_sites: [Amazon UK, AliExpress UK, Go Dropship UK, AW Dropship, eBay UK, ZIK Analytics, Keepa, Seller Sprite, Sold History Button]   # AW Dropship added by the user 2026-10-23 (sourcing for items not on the other sources)
+  # Web domains the guard allows for navigation (subdomains included). Go Dropship UK: website address not yet
+  # confirmed by the user, so it is not listed and cannot be opened. Sold History Button: browser extension, no website.
+  # amzsuccesstools.com: user-approved 2026-10-03 as the ZIK Analytics access route (user's Chrome shortcut), research only.
+  # godropship.co.uk: Go Dropship UK's own site, confirmed from the user's Chrome shortcut 2026-10-03.
+  approved_domains: [amazon.co.uk, aliexpress.com, ebay.co.uk, zikanalytics.com, keepa.com, sellersprite.com, amzsuccesstools.com, godropship.co.uk, aw-dropship.com, saleyee.com, aedropshippes.com, cjdropshipping.com, tbtrade.co.uk, poundwholesale.co.uk]   # poundwholesale.co.uk: Pound Wholesale (UK supplier), added at the user's request 2026-11-24, user's Chrome session signed in, research only; tbtrade.co.uk: TB Trade (Tekbox Trade, UK supplier), added at the user's request 2026-11-04, user's Chrome session signed in, research only; aedropshippes.com: AE Dropshippes, user-approved read-only trust check 2026-10-24 (no sign-in, no orders, no contact); aw-dropship.com: AW Dropship, user-approved sourcing site 2026-10-23 (address given by the user); saleyee.com: Saleyee, user-approved sourcing site 2026-10-23 (www.saleyee.com loads; prices need the user's login)
+  research_locations: [Manchester City, Newcastle City]   # LOCATION REFERENCES only, not postcodes
+  delivery_postcode: TS1 4QP        # supplied by the user 2026-10-03, used only to read estimated delivery; never substituted
+  postcode_required: SUPPLIED       # sites that need an exact postcode use delivery_postcode; record it with every delivery value
+  save_screenshots: true            # evidence screenshots; never of passwords, payment details, security codes or login data
+  research_budget_products_per_source: 35   # CLAUDE.md s17 "configured research budget": products to evaluate per source per day (user: 20 on 2026-10-03, raised to 35 on 2026-10-04)
+  # stop rule per source (CLAUDE.md s17, user 2026-10-05): research a source until 5 of its products pass every gate or this budget is reached; Amazon uses the same rule
+review_page:
+  # Pinned private page on the user's claude.ai account (Artifacts). Rebuilt and republished after every daily hunt.
+  url: https://claude.ai/artifact/VgttmGdPunwq2X1iqbKnLa
+  local_file: data/review_page/ebay_daily_20.html   # derived view built by tools/build_review_page.ps1
+mode: dynamic_seasonal_plus_evergreen
+daily_quota_per_source: 5
+total_daily_target: 15   # 3 sources x 5 (Morrisons removed 2026-10-03, user choice)
+
+# AliExpress cost factors (user rule 2026-10-13). A daily file data/fees/<date>_aliexpress_cost_factors.csv overrides these.
+aliexpress:
+  vat_rate: 0.00              # extra VAT charged at checkout on item + shipping: 0, the listed UK price already includes VAT (user's first order 2026-10-13: total paid = listed price; was 0.20)
+  fx_payment_buffer: 0.04     # FX / payment-processing buffer on item + shipping: 4% for the user's UK card from 2026-10-13 (was 6.3% on the PKR card, 2% before)

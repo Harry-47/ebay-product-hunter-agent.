@@ -1,0 +1,1481 @@
+{
+    "date":  "2026-10-09",
+    "run":  1,
+    "generated_uk":  "2026-10-09 14:22",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  0,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  0,
+                           "has_file":  false,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  0,
+                           "has_file":  false,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  8,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  5,
+                        "selected":  0
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  5,
+                        "selected":  0
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  5,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "User instruction 2026-10-08: for October 2026 focus 70% on Christmas, New Year and winter and 30% on evergreen",
+    "counts":  {
+                   "evaluated":  8,
+                   "qualified":  0,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  8,
+                   "unknown":  0
+               },
+    "blocked":  [
+                    "Amazon UK: no stage file (not researched or blocked)",
+                    "AliExpress UK: no stage file (not researched or blocked)",
+                    "Run notes: 2026-10-09 hunt (started 14:11 UK; eBay-first, competitor-store route via homiely, then Go Dropship best-seller lists and eBay checks). ebay.co.uk OK; godropship.co.uk OK; aliexpress.com text search works again after the Chrome restart but no AliExpress product met the demand rule on the pages read (wreath hangers: no Choice badge, under 500 sold), so none was evaluated; amazon.co.uk PAUSED (basket showed GBP 999.00 on 9 Oct, user has not yet said it is clear); zik OK (UI slow, screenshots time out). October mix applied: 70% Christmas/New Year/winter and 30% evergreen; products evaluated: 3 seasonal (Christmas lights, snow brush, snow shovel), 1 winter/umbrella, 4 evergreen from homiely. Every candidate fails on price in the best case: Go Dropship costs are about 70-75% of eBay small-seller prices. Previous-day pass (bidet sprayer, GDS-20261008-01) is in the 2026-10-08 report."
+                ],
+    "run_notes":  "2026-10-09 hunt (started 14:11 UK; eBay-first, competitor-store route via homiely, then Go Dropship best-seller lists and eBay checks). ebay.co.uk OK; godropship.co.uk OK; aliexpress.com text search works again after the Chrome restart but no AliExpress product met the demand rule on the pages read (wreath hangers: no Choice badge, under 500 sold), so none was evaluated; amazon.co.uk PAUSED (basket showed GBP 999.00 on 9 Oct, user has not yet said it is clear); zik OK (UI slow, screenshots time out). October mix applied: 70% Christmas/New Year/winter and 30% evergreen; products evaluated: 3 seasonal (Christmas lights, snow brush, snow shovel), 1 winter/umbrella, 4 evergreen from homiely. Every candidate fails on price in the best case: Go Dropship costs are about 70-75% of eBay small-seller prices. Previous-day pass (bidet sprayer, GDS-20261008-01) is in the 2026-10-08 report.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  22,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  49,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  52,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  53,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  77,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  83,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  84,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  128,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  149,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  170,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  235,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  254,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  327,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "13.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Large Faux Fur Sheepskin Rug Room Sofa Hairy Mat Fluffy Mat Shaggy Floor Carpet - White",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "9.25",
+                         "ebayPrice":  "13.99",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "homiely",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Competitor store research: homiely best seller (66 sales/30d at 13.99).",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.28",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=sheepskin"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "10.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Lumbar Back Support Cushion Lumbar Support Pillow Memory Foam Back Rest Cushion for Wheelchair Office Chair",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.09",
+                         "ebayPrice":  "10.99",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 205; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "homiely",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Competitor store research: homiely best seller.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.21",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=lumbar"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "9.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "41 Inch Guitar Bag Water Resistant Guitar Case Black Padded Full Size Acoustic Classical Guitar Gig Bag",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.74",
+                         "ebayPrice":  "9.99",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "homiely",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Competitor store research: homiely best seller.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.20",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=guitar"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "6.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Stainless Steel Measuring Cups and Spoons 8 Pack Set with Handles for Baking Kitchen BBQ Use",
+                         "seasonal":  "evergreen (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.66",
+                         "ebayPrice":  "6.99",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "homiely",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "Competitor store research: homiely best seller. Stock not read.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.14",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=measuring"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "10.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "Sunflower Pattern Double Layer Inverted Umbrella Cars Reverse Open Folding",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.86",
+                         "ebayPrice":  "10.99",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: 7; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "atlantc246",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.21",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/sports-outdoors-c303-98209"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-06",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "5.66",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "2pcs Car Snow Brush Ice Scraper Long Handle Windshield Frost Removal Tool",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.46",
+                         "ebayPrice":  "5.66",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 13; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "u-9561",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.16",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-07",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "7.99",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "200 LED White String Lights Mains Powered Indoor Outdoor Christmas Fairy Lights",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "Christmas",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.51",
+                         "ebayPrice":  "7.99",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: 17; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "jhgenerals",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  {
+                                        "Value":  "0.20",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "UNKNOWN",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261009-08",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "UNKNOWN",
+                         "name":  "68cm Orange Steel Shovel Wooden Handle D-Grip Garden Snow Digging Scoop",
+                         "seasonal":  "seasonal (provisional)",
+                         "eventDate":  "UNKNOWN",
+                         "minStart":  "UNKNOWN",
+                         "target":  "UK Winter Season",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.40",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: 0; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-23",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                     },
+                         "bucket":  "UNKNOWN",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "UNKNOWN",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "13.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Large Faux Fur Sheepskin Rug Room Sofa Hairy Mat Fluffy Mat Shaggy Floor Carpet - White",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "9.25",
+                    "ebayPrice":  "13.99",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "homiely",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Competitor store research: homiely best seller (66 sales/30d at 13.99).",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.28",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=sheepskin"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "10.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Lumbar Back Support Cushion Lumbar Support Pillow Memory Foam Back Rest Cushion for Wheelchair Office Chair",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.09",
+                    "ebayPrice":  "10.99",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 205; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "homiely",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Competitor store research: homiely best seller.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.21",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=lumbar"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "9.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "41 Inch Guitar Bag Water Resistant Guitar Case Black Padded Full Size Acoustic Classical Guitar Gig Bag",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.74",
+                    "ebayPrice":  "9.99",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "homiely",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Competitor store research: homiely best seller.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.20",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=guitar"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "6.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Stainless Steel Measuring Cups and Spoons 8 Pack Set with Handles for Baking Kitchen BBQ Use",
+                    "seasonal":  "evergreen (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.66",
+                    "ebayPrice":  "6.99",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "homiely",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "Competitor store research: homiely best seller. Stock not read.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.14",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/search.html?search_categories=all\u0026filter%5Bglobal%5D%5B%5D=measuring"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "10.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "Sunflower Pattern Double Layer Inverted Umbrella Cars Reverse Open Folding",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.86",
+                    "ebayPrice":  "10.99",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: 7; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "atlantc246",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.21",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: UNKNOWN% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/sports-outdoors-c303-98209"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-06",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "5.66",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "2pcs Car Snow Brush Ice Scraper Long Handle Windshield Frost Removal Tool",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.46",
+                    "ebayPrice":  "5.66",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 13; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "u-9561",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.16",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-07",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "7.99",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "200 LED White String Lights Mains Powered Indoor Outdoor Christmas Fairy Lights",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "Christmas",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.51",
+                    "ebayPrice":  "7.99",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: 17; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "jhgenerals",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN; estimated: sourcing_buying_fee;insertion_fee; unknown: source_delivery_charge",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  {
+                                   "Value":  "0.20",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: see evidence; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "UNKNOWN",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261009-08",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "UNKNOWN",
+                    "name":  "68cm Orange Steel Shovel Wooden Handle D-Grip Garden Snow Digging Scoop",
+                    "seasonal":  "seasonal (provisional)",
+                    "eventDate":  "UNKNOWN",
+                    "minStart":  "UNKNOWN",
+                    "target":  "UK Winter Season",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.40",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: 0; sellers with 100+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-23",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/home-garden-c281-96791"
+                                },
+                    "bucket":  "UNKNOWN",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "UNKNOWN",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

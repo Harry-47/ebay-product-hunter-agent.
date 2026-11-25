@@ -1,0 +1,113 @@
+2026-11-09 DAILY HUNT NOTES (UK)
+User instruction: start with the tea light candles seller (homedepo_0), scan all its Christmas items, find their sources.
+Christmas 25 Dec 2026: 46 days -> START_NOW (CLAUDE.md 15); pre-event method 16a may apply to Christmas-only items.
+
+STORE SCAN homedepo_0 (eBay UK BIN/New/UK, keyword christmas): 79 results. Feedback 40.6K, 99.4%.
+ZIK Competitor Research homedepo_0 (UK, 7/14/21 days): active 1,204, sold 1,510 (21d), sell-through 125.42% (ZIK), avg GBP 12.84.
+Christmas items with ZIK 21-day sales (pages 1-2; pages 3-4 hold items with <=2 sales in 21d, not scanned):
+ 1. LED Candles 3 Pack Flameless Wax Remote 4 Timer  GBP 13.99  21d 13  total 13 (uploaded 31/10/2026)
+ 2. Christmas Tree Stand Real Tree 2.2m 2.1L tank     GBP 19.99  21d 10
+ 3. LED Tea Light Candles 24 Pack Warm White          GBP 10.99  21d 10  total 10
+ 4. Christmas Tree Bauble Storage Box 64/96/128       GBP 11.50  21d 6
+ 5. Christmas Snowflake Pathway Stake Lights 8 Pack   GBP 16.99  21d 5
+ 6. Christmas Light Up Present Boxes 3 Pack           GBP 24.99  21d 5
+ 7. Christmas Candy Cane Lights 5 Pack 50 LED stakes  GBP 13.99  21d 4
+ 8. Christmas String Lights 10-20M battery            GBP 8.99   21d 3
+ 9. Christmas Tree Stake Lights 4 Pack 60 LED         GBP 17.99  21d 3
+10. Christmas Snowflake Stake Lights 5 Pack 45 LED    GBP 13.49  21d 3
+11. Light Up Christmas Tree Skirt 55 LED              GBP 15.99  21d 3
+12. Christmas Tree Storage Bag 125cm                  GBP 9.99   21d 3
+(Already passed 6 Nov: LED tea lights 12 pack, not re-counted.)
+History check: none of the 12 found in product_register / candidates / rejections.
+
+ITEM 1 LED pillar candles 3 pack with remote (homedepo_0 GBP 13.99, 13/21d)
+ eBay market (ZIK product research "led pillar candles remote", ebay.co.uk): 645 sold/30d in 100 listings.
+  30+/30d sellers: festive-lights 113 (3,347 total, GBP 9.99), lopo-home 56 (GBP 9.98), jakeriley-5 53 (GBP 8.99) -> 3 PASS
+  500+ total: festive-lights 3,347, huifengloveuk 578 -> 2 PASS
+  eBay UK active BIN/New/UK "led pillar candles remote": 1,300+ results -> sell-through 645/1300 = 49.6% (upper bound) PASS
+  Reference candidates (5+ in 30d): homedepo_0 GBP 13.99 (13), w_whisper GBP 11.39 (6), starryseeker GBP 10.55 (6), festive-lights GBP 9.99 (113)
+ AliExpress (Choice+Free ship, sorted by orders, signed in as ae166816):
+  1005006235202424 Pack of 3 moving wick, GBP 7.78 one-time offer (max 1/shopper); SKU List stock Type A 3 / Type B 3 -> FAIL stock
+  1005008430103254 same set, GBP 10.83 special offer, "Only 3 left" -> FAIL stock
+  1005007757229080 acrylic 3pcs: SKU List white+remote GBP 9.40 stock 4; no remote 8.13 stock 4; gray+remote 8.82 stock 15; beige+remote 9.24 stock 19 -> FAIL stock (<20)
+ Go Dropship: catalogsearch URL gave a blank page; correct route is search.html?search_categories=all&filter[global][]=TERM. Not yet read.
+PAUSED: browser actions repeatedly blocked ("auto mode classifier gave no verdict"). Resume at Go Dropship LED candles, then items 2-12.
+RESUMED (user: Go Dropship working, signed in). New tab group.
+ Go Dropship "led candles": only 2x LED Christmas Tree Candles remote 10.64 (stock 98) and Halloween tea lights (stock 0) -> no 3-pack pillar match. ITEM 1 REJECTED: no source passing stock.
+ Go Dropship "christmas" (2 pages): no match for homedepo items (only 200 LED string lights, already WATCH GD-20261106-05).
+ITEM 4 bauble storage box: ZIK top seller homedepo_0 6/30d (no 30+ sellers). 16a: AliExpress 64-grid bauble box 8.65 (1K+ sold) -> landed ~9.00, min listing ~14.85 > eBay 8.99-11.50 -> REJECT price.
+ITEMS 5/9/10 pathway stake lights (snowflake/tree): AliExpress Choice top 487 sold (<500) -> REJECT source demand.
+ITEM 12 tree storage bag: eBay ramretailgroup24 48/30d at 5.95 (only seller 30+); 173cm bags 3.19-4.49 price floor; AliExpress 4.69-5.61 -> REJECT price/strong sellers.
+ITEM 3 tea lights 24 pack: same AliExpress item as the 6 Nov pass (1005006783187167) -> not a new product (no repeat passes); noted as a pack option for the user.
+ITEM 2 tree stand: no Choice tree stand on AliExpress (search returned unrelated items) -> REJECT no source.
+ITEM 6 present boxes 3pcs: AliExpress 20.79 vs eBay 24.99 -> REJECT price.
+ITEM 7 candy cane lights -> AliExpress solar 5PC set 1005009755231255 (Art Lighting World Store 96.8%, 4.7, 1,000+ sold, Choice filter): SKU List 5PC 6.14 stock 96; 8PC 8.09 stock 26. One-time offer label (max 1/shopper) shown; SKU price used per 24 Oct rule; flag.
+  eBay ZIK "solar candy cane lights": 34 sold/30d (early season). 16a pre-event: median of 5 lowest solar 5-pack = 13.12 (11.41/12.78/13.12/14.05/14.40).
+  profit_calc 2026-11-09: listed 13.12, total cost 9.95, profit 3.17, margin 24.2%, ROI 49.7%, min listing 10.73, max safe cost 7.65, buffer profit 2.79 -> PASS (on ROI). PROVISIONAL PASS AX-20261109-01 (sales_basis PRE_EVENT).
+ITEM 11 LED tree skirt: no Choice match on AliExpress (search returned fairy/curtain lights) -> REJECT no source.
+ITEM 8 Christmas string lights battery: eBay ZIK "christmas string lights battery 10m" 3,178 sold/30d; eBay UK active 3,000+ -> STR ~106% (upper bound); many strong sellers. Price war GBP 0.99-4.88. Best-priced seller homestoreuk item 352504539186 GBP 8.49 (92/30d, 4,375 sold; most popular 50 bright white PVC-wire battery set with timer, variants 50-600 LED). AliExpress Choice offers only copper-wire micro lights (0.79-2.07) -> not the same product; copper-wire version sits in the 0.99-3.99 price war -> REJECT (no matching source).
+HOMEDEPO_0 CHRISTMAS SCAN COMPLETE: 12 items, 1 provisional pass (solar candy cane 5-piece, AliExpress), 1 duplicate variant (24-pack tea lights), 10 rejected.
+Fees: eBay business fee page re-read 9 Nov, Last updated 5 Nov 2026 (unchanged) -> data/fees/2026-11-09_ebay_business_fees.csv carried. AliExpress factors carried (VAT 0, FX 4%).
+
+ROUTINE HUNT (user: continue with routine daily hunt)
+ fastsamshop (ZIK 21d: 1,916 active, 3,384 sold): mug warmer (top eBay seller 7/30d) FAIL strong sellers; sling puck game (zohaibsco 43 only, no 500+ total) FAIL; 4-in-1 12V socket panel (sellers 2-3/30d) FAIL.
+ homiely (ZIK 30d): main items already evaluated 9-13 Oct (fail on price); new garden edging 10m: GD HOM 10.48 vs eBay 10.99 FAIL; cork yoga blocks: no GD match.
+ GD Christmas Bestselling sort: in-stock tops are 3.99 decor sets, feather baubles 4.92, wreath hanger and table runner (failed 6 Nov), paper party garland HOM-63516 7.47 (eBay similar 2 sold/30d avg 5.54) FAIL.
+ LED beanie hat: 30+/30d anita796417 62, london-store86 38, pariella-boutique 37 (3) but 500+ total only pariella 932 (1) FAIL.
+ ukeypoint: mostly <GBP 5; 100W solar panel kit market: 30+/30d chengxi9588 138, ccclo_93 72, simonsmart6 65 but no seller 500+ total FAIL.
+ Electric lint remover: ZIK 929 sold/30d; eBay UK active 908 -> STR 102% PASS; strong sellers pass (7 with 30+, 4 with 500+). AliExpress 1005007097015654 Grey SKU 3.69 (= page price, struck 7.85 ignored), stock 235, 10,000+ sold, 4.9 (4,877 reviews), delivery 14-17 Nov, store Best MorningMan feedback % UNKNOWN. Reference PrimePickMall 8.99 (40/30d).
+  profit_calc: total 6.18, profit 2.81, margin 31.2%, ROI 73.2%, min listing 6.52, max safe cost 5.32, buffer profit 2.58 -> PASS. PROVISIONAL PASS AX-20261109-02 (open: store feedback %).
+ GD lint remover: Mini USB rechargeable 5.44 (+5% = 5.71) vs eBay 8.99 -> profit ~1.00, ROI <20% FAIL.
+ ninjaspeedpro (77K fb, 1,171 sold/30d): mostly branded retail (Sistema, Kilner, Fairy, STV); GD has no stove-top kettle (electric only) - no matches.
+ GD Weekly Top (9 Nov, 16 items): unchecked before = 5.3in LED alarm clock HOM-17459 (5.58, stock 1036, 182 g, 3xAAA, Tracked 2 Business Days, price updated 25 Apr 2025) and 2pc door knobs 3.80.
+  Alarm clock: ZIK market strong but eBay best sellers are the MAINS mirror clock (different). Exact GD-title listings on eBay UK: 23 results, 7.63-8.79 (crowded) < min listing ~9.42 -> FAIL price.
+ Electric wine opener: top seller beepmax 22/30d only -> FAIL strong sellers.
+ Bike lights front+rear set: ZIK 1,886 sold/30d, price war (most 1-6); higher band 50000LM/T6 set junglezon-uk 8.99 (57/30d), saike84 8.95 (45). AliExpress Choice: complete front+rear set 7.09 (7K+ sold) -> too dear vs 8.99; T6 item 1005008406015859 is FRONT ONLY 1.76 (stock 96, special offer) -> not the same product. REJECT (no matching source at a workable cost).
+STATUS ~end of block: AliExpress 2 provisional passes (solar candy cane 5pc AX-20261109-01; lint remover AX-20261109-02); Go Dropship 0; Amazon not run (user target GD + AE). Evaluated today (source checks): AliExpress ~14, Go Dropship ~10.
+[continue + user: "also check amazon"]
+ cardys (345K fb; ZIK 30d 4,821 sold, 91 listings): dog coat w/ harness 670/30d (likely same as 10 Oct AliExpress pass - not repeated); hot water bottle 2L fluffy cover 451/30d; dog crate mat 270; 600 poo bags 192; clothes storage bags 4x 111; retractable lead 127; shower door rollers 50.
+ ZIK NOTE: URL route switched to ebay.com/United States -> reset in UI to ebay.co.uk, United Kingdom, Fixed Price, Brand New, 30 days (fresh tab).
+ Hot water bottle 2L with cover (ebay.co.uk): standard 2L fluffy-cover only cardys at 30+/30d; long 72cm version only infinitedeals776 (382/30d, 1,982 total) -> FAIL strong sellers (needs 3 with 30+).
+ AMAZON (basket counter 0): 600 dog poo bags - Amazon Basics 600 9.94 (1K+, brand Amazon - VeRO risk), AiTodos 600 11.99 (100+ fails 500+ demand), TidyZ 500 6.99 (2K+, different pack). vs cardys eBay 10.95 -> Amazon cost >= eBay price after fees -> FAIL price (same pattern as amazon-price-gap memory).
+ Amazon Product Explorer (5.9a-9): page loads with other users' saved filters (shared account, mostly ebay.com); UK filter set-up not finished.
+ AMAZON shower door rollers (basket 0): 4Pcs 23mm curved 9.99 (500+ bought, 4.4) vs cardys eBay 10.95 (4/8x listing) -> FAIL price (cost ~ eBay price). 8Pcs versions 15.99 with 100-200+ bought -> FAIL demand.
+ Amazon evaluated today: 2 products (poo bags 600, shower door rollers), 0 pass. Pattern unchanged: Amazon price >= eBay competitor price.
+[user: keep hunting on AliExpress + Go Dropship only, leave Amazon; do not select products from previous passes]
+ cardys dog crate mat -> GD "Fluffy Dog Cat Bed Mat Soft Plush Pet Cushion Mattress Washable" 70x50 7.62 (stock ~192), 100x80 11.77 (stock ~197); 45x30 5.91. Not a previous pass (earlier pass = round calming pet bed 60cm, hus2885). eBay check pending.
+ PAUSED: ZIK logged out (login page shown). Agent does not sign in; waiting for user to sign in to ZIK and say continue.
+
+[resumed after ZIK sign-in]
+- GD fluffy dog bed mat (70x50 7.62): exact-title listings 0-1 sales each (~20 sellers); cardys 270/30d is a different padded crate mattress -> REJECT (strong sellers / demand for exact item).
+- GD Weekly Top list read; most items already WATCH with price failures; laundry basket/cat scat/shower head/seat cushion already passed earlier (excluded).
+- GD super seal 10-set 2-pin connectors (4.31): eBay 3.99-7.98, max 11/30d, one seller 30+ -> REJECT.
+- GD Christmas word plate LED kit COM-25430 (3.99, stock 80): 16a median of 5 lowest 5.99 < min ~6.89, 0 sales -> REJECT (price).
+- GD 6pc feather clip baubles (4.92): eBay 6-packs 2.69-4.27 price war -> REJECT.
+- AE 3pc gonk hanging gnomes 1005007996219197 (Red 1.96 stock 656, store 95.3%): eBay 5 lowest 3.20-3.55 median 3.33 < min ~4.20 -> REJECT (price, saturated).
+- ZIK resets to ebay.com on URL navigation and on search errors; set filters in UI then search from the box.
+- AX-20261109-03 milk frother 1005007878387904 Black: PASS profit 1.55 at moni-3019 6.30, ROI 49.6%, buffer 1.36; STR >=83% (996 sold / <=1200 active); strong sellers OK.
+- GD has no thermometer (search empty). AX-20261109-04 TP300 probe thermometer 1005006824959033: PASS profit 1.72 at lupo-store 4.50 (single, no variations), ROI 116%, buffer 1.63; STR 1,891/3,400+ = 55.6%; strong sellers OK. Other refs rejected: enm_e-commerce 8.99 is a foldable red thermometer (different), swiftaddiction 5.99 is a multipack variation range (2.47 single).
+- GD square silicone air fryer pot (5.76, stock 60): eBay exact 3.30-4.37, top 39/30d -> REJECT (price/strong sellers).
+- GD adult mealtime bib (5.33, stock 909; eBay never checked before): top 11/30d, no 30+ sellers -> REJECT (strong sellers).
+- GD 120cm cable tidy zip sleeve (4.78, stock 549; never checked): top 11/30d -> REJECT (strong sellers).
+- rainbow-andy77 competitor scan (ZIK 30d: 858 sold, 1,075 listings): GD matches -> dog grass pad HB-76218 7.40 UK stock 6 -> REJECT (stock <20); 3pc golf headcovers GD 8.53 (stock 439) vs rainbow 12.33: ZIK market 29 sold, max 5/30d -> REJECT (demand/strong sellers, off-season).
+- GD telescopic DAB/FM aerial with 3 adapters (4.62, stock 437): exact listings 3.15-7.39, no 30+ sellers -> REJECT.
+- AE checks not passed: digital tyre gauge (market weak), kitchen scales (mixed products), luggage scale 50kg (only 2 sellers 30+ -> gate FAIL), head torch: Smart Induction zoom 1005006863824680 1-pack stock 16 (FAIL), Pocketman zoom 1005002510984334 one-time offer 2.89 / regular 5.89 (FAIL), COB sensor headlamp 1005009121229695 4.69 stock 116 but eBay sensor headlamps ~0 sales (no market match) -> REJECT.
+- ZIK quirk: after an error the page resets to ebay.com/United States; frame 1532x784: marketplace (405,283) -> ebay.co.uk (320,394); shipping (717,287) -> UK (648,394); Search (1052,37).
+- AE/market checks not passed: electric salt & pepper grinder (only 1 seller 30+), LED touch bedside lamp remote (9 sold), electric garlic chopper (7 sold).
+- ZIK Product Explorer (AliExpress preset, ebay.co.uk/UK, 30+ sales, GBP 6-25): Home/Pet/Car lists read. GD checks from it: 30L pet food container (no GD match); GD large cat litter box drawer 17.67 (stock 125): eBay market 9 sold/30d -> REJECT; GD thermal linen wallpaper out of stock (0); GD gazebo weights 5.98 vs eBay 8.53 -> profit ~0 REJECT.
+STATUS 9 Nov ~17:15: AliExpress 4 provisional passes (solar candy cane, lint remover, milk frother, TP300 thermometer); Go Dropship 0 (about 20 evaluated today).
+- GD dish drainers (clear plastic 7.20; 2-tier 14-15, stock 200+): ZIK "dish drainer rack drip tray" only usave-shop 37/30d -> REJECT (strong sellers).
+- GD battery milk frother stirrer 4.73: eBay battery frothers ~2-4 -> REJECT (price).
+- GD 12V 3.1A dual USB socket panel 4.44 (stock 267): eBay exact panel 3.58-6.89, ~0-1 sales -> REJECT.
+GD evaluated today so far: about 22 (0 pass).
+- GD 5pcs inline blade fuse holder 3.91 (stock 885): ZIK only 3waycomp 31/30d; 5-packs 3.99-7.98 -> REJECT.
+- GD Health & Beauty bestsellers read: castor oil pack kit 6.54 (stock 431): eBay kits ~0-2/30d -> REJECT; heatless curler rods 5.83 (stock 120): 4 sold market-wide -> REJECT; electric makeup brush cleaner 8.84 (stock 52/97): no matching market (43 sold, unrelated) -> REJECT.
+GD evaluated today: about 26, 0 pass. AliExpress: 4 provisional passes.
+- AX-20261109-05 Smart induction zoom headlamp 1005006863824680: RELAXED PASS (user "Pass it"): profit 1.77 at foido 9.95, ROI 32.1% (margin 17.8%), min listing 9.13, max safe cost 5.84, buffer 1.44. Relaxed: stock 16<20; near-match ref; strong sellers met only on broad "rechargeable head torch led" (STR 9% there); narrow "zoom headlamp rechargeable sensor" STR 84/83=101% but only foido 30+/30d. AliExpress now 5/5 (one relaxed).
+[user 9 Nov: then start Go Dropship, use all 35 budget, don't stop until 5 Go Dropship passes]
+- GD 180-degree flip barn door latch 3.06 (stock 115): eBay 3 sold market-wide -> REJECT.
+[user: check eBay first, then Go Dropship]
+- eBay "magnetic thermal door curtain": 61 sold, mostly fly screens; thermal magnetic curtains ~0 sales -> GD 10.92-11.99 thermal curtain REJECT (demand).
+- eBay "car phone holder windscreen suction air vent": strong (dk-power 78, ukvaultdirect 68, junglezon-uk 61; 500+ junglezon 872, qixia 2,055, silcoonline 914). GD vent holder + windscreen suction mount 4.86 (stock 594): best same-type top-20 ref junglezon-uk 7.49 -> profit ~0.56 < 1 -> REJECT (price).
+- eBay head torch market strong but GD has no headlamp (search empty).
+GD evaluated today: 29, 0 pass (6 left in the 35 budget).

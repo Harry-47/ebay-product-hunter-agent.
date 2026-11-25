@@ -1,0 +1,6 @@
+﻿"candidate_id","date","source","product_name","failed_gate","observed_value","threshold","notes"
+"ALX-20261017-02","2026-10-17","AliExpress UK","Watch repair kit Local+ UK 1005010172563070","stock / price","SKU black 6.86 (SuperDeals limited, only 1 left) stock 9; chart rose to 9.89 then fell, no flat stretch; landed 7.13 vs eBay 9.59","stock 50+; no limited-deal price; 1 GBP profit",""
+"ALX-20261017-03","2026-10-17","AliExpress UK","Watch repair kit China 1005008395611788","profit / buffer","SKU black 5.99 stock 319; profit 0.89 vs eBay 9.59; 1.65 at 10.99 but buffer FAIL","1 GBP profit; 6% buffer",""
+"ALX-20261017-04","2026-10-17","AliExpress UK","Castor wheels 1005006862618396","profit","2 inch swivel SKU 9.30 stock 62 vs eBay 6.99-8.59","1 GBP profit",""
+"ALX-20261017-05","2026-10-17","AliExpress UK","Stud finders / garden tool sets / telescopic shower shelf","various","retest under 17 Oct rules: still rejected (rating 4.1; Choice sets under 500 sold; 10.40 vs eBay 10.99)","Choice 500+; rating 4.3+; profit",""
+"ALX-20261017-99","2026-10-17","Carried","16 Oct rejections","various","see 2026-10-16_rejections.csv","","not repeated"

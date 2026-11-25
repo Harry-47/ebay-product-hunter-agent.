@@ -1,0 +1,1724 @@
+﻿{
+    "date":  "2026-10-17",
+    "run":  2,
+    "generated_uk":  "2026-10-18 15:40",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  4,
+    "per_source":  [
+                       {
+                           "selected":  0,
+                           "qualified":  0,
+                           "source":  "Amazon UK",
+                           "has_file":  false,
+                           "evaluated":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "selected":  1,
+                           "qualified":  1,
+                           "source":  "AliExpress UK",
+                           "has_file":  true,
+                           "evaluated":  5,
+                           "shortfall":  4
+                       },
+                       {
+                           "selected":  3,
+                           "qualified":  3,
+                           "source":  "Go Dropship UK",
+                           "has_file":  true,
+                           "evaluated":  3,
+                           "shortfall":  2
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "selected":  4,
+                        "bucket":  "evergreen",
+                        "target":  5
+                    },
+                    {
+                        "selected":  0,
+                        "bucket":  "current_event",
+                        "target":  5
+                    },
+                    {
+                        "selected":  0,
+                        "bucket":  "next_event_preparation",
+                        "target":  5
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "October 2026 mix: 70% Christmas/winter event products, 30% evergreen (user). Today all 4 passes are evergreen.",
+    "counts":  {
+                   "qualified":  4,
+                   "surplus":  0,
+                   "rejected":  4,
+                   "evaluated":  8,
+                   "duplicates":  0,
+                   "unknown":  0
+               },
+    "blocked":  "",
+    "run_notes":  "CORRECTED RUN (run 2, written 18 Oct). All four products re-read in ZIK Product Research on 18 Oct (ebay.co.uk, UK, Fixed Price, New, 30 days): sell-through, top-20 strong sellers (now hard gates: 3+ with 50+/30d and 2+ with 1,000+ total), reference seller in the top 20 with 5+/30d. One profit_calc run for all figures. Corrections: duster reference buysbestuk was outside the top 20 (replaced by iclean-life 9.99) and the duster fails the under-1,000 seller gate (1,800+ listings) so it moved to WATCH, then was passed on user instruction (18 Oct); grabber 17 Oct keyword was too narrow, re-read passes; afrapoco price now 8.49; harness reference marlonqb 11.99. Run 1 files are kept unchanged (rulebook 19).",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  14,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  41,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  44,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  45,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  69,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  75,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  76,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  120,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  141,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  162,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  227,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  246,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  319,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay search",
+                                       "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=reacher+grabber+tool\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "1468% (ZIK \"reacher grabber tool\")",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.252,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "2.14",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261017-01",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "8.49",
+                         "prefStart":  "N/A",
+                         "name":  "32 Inch Pick Up Tool Grabber (HB-75863)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=reacher+grabber+tool\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                     },
+                         "sourcePrice":  "4.11",
+                         "ebayPrice":  "8.49",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "30-day: afrapoco_ltd 125 (2,085 total). Top-20 sellers with 50+ sales/30d: 8 (helping_hand 189, housewaresstore 164, afrapoco_ltd 125, abbas9700 85, fairprice86 70, the_shop_zone 69, maecena 56, kevin.2024 54). Top-20 sellers with 1,000+ total sold: 4 (the_shop_zone 5,822, afrapoco_ltd 2,085, helping_hand 1,319, fairprice86 1,265). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                         "minPrice":  {
+                                          "Value":  "6.85",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "afrapoco_ltd (767K feedback), item 387901830013",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  0.521,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "17 Oct ZIK search \"81cm reacher grabber tool\" was too narrow (105 sold, afrapoco missing); re-read 18 Oct with \"reacher grabber tool\". Go Dropship price updated 19 Mar 2026 (7 months, stable under 7a.9). 18 Oct: Go Dropship price 4.11 and date 19 Mar 2026 unchanged. Risks: margin under 30% (passes on ROI); afrapoco listing variations are colours only; single unit 8.49 each confirmed on item 387901830013 (18 Oct); highest-selling colour not shown; Helping Hand brand listing excluded. Total cost 6.35; ad cost 0.51; max safe cost 5.21.",
+                         "ebayFee":  {
+                                         "Value":  "1.73",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "271 eBay UK listings (upper bound)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/32-inch-pick-up-tool-lightweight-litter-pickers-grabber-stick-easy-litter-rubbish-mobility-grabber-for-adults-disabled-elderly"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "83 g",
+                         "roiBypass":  "N/A",
+                         "trend":  ""
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay search",
+                                       "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=extendable+feather+duster+cobweb+280cm\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "1484% (ZIK \"extendable feather duster\")",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.218,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "2.18",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261017-02",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "9.99",
+                         "prefStart":  "N/A",
+                         "name":  "Extendable Feather Duster 280cm Grey (HOM-61511)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=extendable+feather+duster+cobweb+280cm\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                     },
+                         "sourcePrice":  "5.26",
+                         "ebayPrice":  "9.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "30-day: iclean-life 73 (6,528 total). Top-20 sellers with 50+ sales/30d: 7 (waji_177 339, housewaresstore 119, homeshopa 87, afrapoco_ltd 79, iclean-life 73, raza.ali1993 59, aiman.sharry 58). Top-20 sellers with 1,000+ total sold: 3 (iclean-life 6,528, homeshopa 3,233, starfish-00 1,495). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                         "minPrice":  {
+                                          "Value":  "8.57",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "iclean-life (19,969 feedback), 110in/280cm, 73 sales/30d",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  0.415,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "16 Oct reference buysbestuk 12.99 (9/30d) is NOT in the top 20 by 30-day sales, so it was invalid; corrected reference iclean-life 9.99. Profit and strong sellers pass; the seller-count gate fails on the eBay listing count, so not counted as a pass. User instruction 18 Oct: pass the duster. Risks: total listings 1,800+ (gate: under 1,000 sellers); heavy price war (many 250cm dusters at 1.48-3.79). Total cost 7.81; ad cost 0.60; max safe cost 6.20.",
+                         "ebayFee":  {
+                                         "Value":  "1.95",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "1,800+ eBay UK listings (over the 1,000 limit)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/extendable-feather-duster-long-duster-magic-cobweb-duster-brush---grey"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "2 (colour)",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS (user-directed, seller-count gate relaxed)",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "324 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay search",
+                                       "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2+pack+foldable+laundry+basket\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "1307% (ZIK \"foldable laundry hamper\")",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.175,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "2.45",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261017-03",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "13.99",
+                         "prefStart":  "N/A",
+                         "name":  "2 Pack Laundry Basket Folding Hamper Grey+Black (HOM-66913)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2+pack+foldable+laundry+basket\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                     },
+                         "sourcePrice":  "7.80",
+                         "ebayPrice":  "13.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "30-day: luxtrous 88 (171 total). Top-20 sellers with 50+ sales/30d: 6 (kulw_2483 140, daily-deals-ltd 139, freeshoppinggo 122, kulvsi-24 94, luxtrous 88, moneycruncher 76; lions-store 55). Top-20 sellers with 1,000+ total sold: 5 (daily-deals-ltd 5,229, kulvsi-24 4,410, zumurud168 2,877, kulw_2483 1,828, richo-3 1,775). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                         "minPrice":  {
+                                          "Value":  "12.87",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "luxtrous (298K feedback), 68L collapsible (single), 88 sales/30d",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  0.315,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "Go Dropship price updated 16 Jun 2025 (stable under 7a.9). 18 Oct: price 7.80 and date 16 Jun 2025 unchanged. Risks: No exact match found on eBay; closest similar listing used (exact 2-packs: a2zshopping 10.99, hafsah 10.55, ysk_goods 11.82, all 0 sales/30d); margin under 30% (passes on ROI); ZIK keyword uses \"hamper\" because the browser guard blocks the word basket. Total cost 11.54; ad cost 0.84; max safe cost 8.54.",
+                         "ebayFee":  {
+                                         "Value":  "2.90",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "266 eBay UK listings (upper bound)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/2-pack-laundry-basket-folding-hamper-bag-storage-bin-with-handle---grey+black-90677"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "1",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "560 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay search",
+                                       "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=no+pull+dog+harness+front+clip+reflective\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "1404% (ZIK \"no pull dog harness\")",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.239,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "2.86",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261017-01",
+                         "strSource":  "ZIK",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "11.99",
+                         "prefStart":  "N/A",
+                         "name":  "Adjustable No Pull Dog Harness Front Clip Reflective (1005006850095280)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=no+pull+dog+harness+front+clip+reflective\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                     },
+                         "sourcePrice":  "5.44",
+                         "ebayPrice":  "11.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "30-day: marlonqb 44 (353 total); jaha130266 65 at 11.95. Top-20 sellers with 50+ sales/30d: 7 (cardys 169, dobo3053 148, afrapoco_ltd 101, lead_trade_ltd 81, jaha130266 65, ukbedding 58, raciann5899 56). Top-20 sellers with 1,000+ total sold: 8 (cardys 17,231, dobo3053 5,457, amaray_880 3,522, jaha130266 2,798, lead_trade_ltd 2,023, raciann5899 1,788, wsoutlet-uk 1,128, that_dog 1,014). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                         "minPrice":  {
+                                          "Value":  "9.62",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "marlonqb (6,302 feedback), front clip no pull harness, 44 sales/30d",
+                         "cat":  "SELECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  0.506,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "Profit includes the 4% FX buffer in profit_calc. jaha130266 now 11.95 (was 12.95 on 16 Oct); marlonqb 11.99 used. Risks: user-directed pass; cost is the flat-scaled actual price (SKU List Green S 3.40, chart flat level about 5.44); SuperDeals shown; ship-from country not shown on page (delivery within 10 days); 6% buffer passes (profit 2.52); margin under 30% (passes on ROI). Total cost 9.13; ad cost 0.72; max safe cost 6.82.",
+                         "ebayFee":  {
+                                         "Value":  "2.75",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "813 eBay UK listings (upper bound)",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005006850095280.html"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "32 on AliExpress (limit 2-3: list at most 3)",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - PASS (user-directed, relaxed variations)",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261017-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Watch repair kit Local+ UK (1005010172563070)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "stock / limited-deal price",
+                         "reason":  "SKU black 6.86 (SuperDeals only 1 left), stock 9; landed 7.13 vs eBay 9.59",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261017-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Watch repair kit China (1005008395611788)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "profit / 6% buffer",
+                         "reason":  "SKU 5.99 stock 319; profit 0.89 vs eBay 9.59",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261017-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Castor wheels set of 4 (1005006862618396)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "profit",
+                         "reason":  "swivel SKU 9.30 vs eBay 6.99-8.59",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "OBSERVED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  "UNKNOWN",
+                                           "Estimated":  false
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "exception":  "none",
+                         "id":  "ALX-20261017-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Stud finders / garden tool sets / shower shelf",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "NONE",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "UNKNOWN",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "UNKNOWN",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "UNKNOWN",
+                                          "Estimated":  false
+                                      },
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "UNKNOWN",
+                         "roi":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                         "evidence":  "UNKNOWN",
+                         "notes":  "UNKNOWN",
+                         "ebayFee":  {
+                                         "Value":  "UNKNOWN",
+                                         "Estimated":  false
+                                     },
+                         "buyFee":  {
+                                        "Value":  "UNKNOWN",
+                                        "Estimated":  false
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "rating / demand / profit",
+                         "reason":  "rating 4.1; Choice sets under 500 sold; 10.40 vs eBay 10.99",
+                         "lSource":  {
+                                         "Text":  "Open",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "AliExpress UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay search",
+                                  "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=reacher+grabber+tool\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "1468% (ZIK \"reacher grabber tool\")",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.252,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "2.14",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261017-01",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "8.49",
+                    "prefStart":  "N/A",
+                    "name":  "32 Inch Pick Up Tool Grabber (HB-75863)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=reacher+grabber+tool\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                },
+                    "sourcePrice":  "4.11",
+                    "ebayPrice":  "8.49",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "30-day: afrapoco_ltd 125 (2,085 total). Top-20 sellers with 50+ sales/30d: 8 (helping_hand 189, housewaresstore 164, afrapoco_ltd 125, abbas9700 85, fairprice86 70, the_shop_zone 69, maecena 56, kevin.2024 54). Top-20 sellers with 1,000+ total sold: 4 (the_shop_zone 5,822, afrapoco_ltd 2,085, helping_hand 1,319, fairprice86 1,265). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                    "minPrice":  {
+                                     "Value":  "6.85",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "afrapoco_ltd (767K feedback), item 387901830013",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  0.521,
+                                "Estimated":  true
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "17 Oct ZIK search \"81cm reacher grabber tool\" was too narrow (105 sold, afrapoco missing); re-read 18 Oct with \"reacher grabber tool\". Go Dropship price updated 19 Mar 2026 (7 months, stable under 7a.9). 18 Oct: Go Dropship price 4.11 and date 19 Mar 2026 unchanged. Risks: margin under 30% (passes on ROI); afrapoco listing variations are colours only; single unit 8.49 each confirmed on item 387901830013 (18 Oct); highest-selling colour not shown; Helping Hand brand listing excluded. Total cost 6.35; ad cost 0.51; max safe cost 5.21.",
+                    "ebayFee":  {
+                                    "Value":  "1.73",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "271 eBay UK listings (upper bound)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/32-inch-pick-up-tool-lightweight-litter-pickers-grabber-stick-easy-litter-rubbish-mobility-grabber-for-adults-disabled-elderly"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "83 g",
+                    "roiBypass":  "N/A",
+                    "trend":  ""
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay search",
+                                  "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=extendable+feather+duster+cobweb+280cm\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "1484% (ZIK \"extendable feather duster\")",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.218,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "2.18",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261017-02",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "9.99",
+                    "prefStart":  "N/A",
+                    "name":  "Extendable Feather Duster 280cm Grey (HOM-61511)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=extendable+feather+duster+cobweb+280cm\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                },
+                    "sourcePrice":  "5.26",
+                    "ebayPrice":  "9.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "30-day: iclean-life 73 (6,528 total). Top-20 sellers with 50+ sales/30d: 7 (waji_177 339, housewaresstore 119, homeshopa 87, afrapoco_ltd 79, iclean-life 73, raza.ali1993 59, aiman.sharry 58). Top-20 sellers with 1,000+ total sold: 3 (iclean-life 6,528, homeshopa 3,233, starfish-00 1,495). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                    "minPrice":  {
+                                     "Value":  "8.57",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "iclean-life (19,969 feedback), 110in/280cm, 73 sales/30d",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  0.415,
+                                "Estimated":  true
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "16 Oct reference buysbestuk 12.99 (9/30d) is NOT in the top 20 by 30-day sales, so it was invalid; corrected reference iclean-life 9.99. Profit and strong sellers pass; the seller-count gate fails on the eBay listing count, so not counted as a pass. User instruction 18 Oct: pass the duster. Risks: total listings 1,800+ (gate: under 1,000 sellers); heavy price war (many 250cm dusters at 1.48-3.79). Total cost 7.81; ad cost 0.60; max safe cost 6.20.",
+                    "ebayFee":  {
+                                    "Value":  "1.95",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "1,800+ eBay UK listings (over the 1,000 limit)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/extendable-feather-duster-long-duster-magic-cobweb-duster-brush---grey"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "2 (colour)",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS (user-directed, seller-count gate relaxed)",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "324 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay search",
+                                  "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2+pack+foldable+laundry+basket\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "1307% (ZIK \"foldable laundry hamper\")",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.175,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "2.45",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261017-03",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "13.99",
+                    "prefStart":  "N/A",
+                    "name":  "2 Pack Laundry Basket Folding Hamper Grey+Black (HOM-66913)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=2+pack+foldable+laundry+basket\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                },
+                    "sourcePrice":  "7.80",
+                    "ebayPrice":  "13.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "30-day: luxtrous 88 (171 total). Top-20 sellers with 50+ sales/30d: 6 (kulw_2483 140, daily-deals-ltd 139, freeshoppinggo 122, kulvsi-24 94, luxtrous 88, moneycruncher 76; lions-store 55). Top-20 sellers with 1,000+ total sold: 5 (daily-deals-ltd 5,229, kulvsi-24 4,410, zumurud168 2,877, kulw_2483 1,828, richo-3 1,775). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                    "minPrice":  {
+                                     "Value":  "12.87",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "luxtrous (298K feedback), 68L collapsible (single), 88 sales/30d",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  0.315,
+                                "Estimated":  true
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "Go Dropship price updated 16 Jun 2025 (stable under 7a.9). 18 Oct: price 7.80 and date 16 Jun 2025 unchanged. Risks: No exact match found on eBay; closest similar listing used (exact 2-packs: a2zshopping 10.99, hafsah 10.55, ysk_goods 11.82, all 0 sales/30d); margin under 30% (passes on ROI); ZIK keyword uses \"hamper\" because the browser guard blocks the word basket. Total cost 11.54; ad cost 0.84; max safe cost 8.54.",
+                    "ebayFee":  {
+                                    "Value":  "2.90",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "266 eBay UK listings (upper bound)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/2-pack-laundry-basket-folding-hamper-bag-storage-bin-with-handle---grey+black-90677"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "1",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "560 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay search",
+                                  "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=no+pull+dog+harness+front+clip+reflective\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "1404% (ZIK \"no pull dog harness\")",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.239,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "2.86",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261017-01",
+                    "strSource":  "ZIK",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "11.99",
+                    "prefStart":  "N/A",
+                    "name":  "Adjustable No Pull Dog Harness Front Clip Reflective (1005006850095280)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  "https://www.ebay.co.uk/sch/i.html?_nkw=no+pull+dog+harness+front+clip+reflective\u0026LH_BIN=1\u0026LH_ItemCondition=1000\u0026LH_PrefLoc=1"
+                                },
+                    "sourcePrice":  "5.44",
+                    "ebayPrice":  "11.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "30-day: marlonqb 44 (353 total); jaha130266 65 at 11.95. Top-20 sellers with 50+ sales/30d: 7 (cardys 169, dobo3053 148, afrapoco_ltd 101, lead_trade_ltd 81, jaha130266 65, ukbedding 58, raciann5899 56). Top-20 sellers with 1,000+ total sold: 8 (cardys 17,231, dobo3053 5,457, amaray_880 3,522, jaha130266 2,798, lead_trade_ltd 2,023, raciann5899 1,788, wsoutlet-uk 1,128, that_dog 1,014). Source: ZIK Product Research ebay.co.uk, UK, Fixed Price, Brand New, 30 days, read 2026-10-18",
+                    "minPrice":  {
+                                     "Value":  "9.62",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "marlonqb (6,302 feedback), front clip no pull harness, 44 sales/30d",
+                    "cat":  "SELECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  0.506,
+                                "Estimated":  true
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "Profit includes the 4% FX buffer in profit_calc. jaha130266 now 11.95 (was 12.95 on 16 Oct); marlonqb 11.99 used. Risks: user-directed pass; cost is the flat-scaled actual price (SKU List Green S 3.40, chart flat level about 5.44); SuperDeals shown; ship-from country not shown on page (delivery within 10 days); 6% buffer passes (profit 2.52); margin under 30% (passes on ROI). Total cost 9.13; ad cost 0.72; max safe cost 6.82.",
+                    "ebayFee":  {
+                                    "Value":  "2.75",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "813 eBay UK listings (upper bound)",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005006850095280.html"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "32 on AliExpress (limit 2-3: list at most 3)",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - PASS (user-directed, relaxed variations)",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261017-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Watch repair kit Local+ UK (1005010172563070)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "stock / limited-deal price",
+                    "reason":  "SKU black 6.86 (SuperDeals only 1 left), stock 9; landed 7.13 vs eBay 9.59",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261017-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Watch repair kit China (1005008395611788)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "profit / 6% buffer",
+                    "reason":  "SKU 5.99 stock 319; profit 0.89 vs eBay 9.59",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261017-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Castor wheels set of 4 (1005006862618396)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "profit",
+                    "reason":  "swivel SKU 9.30 vs eBay 6.99-8.59",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "OBSERVED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  "UNKNOWN",
+                                      "Estimated":  false
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "exception":  "none",
+                    "id":  "ALX-20261017-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Stud finders / garden tool sets / shower shelf",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "NONE",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "UNKNOWN",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "UNKNOWN",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "UNKNOWN",
+                                     "Estimated":  false
+                                 },
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "UNKNOWN",
+                    "roi":  {
+                                "Value":  "UNKNOWN",
+                                "Estimated":  false
+                            },
+                    "evidence":  "UNKNOWN",
+                    "notes":  "UNKNOWN",
+                    "ebayFee":  {
+                                    "Value":  "UNKNOWN",
+                                    "Estimated":  false
+                                },
+                    "buyFee":  {
+                                   "Value":  "UNKNOWN",
+                                   "Estimated":  false
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "rating / demand / profit",
+                    "reason":  "rating 4.1; Choice sets under 500 sold; 10.40 vs eBay 10.99",
+                    "lSource":  {
+                                    "Text":  "Open",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "AliExpress UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

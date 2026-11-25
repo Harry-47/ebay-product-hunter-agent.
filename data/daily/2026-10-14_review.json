@@ -1,0 +1,2708 @@
+{
+    "date":  "2026-10-14",
+    "run":  1,
+    "generated_uk":  "2026-10-14 19:53",
+    "total_target":  15,
+    "per_source_target":  5,
+    "total_selected":  2,
+    "per_source":  [
+                       {
+                           "source":  "Amazon UK",
+                           "evaluated":  7,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       },
+                       {
+                           "source":  "AliExpress UK",
+                           "evaluated":  2,
+                           "has_file":  true,
+                           "qualified":  0,
+                           "selected":  0,
+                           "shortfall":  5
+                       },
+                       {
+                           "source":  "Go Dropship UK",
+                           "evaluated":  5,
+                           "has_file":  true,
+                           "qualified":  1,
+                           "selected":  1,
+                           "shortfall":  4
+                       }
+                   ],
+    "buckets":  [
+                    {
+                        "bucket":  "evergreen",
+                        "target":  5,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "current_event",
+                        "target":  5,
+                        "selected":  1
+                    },
+                    {
+                        "bucket":  "next_event_preparation",
+                        "target":  5,
+                        "selected":  0
+                    }
+                ],
+    "allocation_changed":  true,
+    "allocation_reason":  "October 2026 mix: 70% Christmas/winter event products, 30% evergreen (user)",
+    "counts":  {
+                   "evaluated":  14,
+                   "qualified":  2,
+                   "surplus":  0,
+                   "duplicates":  0,
+                   "rejected":  11,
+                   "unknown":  1
+               },
+    "blocked":  [
+                    "Run notes: ZIK was logged out in the evening (not signed in by the agent); eBay checked directly. AliExpress stopped at ~5 evaluated (user: wind up); Amazon closed ~35, Go Dropship ~34 evaluated; only the products listed in this file were formally written up, the full evaluation log is data/notes/2026-10-14_hunt_notes.txt. RULE CHANGES 14 Oct (CLAUDE.md change log): sales-trend gate cancelled; Go Dropship buffer removed; Amazon FBA/Amazon-sold allowed, 15% margin; small-seller rule dropped for all sources; small electronics allowed; pack listings (2-3) allowed; 16a pre-event method for winter/Christmas. Passing sellers saved to data/competitors/passing_sellers.csv. AliExpress read while signed in as ae166816; AliPrice/SKU List not readable so sale-tagged costs stay UNKNOWN."
+                ],
+    "run_notes":  "ZIK was logged out in the evening (not signed in by the agent); eBay checked directly. AliExpress stopped at ~5 evaluated (user: wind up); Amazon closed ~35, Go Dropship ~34 evaluated; only the products listed in this file were formally written up, the full evaluation log is data/notes/2026-10-14_hunt_notes.txt. RULE CHANGES 14 Oct (CLAUDE.md change log): sales-trend gate cancelled; Go Dropship buffer removed; Amazon FBA/Amazon-sold allowed, 15% margin; small-seller rule dropped for all sources; small electronics allowed; pack listings (2-3) allowed; 16a pre-event method for winter/Christmas. Passing sellers saved to data/competitors/passing_sellers.csv. AliExpress read while signed in as ae166816; AliPrice/SKU List not readable so sale-tagged costs stay UNKNOWN.",
+    "calendar":  [
+                     {
+                         "name":  "Halloween",
+                         "type":  "event",
+                         "event_date":  "2026-10-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-10-31",
+                         "days_until":  17,
+                         "preferred_listing_start":  "2026-09-01",
+                         "minimum_listing_start":  "2026-10-01",
+                         "phase":  "LATE_EVENT_WINDOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Black Friday",
+                         "type":  "event",
+                         "event_date":  "2026-11-27",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-27",
+                         "days_until":  44,
+                         "preferred_listing_start":  "2026-09-28",
+                         "minimum_listing_start":  "2026-10-28",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Cyber Monday",
+                         "type":  "event",
+                         "event_date":  "2026-11-30",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-11-30",
+                         "days_until":  47,
+                         "preferred_listing_start":  "2026-10-01",
+                         "minimum_listing_start":  "2026-10-31",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "UK Winter Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2026-12-01",
+                         "window_end":  "2027-02-28",
+                         "anchor_date":  "2026-12-01",
+                         "days_until":  48,
+                         "preferred_listing_start":  "2026-10-02",
+                         "minimum_listing_start":  "2026-11-01",
+                         "phase":  "START_NOW",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "CURRENT_EVENT"
+                     },
+                     {
+                         "name":  "Christmas",
+                         "type":  "event",
+                         "event_date":  "2026-12-25",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-25",
+                         "days_until":  72,
+                         "preferred_listing_start":  "2026-10-26",
+                         "minimum_listing_start":  "2026-11-25",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NEXT_EVENT_PREPARATION"
+                     },
+                     {
+                         "name":  "New Years Eve",
+                         "type":  "event",
+                         "event_date":  "2026-12-31",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2026-12-31",
+                         "days_until":  78,
+                         "preferred_listing_start":  "2026-11-01",
+                         "minimum_listing_start":  "2026-12-01",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "New Year",
+                         "type":  "event",
+                         "event_date":  "2027-01-01",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-01-01",
+                         "days_until":  79,
+                         "preferred_listing_start":  "2026-11-02",
+                         "minimum_listing_start":  "2026-12-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Valentines Day",
+                         "type":  "event",
+                         "event_date":  "2027-02-14",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-02-14",
+                         "days_until":  123,
+                         "preferred_listing_start":  "2026-12-16",
+                         "minimum_listing_start":  "2027-01-15",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Mothering Sunday",
+                         "type":  "event",
+                         "event_date":  "2027-03-07",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-07",
+                         "days_until":  144,
+                         "preferred_listing_start":  "2027-01-06",
+                         "minimum_listing_start":  "2027-02-05",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Easter",
+                         "type":  "event",
+                         "event_date":  "2027-03-28",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-03-28",
+                         "days_until":  165,
+                         "preferred_listing_start":  "2027-01-27",
+                         "minimum_listing_start":  "2027-02-26",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Summer Season",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-06-01",
+                         "window_end":  "2027-08-31",
+                         "anchor_date":  "2027-06-01",
+                         "days_until":  230,
+                         "preferred_listing_start":  "2027-04-02",
+                         "minimum_listing_start":  "2027-05-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "Fathers Day",
+                         "type":  "event",
+                         "event_date":  "2027-06-20",
+                         "window_start":  "N/A",
+                         "window_end":  "N/A",
+                         "anchor_date":  "2027-06-20",
+                         "days_until":  249,
+                         "preferred_listing_start":  "2027-04-21",
+                         "minimum_listing_start":  "2027-05-21",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     },
+                     {
+                         "name":  "UK Back To School",
+                         "type":  "window",
+                         "event_date":  "N/A",
+                         "window_start":  "2027-07-01",
+                         "window_end":  "2027-09-30",
+                         "anchor_date":  "2027-09-01",
+                         "days_until":  322,
+                         "preferred_listing_start":  "2027-07-03",
+                         "minimum_listing_start":  "2027-08-02",
+                         "phase":  "PREPARE_EARLY",
+                         "days_remaining_in_season":  "N/A",
+                         "priority":  "Not defined",
+                         "role":  "NOT_ALLOCATED"
+                     }
+                 ],
+    "selected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/385054416122"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.151,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "1.81",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "11.99",
+                         "prefStart":  "N/A",
+                         "name":  "Earth Rated Dog Poo Bags 300 roll (Amazon B007D17A52)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.00",
+                         "ebayPrice":  "11.99",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "11.48",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "Grabnet",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.259,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Closest similar listing used (unscented eBay vs lavender Amazon). Keepa 3M Buy Box 6.30 to 7.00 stable. Grabnet Sold History 1M 12 / 2W 8. VeRO status of Earth Rated UNKNOWN. Trend: steady everyday consumable.",
+                         "ebayFee":  {
+                                         "Value":  "2.75",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B007D17A52"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "N/A",
+                         "source":  "Amazon UK",
+                         "weight":  "540 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/usr/ninjaspeedpro"
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.20800000000000002,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "1.83",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261014-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "",
+                         "listed":  "8.80",
+                         "prefStart":  "2026-10-02",
+                         "name":  "2 pcs Outside Tap Cover Winter Frost Proof Jacket - Black (HOM-60214)",
+                         "seasonal":  "seasonal (winter)",
+                         "eventDate":  "N/A",
+                         "minStart":  "2026-11-01",
+                         "target":  "UK Winter Season",
+                         "phase":  "START_NOW",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "4.67",
+                         "ebayPrice":  "8.80",
+                         "history":  "QUALIFIED",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "7.53",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "ninjaspeedpro",
+                         "cat":  "SELECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.392,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Reference ninjaspeedpro (76K feedback; small-seller rule dropped 14 Oct) 42 sales/30d, 334 total, listing 2X Outside Tap Faucet Cover. ZIK: 74 sold/30d, STR 74%, avg 7.47. Price updated 13 Apr 2026 (about 6 months, stale flag). Royal Mail Large Letter (no tracking, flagged). Green variant stock 10,969. Trend: season (winter), still early.",
+                         "ebayFee":  {
+                                         "Value":  "1.77",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "",
+                         "reason":  "",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.godropship.co.uk/2-pcs-outside-tap-cover-winter-frost-proof-jacket-garden-tap-thermal-protector---black-89038"
+                                     },
+                         "bucket":  "current_event",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                         "daysUntil":  "48",
+                         "source":  "Go Dropship UK",
+                         "weight":  "92 g",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "rejected":  [
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "2026-10-02",
+                         "name":  "HotHands 5 pairs hand warmers",
+                         "seasonal":  "seasonal (winter)",
+                         "eventDate":  "N/A",
+                         "minStart":  "2026-11-01",
+                         "target":  "UK Winter Season",
+                         "phase":  "START_NOW",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "3.00",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Profit would pass at 6.41-6.90 (min listing 5.70). WATCH for November when winter demand rises. Trend: season (winter).",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "current_event",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "48",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.017,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "0.27",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "15.99",
+                         "prefStart":  "N/A",
+                         "name":  "Thermos ThermoCafe Stainless Steel 500ml Flask (B000TASOEK)",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "11.95",
+                         "ebayPrice":  "15.99",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "18.59",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "nikimayes",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.023,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "eBay resellers 9.94-16; minimum listing 18.59. Keepa 3M 11.0-11.45, dip to 9.00; cost = today 11.95. Reference sales not checked (profit fails first).",
+                         "ebayFee":  {
+                                         "Value":  "3.19",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: 0.27; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 1.7% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.amazon.co.uk/dp/B000TASOEK"
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.057,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "1.04",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "18.19",
+                         "prefStart":  "N/A",
+                         "name":  "Polar Gear 600ml Insulated Food Flask",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "12.98",
+                         "ebayPrice":  "18.19",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "20.10",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "brandstarora_uk",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.08,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "eBay 16.77-22.00; minimum listing 20.10. Reference sales not checked.",
+                         "ebayFee":  {
+                                         "Value":  "3.51",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/margin",
+                         "reason":  "Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 5.7% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.039,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "0.68",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "17.65",
+                         "prefStart":  "2026-10-02",
+                         "name":  "Vellure Premium Door Draft Excluder Strip",
+                         "seasonal":  "seasonal (winter)",
+                         "eventDate":  "N/A",
+                         "minStart":  "2026-11-01",
+                         "target":  "UK Winter Season",
+                         "phase":  "START_NOW",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "12.90",
+                         "ebayPrice":  "17.65",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "19.98",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "slctogether",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.053,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "eBay resellers 12.81-17.65 (many); profit about 0.40 at 17.65. Reference sales not checked.",
+                         "ebayFee":  {
+                                         "Value":  "3.43",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: 0.68; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 3.9% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "current_event",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "48",
+                         "source":  "Amazon UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.057999999999999996,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "0.52",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-06",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "8.99",
+                         "prefStart":  "N/A",
+                         "name":  "Earth Rated Dog Poo Bags 120 count",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.00",
+                         "ebayPrice":  "8.99",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "9.84",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "jhosupplies",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.086,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Keepa correction: cost 6.00 (not 4.10). jhosupplies 11/30d at 8.99; minimum listing 9.84.",
+                         "ebayFee":  {
+                                         "Value":  "2.15",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: 0.52; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 5.8% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Amazon UK",
+                         "weight":  "300 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.002,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "0.03",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "AMZ-20261014-07",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "13.75",
+                         "prefStart":  "N/A",
+                         "name":  "Beco 300 XL Poo Bag Roll",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "10.20",
+                         "ebayPrice":  "13.75",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "16.25",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "zakiak97",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.003,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Keepa correction: cost 10.20 (not 7.69). zakiak97 7/30d at 13.75; minimum listing 16.25.",
+                         "ebayFee":  {
+                                         "Value":  "3.03",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: 0.03; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 0.2% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Amazon UK",
+                         "weight":  "680 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  -0.033,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "-0.25",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALI-20261014-01",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "7.42",
+                         "prefStart":  "2026-10-26",
+                         "name":  "36Pcs 3CM Christmas Balls (item 1005010089248114)",
+                         "seasonal":  "seasonal (christmas)",
+                         "eventDate":  "2026-12-25",
+                         "minStart":  "2026-11-25",
+                         "target":  "Christmas",
+                         "phase":  "PREPARE_EARLY",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "5.61",
+                         "ebayPrice":  "7.42",
+                         "history":  "WATCH",
+                         "adRate":  0.03,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "9.43",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "robert.-150",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  -0.043,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Cost = struck-through 5.61 (sale 2.81 ends 16 Oct is not used; AliPrice chart not readable, cost basis UNKNOWN). At 2.81 it would pass (profit 2.25-3.25). WATCH. Trend: season (Christmas), early.",
+                         "ebayFee":  {
+                                         "Value":  "1.57",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.22",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit",
+                         "reason":  "Profit below GBP 1 (seen: -0.25; rule: \u003e= GBP 1 profit)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005010089248114.html"
+                                     },
+                         "bucket":  "next_event_preparation",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "72",
+                         "source":  "AliExpress UK",
+                         "weight":  "400 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  -1.081,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "-9.62",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "ALI-20261014-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "8.90",
+                         "prefStart":  "2026-10-26",
+                         "name":  "44Pcs 3/6CM Merry Christmas Decoration Ball (item 1005010228823558)",
+                         "seasonal":  "seasonal (christmas)",
+                         "eventDate":  "2026-12-25",
+                         "minStart":  "2026-11-25",
+                         "target":  "Christmas",
+                         "phase":  "PREPARE_EARLY",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "15.58",
+                         "ebayPrice":  "8.90",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "25.58",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "homesolutions2u",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  -0.594,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Sale 7.79 ends 16 Oct; baseline 15.58 vs eBay 43-piece sets at 8.90.",
+                         "ebayFee":  {
+                                         "Value":  "1.79",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.62",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: -9.62; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: -108.1% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  "https://www.aliexpress.com/item/1005010228823558.html"
+                                     },
+                         "bucket":  "next_event_preparation",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "72",
+                         "source":  "AliExpress UK",
+                         "weight":  "600 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  "https://www.ebay.co.uk/itm/358848985516"
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261014-02",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "Large Pet Carrier Bag PET-73719 Black",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "10.15",
+                         "ebayPrice":  "16.88",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "neverance3",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "Profit passes without the buffer (2.04-2.19, ROI about 21%). Price updated 16 Jun 2025 (stale). WATCH.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_verification",
+                         "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "999 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "UNKNOWN",
+                         "basis":  "UNKNOWN",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  "UNKNOWN",
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  "UNKNOWN",
+                         "exception":  "none",
+                         "id":  "GDS-20261014-03",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "UNKNOWN",
+                         "prefStart":  "N/A",
+                         "name":  "100 Pack Puppy Pads 33x45cm",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "7.75",
+                         "ebayPrice":  "UNKNOWN",
+                         "history":  "WATCH",
+                         "adRate":  "UNKNOWN",
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  "UNKNOWN",
+                         "seller":  "UNKNOWN",
+                         "cat":  "UNKNOWN",
+                         "recheck":  "2026-10-28",
+                         "roi":  "UNKNOWN",
+                         "evidence":  "Financials: UNKNOWN",
+                         "notes":  "WATCH: recheck with ZIK seller table once ZIK is signed in again.",
+                         "ebayFee":  "UNKNOWN",
+                         "buyFee":  "UNKNOWN",
+                         "sellers":  "UNKNOWN",
+                         "failed":  "EBAY/ebay_evidence_unavailable",
+                         "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: Profit passes at 12.99 (min listing 12.99, profit 1.56, ROI 20.1%) but no seller with 5+ sales in 30 days at 12.99 or more could be confirmed: ZIK was logged out during the recheck and eBay search shows 135 crowded listings; rule: see stage rules)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "1500 g",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.087,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "1.17",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261014-04",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "13.49",
+                         "prefStart":  "N/A",
+                         "name":  "Paint Roller Set with Extension Pole",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "8.69",
+                         "ebayPrice":  "13.49",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "14.21",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "homiely",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.134,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "homiely 332/30d at 13.49 (profit 1.17); minimum listing 14.21; others 11.25-12.99.",
+                         "ebayFee":  {
+                                         "Value":  "2.82",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/margin",
+                         "reason":  "Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 8.7% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     },
+                     {
+                         "lSeller":  {
+                                         "Text":  "Open Seller",
+                                         "Url":  ""
+                                     },
+                         "lItem":  {
+                                       "Text":  "Open eBay",
+                                       "Url":  ""
+                                   },
+                         "roiMin":  "N/A",
+                         "basis":  "ESTIMATED",
+                         "seasConf":  "MEDIUM",
+                         "str":  "UNKNOWN",
+                         "compliance":  "COMPLIANCE_REVIEW",
+                         "profitPct":  {
+                                           "Value":  0.094,
+                                           "Estimated":  true
+                                       },
+                         "lOther":  {
+                                        "Text":  "Open Evidence",
+                                        "Url":  ""
+                                    },
+                         "profit":  {
+                                        "Value":  "0.97",
+                                        "Estimated":  true
+                                    },
+                         "exception":  "none",
+                         "id":  "GDS-20261014-05",
+                         "strSource":  "UNKNOWN",
+                         "lZik":  {
+                                      "Text":  "Open ZIK",
+                                      "Url":  ""
+                                  },
+                         "mayChange":  "YES",
+                         "listed":  "10.40",
+                         "prefStart":  "N/A",
+                         "name":  "12pcs Cat Scat Mat",
+                         "seasonal":  "evergreen (evergreen)",
+                         "eventDate":  "N/A",
+                         "minStart":  "N/A",
+                         "target":  "UNKNOWN",
+                         "phase":  "N/A",
+                         "lSearch":  {
+                                         "Text":  "Open eBay search",
+                                         "Url":  ""
+                                     },
+                         "sourcePrice":  "6.31",
+                         "ebayPrice":  "10.40",
+                         "history":  "WATCH",
+                         "adRate":  0.05,
+                         "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                         "minPrice":  {
+                                          "Value":  "10.78",
+                                          "Estimated":  true
+                                      },
+                         "seller":  "happycozybloom",
+                         "cat":  "REJECTED",
+                         "recheck":  "2026-10-28",
+                         "roi":  {
+                                     "Value":  0.154,
+                                     "Estimated":  true
+                                 },
+                         "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                         "notes":  "Minimum listing 10.78 vs eBay 7.85-10.59.",
+                         "ebayFee":  {
+                                         "Value":  "2.49",
+                                         "Estimated":  true
+                                     },
+                         "buyFee":  {
+                                        "Value":  "0.00",
+                                        "Estimated":  true
+                                    },
+                         "sellers":  "UNKNOWN",
+                         "failed":  "PROFIT/profit; PROFIT/margin",
+                         "reason":  "Profit below GBP 1 (seen: 0.97; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 9.4% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                         "lSource":  {
+                                         "Text":  "Open Source",
+                                         "Url":  ""
+                                     },
+                         "bucket":  "evergreen",
+                         "variations":  "UNKNOWN",
+                         "lKeepa":  {
+                                        "Text":  "Open Keepa",
+                                        "Url":  ""
+                                    },
+                         "decision":  "REJECTED",
+                         "daysUntil":  "N/A",
+                         "source":  "Go Dropship UK",
+                         "weight":  "UNKNOWN",
+                         "roiBypass":  "N/A"
+                     }
+                 ],
+    "all":  [
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/385054416122"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.151,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "1.81",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "11.99",
+                    "prefStart":  "N/A",
+                    "name":  "Earth Rated Dog Poo Bags 300 roll (Amazon B007D17A52)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.00",
+                    "ebayPrice":  "11.99",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "11.48",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "Grabnet",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.259,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Closest similar listing used (unscented eBay vs lavender Amazon). Keepa 3M Buy Box 6.30 to 7.00 stable. Grabnet Sold History 1M 12 / 2W 8. VeRO status of Earth Rated UNKNOWN. Trend: steady everyday consumable.",
+                    "ebayFee":  {
+                                    "Value":  "2.75",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B007D17A52"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "N/A",
+                    "source":  "Amazon UK",
+                    "weight":  "540 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/usr/ninjaspeedpro"
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.20800000000000002,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "1.83",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261014-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "",
+                    "listed":  "8.80",
+                    "prefStart":  "2026-10-02",
+                    "name":  "2 pcs Outside Tap Cover Winter Frost Proof Jacket - Black (HOM-60214)",
+                    "seasonal":  "seasonal (winter)",
+                    "eventDate":  "N/A",
+                    "minStart":  "2026-11-01",
+                    "target":  "UK Winter Season",
+                    "phase":  "START_NOW",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "4.67",
+                    "ebayPrice":  "8.80",
+                    "history":  "QUALIFIED",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "7.53",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "ninjaspeedpro",
+                    "cat":  "SELECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.392,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Reference ninjaspeedpro (76K feedback; small-seller rule dropped 14 Oct) 42 sales/30d, 334 total, listing 2X Outside Tap Faucet Cover. ZIK: 74 sold/30d, STR 74%, avg 7.47. Price updated 13 Apr 2026 (about 6 months, stale flag). Royal Mail Large Letter (no tracking, flagged). Green variant stock 10,969. Trend: season (winter), still early.",
+                    "ebayFee":  {
+                                    "Value":  "1.77",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "",
+                    "reason":  "",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.godropship.co.uk/2-pcs-outside-tap-cover-winter-frost-proof-jacket-garden-tap-thermal-protector---black-89038"
+                                },
+                    "bucket":  "current_event",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "ACCEPTED - SELECTED (PASS - ESTIMATED)",
+                    "daysUntil":  "48",
+                    "source":  "Go Dropship UK",
+                    "weight":  "92 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261014-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "100 Pack Puppy Pads 33x45cm",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "7.75",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "UNKNOWN",
+                    "recheck":  "2026-10-28",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "WATCH: recheck with ZIK seller table once ZIK is signed in again.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_evidence_unavailable",
+                    "reason":  "eBay evidence could not be obtained (blocked or no comparable listing) (seen: Profit passes at 12.99 (min listing 12.99, profit 1.56, ROI 20.1%) but no seller with 5+ sales in 30 days at 12.99 or more could be confirmed: ZIK was logged out during the recheck and eBay search shows 135 crowded listings; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "NOT ACCEPTED - DATA UNKNOWN",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "1500 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  -0.033,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "-0.25",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALI-20261014-01",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "7.42",
+                    "prefStart":  "2026-10-26",
+                    "name":  "36Pcs 3CM Christmas Balls (item 1005010089248114)",
+                    "seasonal":  "seasonal (christmas)",
+                    "eventDate":  "2026-12-25",
+                    "minStart":  "2026-11-25",
+                    "target":  "Christmas",
+                    "phase":  "PREPARE_EARLY",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "5.61",
+                    "ebayPrice":  "7.42",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "9.43",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "robert.-150",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  -0.043,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Cost = struck-through 5.61 (sale 2.81 ends 16 Oct is not used; AliPrice chart not readable, cost basis UNKNOWN). At 2.81 it would pass (profit 2.25-3.25). WATCH. Trend: season (Christmas), early.",
+                    "ebayFee":  {
+                                    "Value":  "1.57",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.22",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit",
+                    "reason":  "Profit below GBP 1 (seen: -0.25; rule: \u003e= GBP 1 profit)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005010089248114.html"
+                                },
+                    "bucket":  "next_event_preparation",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "72",
+                    "source":  "AliExpress UK",
+                    "weight":  "400 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  -1.081,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "-9.62",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "ALI-20261014-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "8.90",
+                    "prefStart":  "2026-10-26",
+                    "name":  "44Pcs 3/6CM Merry Christmas Decoration Ball (item 1005010228823558)",
+                    "seasonal":  "seasonal (christmas)",
+                    "eventDate":  "2026-12-25",
+                    "minStart":  "2026-11-25",
+                    "target":  "Christmas",
+                    "phase":  "PREPARE_EARLY",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "15.58",
+                    "ebayPrice":  "8.90",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "25.58",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "homesolutions2u",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  -0.594,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Sale 7.79 ends 16 Oct; baseline 15.58 vs eBay 43-piece sets at 8.90.",
+                    "ebayFee":  {
+                                    "Value":  "1.79",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.62",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: -9.62; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: -108.1% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.aliexpress.com/item/1005010228823558.html"
+                                },
+                    "bucket":  "next_event_preparation",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "72",
+                    "source":  "AliExpress UK",
+                    "weight":  "600 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "2026-10-02",
+                    "name":  "HotHands 5 pairs hand warmers",
+                    "seasonal":  "seasonal (winter)",
+                    "eventDate":  "N/A",
+                    "minStart":  "2026-11-01",
+                    "target":  "UK Winter Season",
+                    "phase":  "START_NOW",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "3.00",
+                    "ebayPrice":  "UNKNOWN",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "UNKNOWN",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Profit would pass at 6.41-6.90 (min listing 5.70). WATCH for November when winter demand rises. Trend: season (winter).",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "current_event",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "48",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.017,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "0.27",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-03",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "15.99",
+                    "prefStart":  "N/A",
+                    "name":  "Thermos ThermoCafe Stainless Steel 500ml Flask (B000TASOEK)",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "11.95",
+                    "ebayPrice":  "15.99",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "18.59",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "nikimayes",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.023,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "eBay resellers 9.94-16; minimum listing 18.59. Keepa 3M 11.0-11.45, dip to 9.00; cost = today 11.95. Reference sales not checked (profit fails first).",
+                    "ebayFee":  {
+                                    "Value":  "3.19",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: 0.27; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 1.7% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  "https://www.amazon.co.uk/dp/B000TASOEK"
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.057,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "1.04",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "18.19",
+                    "prefStart":  "N/A",
+                    "name":  "Polar Gear 600ml Insulated Food Flask",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "12.98",
+                    "ebayPrice":  "18.19",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "20.10",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "brandstarora_uk",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.08,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "eBay 16.77-22.00; minimum listing 20.10. Reference sales not checked.",
+                    "ebayFee":  {
+                                    "Value":  "3.51",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/margin",
+                    "reason":  "Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 5.7% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.039,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "0.68",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "17.65",
+                    "prefStart":  "2026-10-02",
+                    "name":  "Vellure Premium Door Draft Excluder Strip",
+                    "seasonal":  "seasonal (winter)",
+                    "eventDate":  "N/A",
+                    "minStart":  "2026-11-01",
+                    "target":  "UK Winter Season",
+                    "phase":  "START_NOW",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "12.90",
+                    "ebayPrice":  "17.65",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "19.98",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "slctogether",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.053,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "eBay resellers 12.81-17.65 (many); profit about 0.40 at 17.65. Reference sales not checked.",
+                    "ebayFee":  {
+                                    "Value":  "3.43",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: 0.68; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 3.9% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "current_event",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "48",
+                    "source":  "Amazon UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.057999999999999996,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "0.52",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-06",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "8.99",
+                    "prefStart":  "N/A",
+                    "name":  "Earth Rated Dog Poo Bags 120 count",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.00",
+                    "ebayPrice":  "8.99",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "9.84",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "jhosupplies",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.086,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Keepa correction: cost 6.00 (not 4.10). jhosupplies 11/30d at 8.99; minimum listing 9.84.",
+                    "ebayFee":  {
+                                    "Value":  "2.15",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: 0.52; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 5.8% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Amazon UK",
+                    "weight":  "300 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.002,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "0.03",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "AMZ-20261014-07",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "13.75",
+                    "prefStart":  "N/A",
+                    "name":  "Beco 300 XL Poo Bag Roll",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "10.20",
+                    "ebayPrice":  "13.75",
+                    "history":  "WATCH",
+                    "adRate":  0.03,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "16.25",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "zakiak97",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.003,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Keepa correction: cost 10.20 (not 7.69). zakiak97 7/30d at 13.75; minimum listing 16.25.",
+                    "ebayFee":  {
+                                    "Value":  "3.03",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: 0.03; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 0.2% (min 15.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Amazon UK",
+                    "weight":  "680 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  "https://www.ebay.co.uk/itm/358848985516"
+                              },
+                    "roiMin":  "UNKNOWN",
+                    "basis":  "UNKNOWN",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  "UNKNOWN",
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  "UNKNOWN",
+                    "exception":  "none",
+                    "id":  "GDS-20261014-02",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "UNKNOWN",
+                    "prefStart":  "N/A",
+                    "name":  "Large Pet Carrier Bag PET-73719 Black",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "10.15",
+                    "ebayPrice":  "16.88",
+                    "history":  "WATCH",
+                    "adRate":  "UNKNOWN",
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  "UNKNOWN",
+                    "seller":  "neverance3",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  "UNKNOWN",
+                    "evidence":  "Financials: UNKNOWN",
+                    "notes":  "Profit passes without the buffer (2.04-2.19, ROI about 21%). Price updated 16 Jun 2025 (stale). WATCH.",
+                    "ebayFee":  "UNKNOWN",
+                    "buyFee":  "UNKNOWN",
+                    "sellers":  "UNKNOWN",
+                    "failed":  "EBAY/ebay_verification",
+                    "reason":  "Failed eBay verification (seen: FAIL; rule: see stage rules)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "999 g",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.087,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "1.17",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261014-04",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "13.49",
+                    "prefStart":  "N/A",
+                    "name":  "Paint Roller Set with Extension Pole",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "8.69",
+                    "ebayPrice":  "13.49",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "14.21",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "homiely",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.134,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "homiely 332/30d at 13.49 (profit 1.17); minimum listing 14.21; others 11.25-12.99.",
+                    "ebayFee":  {
+                                    "Value":  "2.82",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/margin",
+                    "reason":  "Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 8.7% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                },
+                {
+                    "lSeller":  {
+                                    "Text":  "Open Seller",
+                                    "Url":  ""
+                                },
+                    "lItem":  {
+                                  "Text":  "Open eBay",
+                                  "Url":  ""
+                              },
+                    "roiMin":  "N/A",
+                    "basis":  "ESTIMATED",
+                    "seasConf":  "MEDIUM",
+                    "str":  "UNKNOWN",
+                    "compliance":  "COMPLIANCE_REVIEW",
+                    "profitPct":  {
+                                      "Value":  0.094,
+                                      "Estimated":  true
+                                  },
+                    "lOther":  {
+                                   "Text":  "Open Evidence",
+                                   "Url":  ""
+                               },
+                    "profit":  {
+                                   "Value":  "0.97",
+                                   "Estimated":  true
+                               },
+                    "exception":  "none",
+                    "id":  "GDS-20261014-05",
+                    "strSource":  "UNKNOWN",
+                    "lZik":  {
+                                 "Text":  "Open ZIK",
+                                 "Url":  ""
+                             },
+                    "mayChange":  "YES",
+                    "listed":  "10.40",
+                    "prefStart":  "N/A",
+                    "name":  "12pcs Cat Scat Mat",
+                    "seasonal":  "evergreen (evergreen)",
+                    "eventDate":  "N/A",
+                    "minStart":  "N/A",
+                    "target":  "UNKNOWN",
+                    "phase":  "N/A",
+                    "lSearch":  {
+                                    "Text":  "Open eBay search",
+                                    "Url":  ""
+                                },
+                    "sourcePrice":  "6.31",
+                    "ebayPrice":  "10.40",
+                    "history":  "WATCH",
+                    "adRate":  0.05,
+                    "compSales":  "Matched sold in window: UNKNOWN; top-20 sellers with 50+ sales/30d: UNKNOWN; small sellers (\u003c=2k feedback, 10+ sales): UNKNOWN",
+                    "minPrice":  {
+                                     "Value":  "10.78",
+                                     "Estimated":  true
+                                 },
+                    "seller":  "happycozybloom",
+                    "cat":  "REJECTED",
+                    "recheck":  "2026-10-28",
+                    "roi":  {
+                                "Value":  0.154,
+                                "Estimated":  true
+                            },
+                    "evidence":  "Financials: ESTIMATED; estimated: sourcing_buying_fee;insertion_fee",
+                    "notes":  "Minimum listing 10.78 vs eBay 7.85-10.59.",
+                    "ebayFee":  {
+                                    "Value":  "2.49",
+                                    "Estimated":  true
+                                },
+                    "buyFee":  {
+                                   "Value":  "0.00",
+                                   "Estimated":  true
+                               },
+                    "sellers":  "UNKNOWN",
+                    "failed":  "PROFIT/profit; PROFIT/margin",
+                    "reason":  "Profit below GBP 1 (seen: 0.97; rule: \u003e= GBP 1 profit). Listing price GBP 8+: margin under 30% and ROI under 20% (seen: 9.4% (min 30.0%); rule: listing price GBP 8 or more: \u003e= 30% margin, or \u003e= 20% ROI)",
+                    "lSource":  {
+                                    "Text":  "Open Source",
+                                    "Url":  ""
+                                },
+                    "bucket":  "evergreen",
+                    "variations":  "UNKNOWN",
+                    "lKeepa":  {
+                                   "Text":  "Open Keepa",
+                                   "Url":  ""
+                               },
+                    "decision":  "REJECTED",
+                    "daysUntil":  "N/A",
+                    "source":  "Go Dropship UK",
+                    "weight":  "UNKNOWN",
+                    "roiBypass":  "N/A"
+                }
+            ]
+}

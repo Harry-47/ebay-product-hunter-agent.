@@ -1,0 +1,8 @@
+2026-11-11 hunt notes, part 7
+
+AE-20261111-07 FAIL (stock) Electric rechargeable hot water bag, AliExpress item 1005008144760827 (Choice, 4.9, 828 reviews, total 5,000+ sold): SKU List stock random colour 1, Purple G530A 0, Gray G530B 3 (all under 20); without-sale price Gray 6.31 (sale 2.31). Also 220V EU plug (UK 13A adapter needed per review) - compliance risk. eBay grey rechargeable hot water bottle 13.05-13.54 (147/74/66/34 sold 30d, Terapeak).
+AE-20261111-08 FAIL (rating / demand / price) Hot water bottle cover (2L plush): AliExpress top cover 1K+ sold but rating 4.2 (<4.3) and 1.99 is a one-time new-shopper offer; others 193-275 sold (<500) or PVC bottle + cover 6 + 8.15 = 14.15 without sale; eBay cover-only 2.93-3.80.
+AE-20261111-09 FAIL (price) 3-in-1 balaclava hat / face mask / neck warmer, AliExpress item 1005010159289742 (22,088 orders): without sale 7.27 (sale 3.59); eBay Terapeak 30d 63 sellers, 3.18-12.88, top listings 4.14 (35), 4.60 (22), 5.23 (15) -> below cost; strong-seller gate also not met.
+eBay-stage screen: thermal socks (Terapeak 777 sellers, strong). Alpaca socks 2 pairs 13.61 (93), 14.41 (39), 14.46 (34), 15.88 (38) - AliExpress search showed no alpaca 2-pack; thick towel wool socks 3 pairs 1.6 + 2 = 3.60 without sale vs eBay 3-pair thermal 5.74 -> under GBP 1 profit (not counted).
+
+Observation: AliExpress 11.11 sale (ends Nov 18, 16:59 GMT) - prices without sale are typically 2-2.5x the sale price, so under the 11 Nov rule most AliExpress items fail against eBay prices.
